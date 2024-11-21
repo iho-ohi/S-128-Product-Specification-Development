@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portrayalCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://schemas.s100dev.net/schemas/S100/5.2.0/S100PC/20220705/S100PortrayalCatalog.xsd" productId="S-128" version="1.1.0">
+  <pixmaps/>  
+  <colorProfiles>
+    <colorProfile id="1">
+      <description>
+        <name>Color Profile</name>
+        <description>Color Profile</description>
+        <language>eng</language>
+      </description>
+      <fileName>colorProfile.xml</fileName>
+      <fileType>ColorProfile</fileType>
+      <fileFormat>XML</fileFormat>
+    </colorProfile>
+  </colorProfiles>  
+  <symbols>
+	<symbol id="QUESMRK1">
+      <description>
+        <name>QUESMRK1</name>
+        <description>object which is not sufficiently described to be symbolized, or for which no symbol exists in the symbol library</description>
+        <language>eng</language>
+      </description>
+      <fileName>QUESMRK1.svg</fileName>
+      <fileType>Symbol</fileType>
+      <fileFormat>SVG</fileFormat>
+    </symbol>
+  </symbols> 
+  <styleSheets>
+    <styleSheet id="daySvgStyle">
+      <description>
+        <name>Day</name>
+        <description>CSS file for day palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>daySvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+    <styleSheet id="duskSvgStyle">
+      <description>
+        <name>Dusk</name>
+        <description>CSS file for dusk palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>duskSvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+    <styleSheet id="nightSvgStyle">
+      <description>
+        <name>Night</name>
+        <description>CSS file for night palette</description>
+        <language>eng</language>
+      </description>
+      <fileName>nightSvgStyle.css</fileName>
+      <fileType>StyleSheet</fileType>
+      <fileFormat>CSS</fileFormat>
+    </styleSheet>
+  </styleSheets>
+  <lineStyles>
+	<lineStyle id="ElectronicProduct01">
+      <description>
+        <name>ElectronicProduct01</name>
+        <description>ElectronicProduct01</description>
+        <language>eng</language>
+      </description>
+      <fileName>ElectronicProduct01.xml</fileName>
+      <fileType>LineStyle</fileType>
+      <fileFormat>XML</fileFormat>
+    </lineStyle>
+	<lineStyle id="S100Service01">
+      <description>
+        <name>S100Service01</name>
+        <description>S100Service01</description>
+        <language>eng</language>
+      </description>
+      <fileName>S100Service01.xml</fileName>
+      <fileType>LineStyle</fileType>
+      <fileFormat>XML</fileFormat>
+    </lineStyle>
+	<lineStyle id="PhysicalProduct01">
+      <description>
+        <name>PhysicalProduct01</name>
+        <description>PhysicalProduct01</description>
+        <language>eng</language>
+      </description>
+      <fileName>PhysicalProduct01.xml</fileName>
+      <fileType>LineStyle</fileType>
+      <fileFormat>XML</fileFormat>
+    </lineStyle>	
+  </lineStyles>
+  <areaFills/>
+  <fonts/>  
+  <viewingGroups>
+    <viewingGroup id="31000">
+	 <description>
+		<name>Information about the Chart Display</name>
+		<description>Other: A, B - Information about the chart display</description>
+		<language>eng</language>
+	 </description>
+	</viewingGroup>
+	<viewingGroup id="31020">
+	 <description>
+		<name>nautical publication (M_NPUB)</name>
+		<description>Other: A, B - Information about the chart display</description>
+		<language>eng</language>
+	 </description>
+	</viewingGroup>
+  </viewingGroups>  
+  <foundationMode/>  
+  <viewingGroupLayers>
+   <viewingGroupLayer id="18">
+	 <description>
+		<name>Miscellaneous (Other)</name>
+		<description>Other Display elements</description>
+		<language>eng</language>
+	 </description>
+	 <viewingGroup>31000</viewingGroup>
+	 <viewingGroup>31020</viewingGroup>
+   </viewingGroupLayer>
+  </viewingGroupLayers>
+  <displayModes>
+	<displayMode id="3">
+	 <description>
+		<name>Other Information</name>
+		<description>All other objects in the SENC</description>
+		<language>eng</language>
+	 </description>
+	 <viewingGroupLayer>18</viewingGroupLayer>
+	</displayMode>
+  </displayModes>  
+  <displayPlanes>
+    <displayPlane id="OVERRADAR" order="1">
+      <description>
+        <name>Over radar</name>
+        <description>Content displayed on top of Radar image</description>
+        <language>eng</language>
+      </description>
+    </displayPlane>
+	  <displayPlane id="UnderRADAR" order="-1">
+      <description>
+          <name>Under radar</name>
+          <description>Content displayed underneath Radar image</description>
+          <language>eng</language>
+      </description> 
+    </displayPlane>   
+  </displayPlanes>
+  <context/>  
+  <rules>
+    <ruleFile id="main">
+      <description>
+        <name>main</name>
+        <description>main rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>main.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>TopLevelTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="Default">
+      <description>
+        <name>Default</name>
+        <description>Default</description>
+        <language>eng</language>
+      </description>
+      <fileName>Default.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="simpleLineStyle">
+      <description>
+        <name>simpleLineStyle</name>
+        <description>simple Line Style rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>simpleLineStyle.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="textStyle">
+      <description>
+        <name>textStyle</name>
+        <description>text Style rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>textStyle.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="DistributorInformation">
+      <description>
+        <name>Distributor Information</name>
+        <description>Distributor Information rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>DistributorInformation.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="S100Service">
+      <description>
+        <name>S100 Service</name>
+        <description>S100 Service rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>S100Service.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="ElectronicProduct">
+      <description>
+        <name>Electronic Product</name>
+        <description>Electronic Product rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>ElectronicProduct.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+	<ruleFile id="PhysicalProduct">
+      <description>
+        <name>Physical Product</name>
+        <description>Physical Product rule file</description>
+        <language>eng</language>
+      </description>
+      <fileName>PhysicalProduct.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>	
+  </rules>  
+</portrayalCatalog>

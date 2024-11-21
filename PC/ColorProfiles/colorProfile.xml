@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colorProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schemas.s100dev.net/schemas/S100/5.2.0/S100PC/20220705/S100ColorProfile.xsd">
+    <colors>
+        <color token="CHGRN" name="green">
+            <description>Chart green</description>
+        </color>
+        <color token="CHYLW" name="yellow">
+            <description>Chart yellow</description>
+        </color>
+        <color token="CHMGD" name="magenta">
+            <description>Chart magenta dominant</description>
+        </color>
+    </colors>
+  <palette name="Day" css="daySvgStyle.css">
+    <item token="CHGRN">
+      <cie>
+        <xyL>
+          <x>0.31</x>
+          <y>0.56</y>
+          <L>60</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>82</red>
+        <green>232</green>
+        <blue>59</blue>
+      </srgb>
+    </item>
+    <item token="CHYLW">
+      <cie>
+        <xyL>
+          <x>0.41</x>
+          <y>0.49</y>
+          <L>70</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>225</red>
+        <green>225</green>
+        <blue>57</blue>
+      </srgb>
+    </item>
+    <item token="CHMGD">
+      <cie>
+        <xyL>
+          <x>0.3</x>
+          <y>0.17</y>
+          <L>20</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>192</red>
+        <green>69</green>
+        <blue>209</blue>
+      </srgb>
+    </item>
+  </palette>
+  <palette name="Dusk" css="duskSvgStyle.css">
+	<item token="CHGRN">
+      <cie>
+        <xyL>
+          <x>0.31</x>
+          <y>0.56</y>
+          <L>20</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>47</red>
+        <green>142</green>
+        <blue>32</blue>
+      </srgb>
+    </item>
+    <item token="CHYLW">
+      <cie>
+        <xyL>
+          <x>0.41</x>
+          <y>0.49</y>
+          <L>24</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>139</red>
+        <green>139</green>
+        <blue>31</blue>
+      </srgb>
+    </item>
+    <item token="CHMGD">
+      <cie>
+        <xyL>
+          <x>0.28</x>
+          <y>0.24</y>
+          <L>18</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>130</red>
+        <green>108</green>
+        <blue>161</blue>
+      </srgb>
+    </item>
+  </palette>	
+  <palette name="Night" css="nightSvgStyle.css">
+    <item token="CHGRN">
+      <cie>
+        <xyL>
+          <x>0.31</x>
+          <y>0.56</y>
+          <L>2.5</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>12</red>
+        <green>52</green>
+        <blue>6</blue>
+      </srgb>
+    </item>
+    <item token="CHYLW">
+      <cie>
+        <xyL>
+          <x>0.41</x>
+          <y>0.49</y>
+          <L>3</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>50</red>
+        <green>50</green>
+        <blue>6</blue>
+      </srgb>
+    </item>
+    <item token="CHMGD">
+      <cie>
+        <xyL>
+          <x>0.3</x>
+          <y>0.17</y>
+          <L>2</L>
+        </xyL>
+      </cie>
+      <srgb>
+        <red>65</red>
+        <green>18</green>
+        <blue>71</blue>
+      </srgb>
+    </item>	
+  </palette>
+</colorProfile>

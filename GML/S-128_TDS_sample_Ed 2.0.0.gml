@@ -2,7 +2,7 @@
 <S128:Dataset xmlns:S128="http://www.iho.int/S128/2.0" xmlns="http://www.iho.int/S128/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S128/2.0 S-128.xsd" gml:id="CNP00001">
 	<S100:DatasetIdentificationInformation>
 		<S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
-		<S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
+		<S100:encodingSpecificationEdition>5.2</S100:encodingSpecificationEdition>
 		<S100:productIdentifier>S-128</S100:productIdentifier>
 		<S100:productEdition>2.0</S100:productEdition>
 		<S100:applicationProfile>1</S100:applicationProfile>
@@ -170,12 +170,10 @@
 		<S128:S100Service gml:id="CNP00006">
 			<S128:catalogueElementClassification code="3">Water Level Product</S128:catalogueElementClassification>
 			<S128:notForNavigation>false</S128:notForNavigation>
-<!--			<S128:purpose>newDataset</S128:purpose>
--->			<S128:featureName>
+			<S128:featureName>
 				<S128:name>104KR00KR4_G3B30_20220810_F24</S128:name>
 			</S128:featureName>
 			<S128:compressionFlag>false</S128:compressionFlag>
-			<S128:encodingFormat code="3">HDF5</S128:encodingFormat>
 			<S128:serviceStatus code="2">released</S128:serviceStatus>
 			<S128:typeOfProductFormat code="7">HDF-5</S128:typeOfProductFormat>
 			<S128:productSpecification>

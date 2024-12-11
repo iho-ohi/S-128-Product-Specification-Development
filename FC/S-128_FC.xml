@@ -820,7 +820,7 @@
 				</S100FC:listedValue>
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
-				<S100FC:S100_FC_SimpleAttribute>
+		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>S100_Support File Format</S100FC:name>
 			<S100FC:definition>The format used for the support file.</S100FC:definition>
 			<S100FC:code>supportFileFormat</S100FC:code>
@@ -1265,14 +1265,14 @@
 			<S100FC:code>yearNumber</S100FC:code>
 			<S100FC:valueType>integer</S100FC:valueType>
 		</S100FC:S100_FC_SimpleAttribute>
-		  <S100FC:S100_FC_SimpleAttribute>
-		  <S100FC:name>Horizontal Datum EPSG</S100FC:name>
-		  <S100FC:definition>Horizontal reference as  an EPSG code representing a valid entry in the EPSG Geodetic Parameter Dataset, as maintained by the Geodesy Subcommittee of the IOGP Geomatics Committee, and provided online at epsg.org. </S100FC:definition>
-		  <S100FC:code>horizontalDatumEpsg</S100FC:code>
-		  <S100FC:remarks>codeListType=open enumeration; encoding=other: [something]</S100FC:remarks>
-		  <S100FC:alias />
-		  <S100FC:valueType>S100_CodeList</S100FC:valueType>
-		  <S100FC:listedValues>			
+		<S100FC:S100_FC_SimpleAttribute>
+			<S100FC:name>Horizontal Datum EPSG</S100FC:name>
+			<S100FC:definition>Horizontal reference as  an EPSG code representing a valid entry in the EPSG Geodetic Parameter Dataset, as maintained by the Geodesy Subcommittee of the IOGP Geomatics Committee, and provided online at epsg.org. </S100FC:definition>
+			<S100FC:code>horizontalDatumEpsg</S100FC:code>
+			<S100FC:remarks>codeListType=open enumeration; encoding=other: [something]</S100FC:remarks>
+			<S100FC:alias />
+			<S100FC:valueType>S100_CodeList</S100FC:valueType>
+			<S100FC:listedValues>			
 			<S100FC:listedValue>
 				<S100FC:label>EPSG3395 (World Mercator)</S100FC:label>
 				<S100FC:definition>A global Mercator projection commonly used for mapping applications requiring accurate distance measurements near the equator.</S100FC:definition>
@@ -1294,8 +1294,8 @@
 				<S100FC:remarks />
 				<S100FC:alias />
 			</S100FC:listedValue>
-		</S100FC:listedValues>
-	</S100FC:S100_FC_SimpleAttribute>
+			</S100FC:listedValues>
+		</S100FC:S100_FC_SimpleAttribute>
 		<S100FC:S100_FC_SimpleAttribute>
 			<S100FC:name>Vertical Datum</S100FC:name>
 			<S100FC:definition>The reference level used for expressing the vertical measurements of points on the earth's surface. Also called datum level, reference plane, levelling datum, datum for sounding reduction, datum for heights.</S100FC:definition>
@@ -1510,25 +1510,40 @@
 				<S100FC:listedValue>
 					<S100FC:label>Dutch High Water Reference Level</S100FC:label>
 					<S100FC:definition>Dutch High Water Reference Level.</S100FC:definition>
-					<S100FC:code>42</S100FC:code>
+					<S100FC:code>43</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Baltic Sea Chart Datum 2000</S100FC:label>
 					<S100FC:definition>The datum refers to each Baltic country&apos;s realization of the European Vertical Reference System (EVRS) with land-uplift epoch 2000, which is connected to the Normaal Amsterdams Peil (NAP).</S100FC:definition>
-					<S100FC:code>43</S100FC:code>
+					<S100FC:code>44</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Dutch Estuary Low Water Reference Level (OLW)</S100FC:label>
 					<S100FC:definition>Dutch Estuary Low Water Reference Level (OLW)</S100FC:definition>
-					<S100FC:code>44</S100FC:code>
+					<S100FC:code>45</S100FC:code>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>International Great Lakes Datum 2020</S100FC:label>
+					<S100FC:definition>The 2020 update to the International Great Lakes Datum (IGLD), the official reference system used to measure water level heights in the Great Lakes, connecting channels, and the St. Lawrence River system.</S100FC:definition>
+					<S100FC:code>46</S100FC:code>
 				</S100FC:listedValue>
 				<S100FC:listedValue>
 					<S100FC:label>Sea Floor</S100FC:label>
 					<S100FC:definition>The bottom of the ocean and seas where there is a generally smooth gentle gradient. Also referred to as sea bed (sometimes seabed or sea-bed), and sea bottom.</S100FC:definition>
-					<S100FC:code>45</S100FC:code>
+					<S100FC:code>47</S100FC:code>
 				</S100FC:listedValue>
-				</S100FC:listedValues>
-				</S100FC:S100_FC_SimpleAttribute>
+				<S100FC:listedValue>
+					<S100FC:label>Sea Surface</S100FC:label>
+					<S100FC:definition>A two-dimensional (in the horizontal plane) field representing the air-sea interface, with high-frequency fluctuations such as wind waves and swell, but not astronomical tides, filtered out.</S100FC:definition>
+					<S100FC:code>48</S100FC:code>
+				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>hydrographic Zero</S100FC:label>
+					<S100FC:definition>A vertical reference near the lowest astronomical tide (LAT), below which the sea level falls only very exceptionally.</S100FC:definition>
+					<S100FC:code>49</S100FC:code>
+				</S100FC:listedValue>
+			</S100FC:listedValues>
+		</S100FC:S100_FC_SimpleAttribute>
 	</S100FC:S100_FC_SimpleAttributes>
 	<S100FC:S100_FC_ComplexAttributes>
 		<S100FC:S100_FC_ComplexAttribute>
@@ -1748,7 +1763,7 @@
 				<S100FC:attribute ref="protocolRequest"/>
 			</S100FC:subAttributeBinding>
 		</S100FC:S100_FC_ComplexAttribute>
-				<S100FC:S100_FC_ComplexAttribute>
+		<S100FC:S100_FC_ComplexAttribute>
 			<S100FC:name>Periodic Date Range</S100FC:name>
 			<S100FC:definition>The active period of a recurring event or occurrence.</S100FC:definition>
 			<S100FC:code>periodicDateRange</S100FC:code>
@@ -1912,7 +1927,7 @@
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:permittedValues>
-					<S100FC:value>1</S100FC:value>
+					<S100FC:value>8</S100FC:value>
 				</S100FC:permittedValues>
 				<S100FC:attribute ref="digitalSignatureReference"/>
 			</S100FC:subAttributeBinding>
@@ -2178,17 +2193,17 @@
 			<S100FC:code>timeIntervalOfProduct</S100FC:code>
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
-					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-				</S100FC:multiplicity>
-				<S100FC:attribute ref="issueDate"/>
-			</S100FC:subAttributeBinding>
-			<S100FC:subAttributeBinding sequential="false">
-				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
 					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="expirationDate"/>
+			</S100FC:subAttributeBinding>
+			<S100FC:subAttributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="issueDate"/>
 			</S100FC:subAttributeBinding>
 			<S100FC:subAttributeBinding sequential="false">
 				<S100FC:multiplicity>
@@ -2265,8 +2280,7 @@
 	<S100FC:S100_FC_Roles>
 		<S100FC:S100_FC_Role>
 			<S100FC:name>Catalogue Header</S100FC:name>
-			<S100FC:definition>the top section of a catalogue
-			</S100FC:definition>
+			<S100FC:definition>the top section of a catalogue</S100FC:definition>
 			<S100FC:code>catalogueHeader</S100FC:code>
 		</S100FC:S100_FC_Role>
 		<S100FC:S100_FC_Role>
@@ -2567,115 +2581,115 @@
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureName"/>
 			</S100FC:attributeBinding>
-			</S100FC:S100_FC_InformationType>
+		</S100FC:S100_FC_InformationType>
 		<S100FC:S100_FC_InformationType isAbstract="false">
-				<S100FC:name>Price Information</S100FC:name>
-				<S100FC:definition>Pricing information of nautical product.</S100FC:definition>
-				<S100FC:code>PriceInformation</S100FC:code>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true"  infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="information"/>
-				</S100FC:attributeBinding>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true"  infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="onlineResource"/>
-				</S100FC:attributeBinding>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="pricing"/>
-				</S100FC:attributeBinding>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="sourceIndication"/>
-				</S100FC:attributeBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:association ref="PriceOfNauticalProduct"/>
-					<S100FC:role ref="theCatalogueOfNauticalProduct"/>
-					<S100FC:informationType ref="CatalogueSectionHeader"/>
-				</S100FC:informationBinding>
-			</S100FC:S100_FC_InformationType>
+			<S100FC:name>Price Information</S100FC:name>
+			<S100FC:definition>Pricing information of nautical product.</S100FC:definition>
+			<S100FC:code>PriceInformation</S100FC:code>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true"  infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="information"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true"  infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="onlineResource"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="pricing"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="sourceIndication"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="PriceOfNauticalProduct"/>
+				<S100FC:role ref="theCatalogueOfNauticalProduct"/>
+				<S100FC:informationType ref="CatalogueSectionHeader"/>
+			</S100FC:informationBinding>
+		</S100FC:S100_FC_InformationType>
 		<S100FC:S100_FC_InformationType isAbstract="false">
-				<S100FC:name>Producer Information</S100FC:name>
-				<S100FC:definition>Information about the country of production.</S100FC:definition>
-				<S100FC:code>ProducerInformation</S100FC:code>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>1</S100Base:lower>
-						<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="agencyResponsibleForProduction"/>
-				</S100FC:attributeBinding>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="agencyName"/>
-				</S100FC:attributeBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:association ref="ProducerContact"/>
-					<S100FC:role ref="theContactDetails"/>
-					<S100FC:informationType ref="ContactDetails"/>
-				</S100FC:informationBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true"/>
-					</S100FC:multiplicity>
-					<S100FC:association ref="ProductionDetails"/>
-					<S100FC:role ref="catalogueHeader"/>
-					<S100FC:informationType ref="CatalogueSectionHeader"/>
-				</S100FC:informationBinding>
-			</S100FC:S100_FC_InformationType>
+			<S100FC:name>Producer Information</S100FC:name>
+			<S100FC:definition>Information about the country of production.</S100FC:definition>
+			<S100FC:code>ProducerInformation</S100FC:code>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="agencyResponsibleForProduction"/>
+			</S100FC:attributeBinding>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="agencyName"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ProducerContact"/>
+				<S100FC:role ref="theContactDetails"/>
+				<S100FC:informationType ref="ContactDetails"/>
+			</S100FC:informationBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
+				</S100FC:multiplicity>
+				<S100FC:association ref="ProductionDetails"/>
+				<S100FC:role ref="catalogueHeader"/>
+				<S100FC:informationType ref="CatalogueSectionHeader"/>
+			</S100FC:informationBinding>
+		</S100FC:S100_FC_InformationType>
 		<S100FC:S100_FC_InformationType isAbstract="false">
-				<S100FC:name>Distributor Information</S100FC:name>
-				<S100FC:definition>distributor information.</S100FC:definition>
-				<S100FC:code>DistributorInformation</S100FC:code>
-				<S100FC:attributeBinding sequential="false">
-					<S100FC:multiplicity>
-						<S100Base:lower>1</S100Base:lower>
-						<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
-					</S100FC:multiplicity>
-					<S100FC:attribute ref="distributorName"/>
-				</S100FC:attributeBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true" />
-					</S100FC:multiplicity>
-					<S100FC:association ref="DistributionDetails"/>
-					<S100FC:role ref="catalogueHeader"/>
-					<S100FC:informationType ref="CatalogueSectionHeader"/>
-				</S100FC:informationBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true" />
-					</S100FC:multiplicity>
-					<S100FC:association ref="DistributorContact"/>
-					<S100FC:role ref="theContactDetails"/>
-					<S100FC:informationType ref="ContactDetails"/>
-				</S100FC:informationBinding>
+			<S100FC:name>Distributor Information</S100FC:name>
+			<S100FC:definition>distributor information.</S100FC:definition>
+			<S100FC:code>DistributorInformation</S100FC:code>
+			<S100FC:attributeBinding sequential="false">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="false" infinite="false">1</S100Base:upper>
+				</S100FC:multiplicity>
+				<S100FC:attribute ref="distributorName"/>
+			</S100FC:attributeBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="DistributionDetails"/>
+				<S100FC:role ref="catalogueHeader"/>
+				<S100FC:informationType ref="CatalogueSectionHeader"/>
+			</S100FC:informationBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="DistributorContact"/>
+				<S100FC:role ref="theContactDetails"/>
+				<S100FC:informationType ref="ContactDetails"/>
+			</S100FC:informationBinding>
 			</S100FC:S100_FC_InformationType>
 	</S100FC:S100_FC_InformationTypes>
 	<S100FC:S100_FC_FeatureTypes>
@@ -2693,7 +2707,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>1</S100Base:lower>
-					<S100Base:upper xsi:nil="true"  infinite="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="catalogueElementClassification"/>
 			</S100FC:attributeBinding>
@@ -2728,14 +2742,14 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="true"  infinite="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="featureName"/>
 			</S100FC:attributeBinding>
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="true"  infinite="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="information"/>
 			</S100FC:attributeBinding>
@@ -2775,35 +2789,35 @@
 					<S100FC:association ref="CarriageRequirement"/>
 					<S100FC:role ref="theRequirement"/>
 					<S100FC:informationType ref="IndicationOfCarriageRequirement"/>
-				</S100FC:informationBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true" />
-					</S100FC:multiplicity>
-					<S100FC:association ref="PriceOfElement"/>
-					<S100FC:role ref="thePriceInformation"/>
-					<S100FC:informationType ref="PriceInformation"/>
-				</S100FC:informationBinding>
-				<S100FC:informationBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>1</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true" />
-					</S100FC:multiplicity>
-					<S100FC:association ref="ProductPackage"/>
-					<S100FC:role ref="elementContainer"/>
-					<S100FC:informationType ref="CatalogueSectionHeader"/>
-				</S100FC:informationBinding>
+			</S100FC:informationBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="PriceOfElement"/>
+				<S100FC:role ref="thePriceInformation"/>
+				<S100FC:informationType ref="PriceInformation"/>
+			</S100FC:informationBinding>
+			<S100FC:informationBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>1</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="ProductPackage"/>
+				<S100FC:role ref="elementContainer"/>
+				<S100FC:informationType ref="CatalogueSectionHeader"/>
+			</S100FC:informationBinding>
 			<S100FC:featureUseType>geographic</S100FC:featureUseType>
-				<S100FC:featureBinding roleType="association">
-					<S100FC:multiplicity>
-						<S100Base:lower>0</S100Base:lower>
-						<S100Base:upper xsi:nil="true" infinite="true" />
-					</S100FC:multiplicity>
-					<S100FC:association ref="ProductMapping"/>
-					<S100FC:role ref="theReference"/>
-					<S100FC:featureType ref="CatalogueElement"/>
-				</S100FC:featureBinding>
+			<S100FC:featureBinding roleType="association">
+				<S100FC:multiplicity>
+					<S100Base:lower>0</S100Base:lower>
+					<S100Base:upper xsi:nil="true" infinite="true" />
+				</S100FC:multiplicity>
+				<S100FC:association ref="ProductMapping"/>
+				<S100FC:role ref="theReference"/>
+				<S100FC:featureType ref="CatalogueElement"/>
+			</S100FC:featureBinding>
 			<S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
 		</S100FC:S100_FC_FeatureType>
 		<S100FC:S100_FC_FeatureType isAbstract="true">
@@ -2820,7 +2834,7 @@
 			<S100FC:attributeBinding sequential="false">
 				<S100FC:multiplicity>
 					<S100Base:lower>0</S100Base:lower>
-					<S100Base:upper xsi:nil="true"  infinite="true"/>
+					<S100Base:upper xsi:nil="true" infinite="true"/>
 				</S100FC:multiplicity>
 				<S100FC:attribute ref="compilationScale"/>
 			</S100FC:attributeBinding>

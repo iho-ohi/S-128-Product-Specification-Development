@@ -2,7 +2,7 @@
 <S128:Dataset xmlns:S128="http://www.iho.int/S128/2.0" xmlns="http://www.iho.int/S128/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S128/2.0 S-128.xsd" gml:id="CNP00001">
 	<S100:DatasetIdentificationInformation>
 		<S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
-		<S100:encodingSpecificationEdition>5.2</S100:encodingSpecificationEdition>
+		<S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>
 		<S100:productIdentifier>S-128</S100:productIdentifier>
 		<S100:productEdition>2.0</S100:productEdition>
 		<S100:applicationProfile>1</S100:applicationProfile>
@@ -27,6 +27,9 @@
 					</S128:timeIntervalOfCycle>
 				</S128:issuanceCycle>
 			</S128:timeIntervalOfProduct>
+			<!--Replace by SE-->
+			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+
 			<S128:editionNumber>1</S128:editionNumber>
 			<S128:productNumber>US5ME1AD</S128:productNumber>
 			<S128:specificUsage code="5">Navigational Purpose Harbour</S128:specificUsage>
@@ -38,7 +41,8 @@
 				<S128:name>S-57 Transfer Standard for Digital Hydrographic Data</S128:name>
 				<S128:version>3.1</S128:version>
 			</S128:productSpecification>
-			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+			
+
 			<S128:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="Geometry.CNP00002" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -58,6 +62,9 @@
 		<S128:ElectronicProduct gml:id="ID0003">
 			<S128:catalogueElementClassification code="1">ENC</S128:catalogueElementClassification>
 			<S128:notForNavigation>true</S128:notForNavigation>
+			<!--Replace by SE-->
+			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+			
 			<S128:editionNumber>1</S128:editionNumber>
 			<S128:navigationPurpose code="1">port</S128:navigationPurpose>
 			<S128:productNumber>101IT00500000082B</S128:productNumber>
@@ -73,7 +80,6 @@
 				<S128:name>S-101</S128:name>
 				<S128:version>010100</S128:version>
 			</S128:productSpecification>
-			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
 			<S128:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="Geometry.CNP00003" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -97,6 +103,7 @@
 				<S128:language>eng</S128:language>
 				<S128:name>Republic of Korea</S128:name>
 			</S128:featureName>
+			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
 			<S128:editionNumber>2</S128:editionNumber>
 			<S128:specificUsage code="1">Navigational Purpose Overview</S128:specificUsage>
 			<S128:editionDate>2018-10-22</S128:editionDate>
@@ -106,7 +113,6 @@
 					<S128:iso216 code="5">A4</S128:iso216>
 				</S128:printSize>
 			</S128:printInformation>
-			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
 			<S128:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="Geometry.CNP00004" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -135,6 +141,13 @@
 				<S128:applicationProfile>Kinds of publications and Information Summary</S128:applicationProfile>
 				<S128:linkage>http://www.khoa.go.kr/kcom/cnt/selectContentsPage.do?cntId=31305010</S128:linkage>
 			</S128:onlineResource>
+			<!--Replace by SE-->
+			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+			<S128:theReference xlink:href="#ID0002" xlink:arcrole="http://www.iho.int/S128/gml/1.2.0/roles/theReference">
+				<ProductMapping>
+						<categoryOfProductMapping code="1">higherPriorityAlternative</categoryOfProductMapping>
+					</ProductMapping>
+			</S128:theReference>
 			<S128:editionNumber>2</S128:editionNumber>
 			<S128:specificUsage code="1">Navigational Purpose Overview</S128:specificUsage>
 			<S128:editionDate>2018-10-15</S128:editionDate>
@@ -145,12 +158,7 @@
 					<S128:iso216 code="5">A4</S128:iso216>
 				</S128:printSize>
 			</S128:printInformation>
-			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
-			<S128:theReference xlink:href="#ID0002" xlink:arcrole="http://www.iho.int/S128/gml/1.2.0/roles/theReference">
-				<ProductMapping>
-					<categoryOfProductMapping code="1">higherPriorityAlternative</categoryOfProductMapping>
-				</ProductMapping>
-			</S128:theReference>
+
 			<S128:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="Geometry.CNP00005" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -173,6 +181,9 @@
 			<S128:featureName>
 				<S128:name>104KR00KR4_G3B30_20220810_F24</S128:name>
 			</S128:featureName>
+			<!--Replace by SE-->
+			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+			
 			<S128:compressionFlag>false</S128:compressionFlag>
 			<S128:serviceStatus code="2">released</S128:serviceStatus>
 			<S128:typeOfProductFormat code="7">HDF-5</S128:typeOfProductFormat>
@@ -181,7 +192,7 @@
 				<S128:name>S-104</S128:name>
 				<S128:version>0.0.7</S128:version>
 			</S128:productSpecification>
-			<S128:elementContainer xlink:href="#CNP00008" xlink:arcrole="http://www.iho.int/S128/gml/1.2/roles/elementContainer"/>
+			
 			<S128:geometry>
 				<S100:surfaceProperty>
 					<S100:Surface gml:id="Geometry.CNP00006" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">

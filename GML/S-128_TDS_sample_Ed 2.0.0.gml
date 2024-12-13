@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<S128:Dataset xmlns:S128="http://www.iho.int/S128/2.0" xmlns="http://www.iho.int/S128/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S128/2.0 S-128.xsd" gml:id="CNP00001">
+<S128:Dataset xmlns:S128="http://www.iho.int/S128/2.0" xmlns="http://www.iho.int/S128/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S100="http://www.iho.int/s100gml/5.0" xmlns:s100_profile="http://www.iho.int/S-100/profile/s100_gmlProfile" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.iho.int/S128/2.0 https://staging.s100dev.net/schemas/S128/2.0.0/20241211/S-128.xsd" gml:id="CNP00001">
 	<S100:DatasetIdentificationInformation>
 		<S100:encodingSpecification>S-100 Part 10b</S100:encodingSpecification>
 		<S100:encodingSpecificationEdition>1.0</S100:encodingSpecificationEdition>

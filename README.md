@@ -2,6 +2,7 @@
 Collaboration space for IHO Nautical Information Provision Working Group for the development of S-128 Product Specification with its artifacts.  
 
 ## 2024-12-11 Release Candidate for HSSC endorsement.
+https://github.com/iho-ohi/S-128-Product-Specification-Development/releases/tag/S128_v2.0.0-RC-2024-12-11
 - PS-package received from developer team unpacked from zip into repository folder structure
 - Modification of XSD / GML files based on outcome of the latest open issues
 - Update of version indication in human redable files

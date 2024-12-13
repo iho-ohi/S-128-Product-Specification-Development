@@ -3,8 +3,8 @@ Collaboration space for IHO Nautical Information Provision Working Group for the
 
 ## 2024-12-11 Release Candidate for HSSC endorsement.
 - PS-package received from developer team unpacked from zip into repository folder structure
-- Slight modficication of XSD / GML files based on outcome of the latest open issues
-- Update of versions in human redable files
+- Modification of XSD / GML files based on outcome of the latest open issues
+- Update of version indication in human redable files
   
 -  A separate XSD- schema uploaded to;
 https://staging.s100dev.net/schemas/S128/2.0.0/20241211/S-128.xsd

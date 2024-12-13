@@ -13,12 +13,14 @@ NOTE!
 Inheritance within the FeatureCatalogue is not replicated in the RC XSD. The RC XSD collapses the structure of inheritance, and presents only the resulting featureTypes.
 All inherited properties are placed before those in the derived type, and ordering of properties within types is retained.
 
-abstract class CatalogueElement extends AbstractFeatureType
+Inheritance structure used in S-128 FeatureCatalogue;
 
-> class S100Service extends CatalogueElement
->
->	abstract class NavigationalProduct extends CatalogueElement
->
->> class PhysicalProduct extends NavigationalProduct
->>
->> class ElectronicProduct extends NavigationalProduct
+> abstract class CatalogueElement extends AbstractFeatureType
+> 
+>> class S100Service extends CatalogueElement
+>> 
+>>	abstract class NavigationalProduct extends CatalogueElement
+>> 
+>>> class PhysicalProduct extends NavigationalProduct
+>>> 
+>>> class ElectronicProduct extends NavigationalProduct

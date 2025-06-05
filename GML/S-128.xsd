@@ -1028,12 +1028,12 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Port">
 				<xs:annotation>
-					<xs:documentation>Person or corporation, owners of, or entrusted with or invested with the power of managing a port. May be called a Harbour Board, Port Trust, Port Commission, Harbour Commission, Marine Department.</xs:documentation>
+					<xs:documentation>For port and near shore operations.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="Transit">
 				<xs:annotation>
-					<xs:documentation>(1) In astronomy, the apparent passage of a star or other celestial body across a defined line of the celestial sphere, as a meridian, prime vertical, or almucantar. When no line is specified, a transit across the meridian is usually intended. See Meridian Transit.  (2) The apparent passage of a star or other celestial body across a line in the reticle of a telescope, or some line of sight.  (3) The apparent passage of a smaller celestial body across the disk of a larger celestial body.  (4) A surveying instrument composed of a horizontal circle graduated in circular measure and an alidade with a telescope which can be reversed in its supports without being lifted therefrom. Also, the act of making such a reversal.  (5) A theodolite having a telescope that can be transited in its supports is a transit, and is sometimes termed a transit theodolite. All modern theodolites are transits.  (6) An astronomical instrument having a telescope which can be so adjusted in position that the line of sight may be made to define a vertical circle. A transit used in astronomical work is usually termed either an astronomic(al) transit or a transit instrument.  (7) In navigation, the position of two distant, fixed objects when they are in line to an observer; the line passing through them and the observer being a line of position. See also Range.</xs:documentation>
+					<xs:documentation>For coast and planning purposes.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="Overview">

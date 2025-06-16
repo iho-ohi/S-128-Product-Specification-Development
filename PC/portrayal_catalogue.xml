@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<portrayalCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://schemas.s100dev.net/schemas/S100/5.2.0/S100PC/20220705/S100PortrayalCatalog.xsd" productId="S-128" version="1.1.0">
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" productId="S-128" version="1.1.0"
+xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100PC/20240415/S100PortrayalCatalog.xsd">
+
   <pixmaps/>  
   <colorProfiles>
     <colorProfile id="1">
@@ -9,9 +11,9 @@
         <description>Color Profile</description>
         <language>eng</language>
       </description>
-      <fileName>colorProfile.xml</fileName>
-      <fileType>ColorProfile</fileType>
-      <fileFormat>XML</fileFormat>
+        <fileName>colorProfile.xml</fileName>
+        <fileType>ColorProfile</fileType>
+        <fileFormat>XML</fileFormat>
     </colorProfile>
   </colorProfiles>  
   <symbols>
@@ -236,5 +238,5 @@
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>	
-  </rules>  
-</portrayalCatalog>
+  </rules>
+</pc:portrayalCatalog>

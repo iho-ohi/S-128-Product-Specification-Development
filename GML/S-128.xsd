@@ -889,7 +889,7 @@
 		<xs:annotation>
 			<xs:documentation>The largest intended viewing scale for the data.</xs:documentation>
 		</xs:annotation>
-		<xs:restriction base="xs:string"/>
+		<xs:restriction base="xs:int"/>
 	</xs:simpleType>
 	<xs:simpleType name="originalProductNumberType">
 		<xs:annotation>

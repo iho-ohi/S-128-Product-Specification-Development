@@ -1,7 +1,7 @@
 # S-128-Product-Specification-Development
 Collaboration space for IHO Nautical Information Provision Working Group for the development of S-128 Product Specification with its artifacts.  
 
-## 2025-06-16 ed2.0.0
+## 2025-06-17 ed2.0.0
 https://github.com/iho-ohi/S-128-Product-Specification-Development/releases/tag/ed2.0.0
 - optimumDisplayScale type fixed (interger)
 

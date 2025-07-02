@@ -1,6 +1,10 @@
 # S-128-Product-Specification-Development
 Collaboration space for IHO Nautical Information Provision Working Group for the development of S-128 Product Specification with its artifacts.  
 
+## 2025-07-02 ed2.0.0
+- Renamed "routing" to "routeing" in accordance with the S-100 Glossary
+- Re-released ed2.0.0 with updated files and package
+
 ## 2025-07-01 ed2.0.0
 - Final version of documentation for ed2.0.0
 

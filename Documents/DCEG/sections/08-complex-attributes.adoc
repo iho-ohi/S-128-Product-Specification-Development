@@ -1,0 +1,423 @@
+
+[[sec_8]]
+== Complex Attributes
+
+[[sec_8.1]]
+=== contact address
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Direction or superscription of a letter,
+package, etc., specifying the name of the place to which it is directed,
+and optionally a contact person or organisation who should receive
+it.
+
+[underline]#Sub-attributes:#::
+*administrative division* (see <<sec_7.1>>) +
+*city name* (see <<sec_7.13>>) +
+*country name* (see <<sec_7.20>>) +
+*delivery point* (see <<sec_7.25>>) +
+*postal code* (see <<sec_7.61>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.2]]
+=== custom paper size
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# User specified paper size width x,
+height y.
+
+[underline]#Sub-attributes:#::
+*paper length* (see <<sec_7.59>>) +
+*paper width* (see <<sec_7.60>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.3]]
+=== default locale
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Locale of an option that is selected
+automatically unless an alternative is specified.
+
+[underline]#Sub-attributes:#::
+*character encoding* (see <<sec_7.12>>) +
+*country name* (see <<sec_7.20>>) +
+*language* (see <<sec_7.46>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.4]]
+=== feature name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Provides the name of an entity, defines
+the national language of the name, and provides the option to display
+the name at various system display settings.
+
+[underline]#Sub-attributes:#::
+*language* (see <<sec_7.46>>) +
+*name* (see <<sec_7.50>>) +
+*name usage*(see <<sec_7.52>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.5]]
+=== information
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Textual information about the feature.
+The information may be provided as a string of text or as a file name
+of a single external text file that contains the text.
+
+[underline]#Sub-attributes:#::
+*file locator* (see <<sec_7.34>>) +
+*file reference* (see <<sec_7.36>>) +
+*headline* (see <<sec_7.37>>) +
+*language* (see <<sec_7.46>>) +
+*text* (see <<sec_7.85>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.6]]
+=== issuance cycle
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The cycle of issuing a product or
+service.
+
+[underline]#Sub-attributes:#::
+*periodic date range* (see <<sec_8.8>>) +
+*time interval of cycle* (see <<sec_8.19>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.7]]
+=== online resource
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Information about online sources from
+which a resource or data can be obtained.
+
+[underline]#Sub-attributes:#
+*application profile* (see <<sec_7.4>>) +
+*linkage* (see <<sec_7.47>>) +
+*name of resource* (see <<sec_7.51>>) +
+*online description* (see <<sec_7.55>>) +
+*protocol* (see <<sec_7.68>>) +
+*protocol request* (see <<sec_7.69>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.8]]
+=== periodic date range
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The active period of a recurring event
+or occurrence.
+
+[underline]#Sub-attributes:#::
+*date end* (see <<sec_7.23>>) +
+*date start* (see <<sec_7.24>>)
+
+[underline]#Remarks:#
+
+* No remarks
+
+|===
+
+[[sec_8.9]]
+=== pricing
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A decision or establishment of a price.
+
+[underline]#Sub-attributes:#::
+*contract period* (see <<sec_7.19>>) +
+*currency* (see <<sec_7.21>>) +
+*price* (see <<sec_7.62>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.10]]
+=== print information
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Information on the printing of nautical
+paper charts.
+
+[underline]#Sub-attributes:#::
+*print agency* (see <<sec_7.63>>) +
+*print nation* (see <<sec_7.64>>) +
+*reprint edition* (see <<sec_7.73>>) +
+*reprint nation* (see <<sec_7.74>>) +
+*print size* (see <<sec_8.11>>)
+
+[underline]#Remarks:#
+
+* No remarks
+
+|===
+
+[[sec_8.11]]
+=== print size
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Size of nautical paper charts.
+
+[underline]#Sub-attributes:#::
+*ISO 216* (see <<sec_7.42>>) +
+*custom paper size* (see <<sec_8.2>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.12]]
+=== product specification
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of the product specification
+to which a nautical product adheres.
+
+[underline]#Sub-attributes:#::
+*edition date* (see <<sec_7.31>>) +
+*ISSN* (see <<sec_7.43>>) +
+*name* (see <<sec_7.50>>) +
+*version* (see <<sec_7.92>>)
+
+[underline]#Remarks:#
+
+* No remarks..
+
+|===
+
+[[sec_8.13]]
+=== reference to NM
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A reference to a specific Notice to
+Mariners.
+
+[underline]#Sub-attributes:#::
+*publication date* (see <<sec_7.70>>) +
+*week of year* (see <<sec_8.21>>)
+
+[underline]#Remarks:#
+
+* The date of the last group of NMs consulted for its correction,
+even if this group and possibly preceding groups did not in fact contain
+any updates to be made to the product in question.
+
+|===
+
+[[sec_8.14]]
+=== service specification
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of the (product) specification
+to which a nautical service adheres.
+
+[underline]#Sub-attributes:#::
+*edition date* (see <<sec_7.31>>) +
+*name* (see <<sec_7.50>>) +
+*version* (see <<sec_7.92>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.15]]
+=== source indication
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Information about the source document,
+publication, or reference from which object data or textual material
+included or referenced in a dataset are derived.
+
+[underline]#Sub-attributes:#::
+*category of authority* (see <<sec_7.10>>) +
+*country name* (see <<sec_7.20>>) +
+*reported date* (see <<sec_7.72>>) +
+*source* (see <<sec_7.77>>) +
+*source type* (see <<sec_7.79>>) +
+*feature name* (see <<sec_8.4>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.16]]
+=== support file
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Information on additional files used
+in addition to nautical products.
+
+[underline]#Sub-attributes:#::
+*comment* (see <<sec_7.15>>) +
+*digital signature reference* (see <<sec_7.26>>) +
+*digital signature value* (see <<sec_7.27>>) +
+*edition number* (see <<sec_7.32>>) +
+*file locator* (see <<sec_7.34>>) +
+*file name* (see <<sec_7.35>>) +
+*issue date* (see <<sec_7.44>>) +
+*other data type description* (see <<sec_7.58>>) +
+*support file format* (see <<sec_7.81>>) +
+*support file purpose* (see <<sec_7.82>>) +
+*default locale* (see <<sec_8.3>>) +
+*support file specification* (see <<sec_8.17>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.17]]
+=== support file specification
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of the product specification
+to which a support file adheres.
+
+[underline]#Sub-attributes:#::
+*edition date* (see <<sec_7.31>>) +
+*name* (see <<sec_7.50>>) +
+*version* (see <<sec_7.92>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.18]]
+=== telecommunications
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A means or channel of communicating
+at a distance by electrical or electromagnetic means such as telegraphy,
+telephony, or broadcasting.
+
+[underline]#Sub-attributes:#::
+*contact instructions* (see <<sec_7.18>>) +
+*telecommunication identifier* (see <<sec_7.83>>) +
+*telecommunication service* (see <<sec_7.84>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.19]]
+=== time interval of cycle
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The temporal interval of the cycle
+over which data is produced.
+
+[underline]#Sub-attributes:#::
+*type of time interval unit* (see <<sec_7.88>>) +
+*value of time* (see <<sec_7.91>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.20]]
+=== time interval of product
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The temporal interval over which the
+product is updated or renewed.
+
+[underline]#Sub-attributes:#::
+*expiration date* (see <<sec_7.33>>) +
+*issue date* (see <<sec_7.44>>) +
+*issuance cycle* (see <<sec_8.6>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_8.21]]
+=== week of year
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The indication of a specific week
+within a specific year.
+
+[underline]#Sub-attributes:#::
+*week number* (see <<sec_7.94>>) +
+*year number* (see <<sec_7.95>>)
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===

@@ -1,0 +1,90 @@
+
+[.preface]
+== metanorma-extension
+
+[.boilerplate]
+--
+Changes to this Product Specification are coordinated by the IHO Nautical
+Information Provision Working Group (NIPWG). New editions will be
+made available via the IHO web site. Maintenance of the Product Specification
+shall conform to IHO Technical Resolution 2/2007 (as amended).
+--
+
+=== document history
+
+[source,yaml]
+----
+- date:
+  - type: published
+    value: 2022-03-11
+  edition: "1.0.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      subdivision: Nautical Information Provision Working Group
+      abbreviation: NIPWG
+  amend:
+    - description: Release 1.0.0
+- date:
+  - type: updated
+    value: 2022-05
+  edition: "1.0.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      subdivision: Hydrographic Services and Standards Committee
+      abbreviation: HSSC
+  amend:
+    - description: Initial published version for evaluation and testing.
+- date:
+  - type: updated
+    value: 2023-10
+  edition: "1.1.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Align with S-100 Ed 5.0.0 evaluation and testing.
+- date:
+  - type: updated
+    value: 2024-02
+  edition: "1.2.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      subdivision: Hydrographic Services and Standards Committee
+      abbreviation: HSSC
+  amend:
+    - description: Initial published version for evaluation and testing.
+- date:
+  - type: updated
+    value: 2024-03
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Updated to align with S-100 Edition 5.2.0 and Applied feedback from NIPWG
+- date:
+  - type: updated
+    value: 2024-07
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Applied feedback from NIPWG
+- date:
+  - type: published
+    value: 2025-03
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      abbreviation: IHO CL xx/2025
+  amend:
+    - description: First operational Edition of S-128 Annex A
+----

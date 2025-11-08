@@ -1,0 +1,206 @@
+
+
+== Overview
+
+=== Preface
+
+The "Data Classification and Encoding Guide" has been developed to
+provide consistent, standardized instructions for encoding S-100 compliant
+Catalogue of Nautical Products (S-128) data.
+
+The purpose of the Data Classification and Encoding Guide is to facilitate
+S-128 encoding to meet IHO standards for the proper display of Catalogue
+of Nautical Products information in an ECDIS and other electronic
+charting displays. This document describes how to encode information
+that the modeller considers relevant to a Catalogue of Nautical data
+product. The content of a dataset is at the discretion of the producing
+authority provided that the conventions described within this document
+are followed. A "producing authority" is a Hydrographic Office (HO)
+or other organization authorized by a government, to produce definitive
+nautical information.
+
+The entire S-100 Universal Hydrographic Data Model, including the
+S-128 Product Specification, is available at the following web site,
+http://www.iho.int/[http://www.iho.int].
+
+=== S-128 Annex A - Data Classification and Encoding Guide - Metadata
+
+NOTE: This information uniquely identifies this Annex to the Product
+Specification and provides information about its creation and maintenance.
+
+*Title:*:: The International Hydrographic Organization Catalogue of
+Nautical Products Specification, Annex A -- Data Classification and
+Encoding Guide.
+
+*Version:*:: 2.0.0
+
+*Date:*:: March 2025
+
+*Language:*:: English
+
+*Classification:*:: Unclassified
+
+*Contact:*::
++
+--
+International Hydrographic Organization (IHO)
+4b, quai Antoine 1er +
+B.P. 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Fax: +377 93 10 81 40 +
+Email: mailto:info@iho.int[info@iho.int]
+--
+
+*URL:*:: http://www.iho.int/[www.iho.int]
+
+*Identifier:*:: S-128 Annex A
+
+*Maintenance:*:: Changes to S-128 Annex A - Data Classification and
+Encoding Guide are coordinated by the IHO Nautical Information Provision
+Working Group (NIPWG) and must be made available via the IHO web site.
+
+=== Terms, definitions and abbreviations
+
+[heading="terms and definitions"]
+==== Terms and definitions
+
+===== aggregation
+
+special form of {{association}} that specifies a whole-part relationship
+between the aggregate (whole) and a component (see composition)
+
+===== association
+
+semantic relationship between two or more classifiers that specifies
+connections among their instances
+
+NOTE: A binary association is an association among exactly two classifiers
+(including the possibility of an association from a classifier to
+itself)
+
+===== attribute
+
+named property of an entity
+
+NOTE: Describes the geometrical, topological, thematic, or other characteristic
+of an entity
+
+===== composition
+
+a strong {{aggregation}}; if a container object is deleted than all
+of its containee objects are deleted as well (that is, containee objects
+cannot exist without the container object)
+
+===== curve
+
+1-dimensional geometric primitive, representing the continuous image
+of a line
+
+NOTE: The boundary of a curve is the set of points at either end of
+the curve. If the curve is a cycle, the two ends are identical, and
+the curve (if topologically closed) is considered to not have a boundary.
+The first point is called the start point, and the last is the end
+point. Connectivity of the curve is guaranteed by the "continuous
+image of a line"
+
+===== enumeration
+
+a fixed list of valid identifiers of named literal values. Attributes
+of an enumerated type may only take values from this list
+(source: ISO 19136:2007, Geographic information -- Geography Markup
+Language (GML))
+
+===== feature
+
+abstraction of real world phenomena
+
+NOTE: A feature may occur as a type or an instance. The terms
+"feature type" or "feature instance" should be used when only one
+is meant
+
+[example]
+The feature instance named "Eiffel Tower" may be classified with other
+phenomena into a feature type "tower"
+
+===== geometric primitive
+
+geometric object representing a single, connected, homogeneous element
+of geometry
+
+NOTE: Geometric primitives are non-decomposed objects that present
+information about geometric configuration. They include points, curves,
+surfaces
+
+===== maximum display scale
+
+the largest value of the ratio of the linear dimensions of features
+of a dataset presented in the display and the actual dimensions of
+the features represented (largest scale) of the scale range of the
+dataset
+
+===== minimum display scale
+
+the smallest value of the ratio of the linear dimensions of features
+of a dataset presented in the display and the actual dimensions of
+the features represented (smallest scale) of the scale range of the
+dataset
+
+===== point
+
+0-dimensional geometric primitive, representing a position.
+
+NOTE: The boundary of a point is the empty set
+
+===== pointset
+
+a set of points in geometric space
+
+===== skin of the earth
+
+a subset of the geographic (geo) features that must create a complete
+non-overlapping coverage of the area of data coverage of an ENC dataset
+
+===== surface
+
+connected 2-dimensional geometric primitive, representing the continuous
+image of a region of a plane
+
+NOTE: The boundary of a surface is the set of oriented, closed curves
+that delineate the limits of the surface
+
+==== Abbreviations
+
+ECDIS:: Electronic Chart Display and Information System
+
+ENC:: Electronic Navigational Chart
+
+GML:: Geography Markup Language
+
+HO:: Hydrographic Office
+
+IHO:: International Hydrographic Organization
+
+IMO:: International Maritime Organization
+
+ISO:: International Organization for Standardization
+
+SENC:: System Electronic Navigational Chart
+
+SOLAS:: Safety of Life at Sea
+
+=== Use of language
+
+Within this document:
+
+"Must" indicates a mandatory requirement;
+
+"Should" indicates an optional requirement, that is the recommended
+process to be followed, but is not mandatory;
+
+"May" means "allowed to" or "could possibly", and is not mandatory.
+
+=== Maintenance
+
+Changes to the Data Classification and Encoding Guide must occur in
+accordance with the S-128 CNP Product Specification.

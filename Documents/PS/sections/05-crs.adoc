@@ -1,0 +1,86 @@
+
+[[sec_5]]
+== Coordinate Reference Systems (CRS)
+
+[[sec_5.1]]
+=== Introduction
+
+The location of an object in the S-100 Standard is defined by means
+of coordinates which relate a feature to a position. The coordinate
+reference system used for this Product Specification is World Geodetic
+System 1984 (WGS 84) which is defined by the European Petroleum Survey
+Group (EPSG) code 4326, (or similar - North American Datum 1983 /
+Canadian Spatial Reference System).
+
+Spatial data is expressed as latitude (stem:[phi]) and longitude (stem:[lambda])
+geographic coordinates. Latitude values are stored as a negative number
+to represent a position south of the Equator. Longitude values are
+stored as a negative number to represent a position west of the International
+Prime Meridian. Coordinates are expressed as real value, degree /
+degree decimal format. Datasets conforming to this product specification
+are not projected.
+
+*Horizontal coordinate reference system:*:: WGS84
+
+*Projection:*:: None
+
+*Vertical coordinate reference system:*:: Although all coordinates
+in a data set must refer to the same horizontal CRS different Vertical
+Datums can be used for the depth component of a coordinate tuple.
+Therefore the vertical CRS can be repeated. For each Vertical CRS
+a unique identifier is defined. Those identifiers will be used to
+indicate which Vertical CRS is used. Units must be in meters.
+
+*Temporal reference system:*:: Gregorian calendar
+
+*Coordinate reference system registry:*:: http://www.epsg-registry.org/[EPSG Geodetic Parameter Registry]
+
+*Date type (according to <<ISO_19115>>):*:: 002 - publication
+
+*Responsible party:*:: International Organisation of Oil and Gas Producers (IOGP)
+
+*URL:*:: https://epsg.org/home.html
+
+[[sec_5.2]]
+=== Horizontal reference system
+
+Positional data is expressed in latitude and longitude geographic
+coordinates to one of the reference horizontal reference systems defined
+in the horizontalDatum attribute. Unless otherwise defined, the World
+Geodetic System 84 (WGS 84) will be used for CNP data products.
+
+[[sec_5.3]]
+=== Projection
+
+CNP data products are un-projected.
+
+[[sec_5.4]]
+=== Vertical coordinate reference system
+
+Although all coordinates in a data set must refer to the same horizontal
+CRS different Vertical Datums can be used for the depth component
+of a coordinate tuple. Therefore the vertical CRS can be repeated.
+For each Vertical CRS a unique identifier is defined. Those identifiers
+will be used to indicate which Vertical CRS is used. Units must be
+in meters.
+
+[[sec_5.5]]
+=== Temporal reference system
+
+Time is measured by reference to Calendar dates and Clock time in
+accordance with <<ISO_19108_2002,clause=5.4.4>>.
+
+[[sec_5.6]]
+=== Coverage of nautical products data and scale
+
+CNP data must be compiled in the best applicable scale. The use of
+the data itself is "scale independent". That means that the data can
+be used at any scale. S-100 allows the association of multiple spatial
+attributes to a single feature instance. Each of these spatial attributes
+can in principle be qualified by maximum and minimum scales.
+
+For example, it is possible, within one dataset, to have a single
+instance of a feature that has more than one area geometry. Each of
+these geometries has different scale max/min attributes. Moreover,
+due to cluttering in smaller scales, the scale minimum attribute may
+be used to turn off portrayal of some features at smaller scales.

@@ -1,0 +1,46 @@
+---
+directives:
+  - documents-inline
+  - recompile-xml: true
+  #- coverpage: index.html
+
+output_folder: collection
+
+bibdata:
+  title:
+    type: title-main
+    language: en
+    content: Catalogue of Nautical Products
+
+  type: collection
+
+  docid:
+    type: iho
+    id: IHO S-128 (all parts)
+
+  edition: "2.0.0"
+
+  date:
+    - type: created
+      value: "2025-03-01"
+
+  copyright:
+    owner:
+      name: International Hydrographic Organization
+      abbreviation: IHO
+    from: "2025"
+
+format:
+  - xml
+  - html
+  - presentation
+  - doc
+  - pdf
+  - rxl
+
+manifest:
+  docref:
+    - file: sources/2.0.0/main/document.adoc
+      identifier: IHO S-128
+    - file: sources/2.0.0/annex-a/document.adoc
+      identifier: IHO S-128 Annex A

@@ -1,0 +1,2620 @@
+
+
+[[sec_7]]
+== Attribute and Enumerate Descriptions
+
+[[sec_7.1]]
+=== administrative division
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A generic term for an administrative
+region within a country at a level below that of the sovereign state.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.2]]
+=== agency name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of an agency, entity or organization.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.3]]
+=== agency responsible for production
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Identifies the agency which produced
+the data.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.4]]
+=== application profile
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Name of an application profile that
+can be used with the online resource.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.5]]
+=== approximate grid resolution
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Approximate grid resolution for nautical
+products.
+
+[underline]#Remarks:#
+
+* A single value may be provided when all axes have a common resolution.
+For multiple value provision, use axis order as specified in dataset.
+May be approximate for ungeorectified data. For example, for 5 metre
+resolution, the value 5 must be encoded. If the grid cell size varies
+over the extent of the grid, an approximated value based on model
+parameters or production metadata should be used. For S-111, approximateGridResolution is mandatory for grid formats, thus with multiplicity [1..++*++]. It is also mandatory for S-104.
+
+|===
+
+[[sec_7.6]]
+=== catalogue element classification
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:#Classification of a catalogue element.
+
+. *ENC*
++
+--
+[underline]#IHO Definition:# Electronic Navigational Chart.
+--
+
+. *bathymetric chart*
++
+--
+[underline]#IHO Definition:# A topographic chart of the bed of a body
+of water, or a part of it. Generally, bathymetric charts show depths
+by contour lines and gradient tints.
+--
+
+. *water level product*
++
+--
+[underline]#IHO Definition:# Water Level Information for Surface Navigation.
+--
+
+. *surface current product*
++
+--
+[underline]#IHO Definition:# A product representing the water velocity
+at one or more geographic locations down to a given depth.
+--
+
+. *MSI service*
++
+--
+[underline]#IHO Definition:# MSI (Maritime Safety Information) service.
+--
+
+. *AtoN information*
++
+--
+[underline]#IHO Definition:# A service providing information related
+to Marine Aids to Navigation.
+--
+
+. *catalogue service*
++
+--
+[underline]#IHO Definition:# A service providing structured records
+of items.
+--
+
+. *routing service*
++
+--
+[underline]#IHO Definition:# Services associated with Ships Routeing.
+--
+
+. *ice information*
++
+--
+[underline]#IHO Definition:# Newly discovered icebergs, changes to
+ice conditions and ice related information likely to impact navigation.
+--
+
+. *routing information*
++
+--
+[underline]#IHO Definition:# Information associated with Ships Routeing.
+--
+
+. *special purpose chart*
++
+--
+[underline]#IHO Definition:# Any chart designed primarily to meet
+specific requirements.
+--
+
+. *nautical publication*
++
+--
+[underline]#IHO Definition:# A (nautical chart or) nautical publication
+is a "a special-purpose map or book, or a specially compiled database
+from which such a map or book is derived, that is issued officially
+by or on the authority of a Government, authorized Hydrographic Office
+or other relevant government institution and is designed to meet the
+requirements of marine navigation".
+--
+
+. *printed nautical chart*
++
+--
+[underline]#IHO Definition:# A printed nautical chart is a "a special-purpose
+map, that is issued officially by or on the authority of a Government,
+authorized Hydrographic Office or other relevant government institution
+and is designed to meet the requirements of marine navigation"
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.7]]
+=== catalogue element identifier
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Identifier of a catalogue element.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.8]]
+=== catalogue section number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A number identifying a section within
+a catalogue.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.9]]
+=== catalogue section title
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The catalogue section title.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.10]]
+=== category of authority
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The type of person, government agency
+or organisation granted powers of managing or controlling access to
+and/or activity in an area.
+
+[start=2]
+. *border control*
++
+--
+[underline]#IHO Definition:# The administration to prevent or detect
+and prosecute violations of rules and regulations at international
+boundaries.
+--
+
+. *police*
++
+--
+[underline]#IHO Definition:# The department of government, or civil
+force, charged with maintaining public order.
+--
+
+. *port*
++
+--
+[underline]#IHO Definition:# Person or corporation, owners of, or
+entrusted with or invested with the power of managing a port. May
+be called a Harbour Board, Port Trust, Port Commission, Harbour Commission,
+Marine Department.
+--
+
+. *immigration*
++
+--
+[underline]#IHO Definition:# The authority controlling people entering
+a country.
+--
+
+. *health*
++
+--
+[underline]#IHO Definition:# The authority with responsibility for
+checking the validity of the health declaration of a vessel and for
+declaring free pratique.
+--
+
+. *coast guard*
++
+--
+[underline]#IHO Definition:# Organization keeping watch on shipping
+and coastal waters according to governmental law; normally the authority
+with responsibility for search and rescue.
+--
+
+. *agricultural*
++
+--
+[underline]#IHO Definition:# The authority with responsibility for
+preventing infection of the agriculture of a country and for the protection
+of the agricultural interests of a country.
+--
+
+. *military*
++
+--
+[underline]#IHO Definition:# A military authority which provides control
+of access to or approval for transit through designated areas or airspace.
+--
+
+. *private company*
++
+--
+[underline]#IHO Definition:# A private or publicly owned company or
+commercial enterprise which exercises control of facilities, for example
+a calibration area.
+--
+
+. *maritime police*
++
+--
+[underline]#IHO Definition:# A governmental or military force with
+jurisdiction in territorial waters. Examples could include Gendarmerie
+Maritime, Carabinierie, and Guardia Civil.
+--
+
+. *environmental*
++
+--
+[underline]#IHO Definition:# An authority with responsibility for
+the protection of the environment.
+--
+
+. *fishery*
++
+--
+[underline]#IHO Definition:# An authority with responsibility for
+the control of fisheries.
+--
+
+. *finance*
++
+--
+[underline]#IHO Definition:# An authority with responsibility for
+the control and movement of money.
+--
+
+. *maritime*
++
+--
+[underline]#IHO Definition:# A national or regional authority charged
+with administration of maritime affairs.
+--
+
+. *customs*
++
+--
+[underline]#IHO Definition:# The agency or establishment for collecting
+duties, tolls.
+--
+
+. *hydrographic office*
++
+--
+[underline]#IHO Definition:# State agency in charge of marine surveys
+and hydrography.
+--
+
+. *RENC*
++
+--
+[underline]#IHO Definition:# Regional ENC Coordination Centre.
+--
+
+. *VARs*
++
+--
+[underline]#IHO Definition:# Value Added Resellers (VARs), who are
+able to offer comprehensive end-use services that bring together various
+navigational products into one package
+--
+
+* No remarks.
+
+|===
+
+[[sec_7.11]]
+=== category of product mapping
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A classification of the internal relationships
+between products and services.
+
+. *higher priority alternative*
++
+--
+[underline]#IHO Definition:# A higher prioritized or recommended alternative
+product or service, that can fully replace another.
+--
+
+. *lower priority alternative*
++
+--
+[underline]#IHO Definition:# A lower prioritized or not recommended
+alternative product or service, that can fully replace another.
+--
+
+. *recommended enhancement provider*
++
+--
+[underline]#IHO Definition:# A recommended additional product or service,
+that provides added value to another.
+--
+
+. *recommended enhancement user*
++
+--
+[underline]#IHO Definition:# A product or service, that is recommended
+to make use of added value provided by another product or service
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.12]]
+=== character encoding
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Designation of the character set to
+be used to encode the textual value of the locale.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.13]]
+=== city name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of a town or city.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.14]]
+=== classification
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Indicates a classification.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.15]]
+=== comment
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Comment regarding an entity obvious
+from context.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.16]]
+=== compilation scale
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# In ECDIS, the scale at which the data
+was compiled.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.17]]
+=== compression flag
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Indicates if the resource is compressed.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.18]]
+=== contact instructions
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Instructions provided on how to contact
+a particular person, organisation or service.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.19]]
+=== contract period
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Definition of a period when a contract
+is valid.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.20]]
+=== country name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of a nation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.21]]
+=== currency
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Something (such as coins, treasury
+notes, and banknotes) that is in circulation as a medium of exchange
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.22]]
+=== dataset name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name or identification of a dataset.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.23]]
+=== date end
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The latest date on which an object
+(for example a buoy) will be present.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.24]]
+=== date start
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The earliest date on which an object
+(for example a buoy) will be present.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.25]]
+=== delivery point
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Details of where post can be delivered
+such as the apartment, name and/or number of a street, building or
+PO Box.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.26]]
+=== digital signature reference
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:#Specifies the algorithm used to compute
+digital signature value.
+
+[start=8]
+. *ECDSA-384-SHA2*
++
+--
+[underline]#IHO Definition:# Elliptic Curve Digital Signature Algorithm
+(ECDSA) that based upon the issuing certificate. It's signed with
+the issuer's key P-384
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.27]]
+=== digital signature value
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Value derived from the digital signature.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.28]]
+=== distribution status
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Supply status of nautical products.
+
+. *production*
++
+--
+[underline]#IHO Definition:# A product or service that is currently
+in production.
+--
+
+. *withdrawn*
++
+--
+[underline]#IHO Definition:# A product or service that has been withdrawn
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.29]]
+=== distributor name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Name of the distributor.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.30]]
+=== domestic carriage requirement
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A carriage requirement that is specific
+to a country or region and is based on domestic legislation or regulation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.31]]
+=== edition date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Date of publishing for example of
+a publication, chart, or product.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.32]]
+=== edition number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Edition of the ENC being referenced
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.33]]
+=== expiration date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Expiration date of a product or service.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.34]]
+=== file locator
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The location of a fragment of text
+or other information in a support file.
+
+[underline]#Remarks:#
+
+* Application schemas must describe how the associated file is identified.
+The associated file will commonly be named in a file reference co-attribute
+of the same complex attribute. Each DCEG must specify requirements
+for the format of the associated file and the semantics of file locator.
+For example, the value of file locator may be an HTML ID in an HTML
+file, line number in a text file) or a bookmark in a PDF file.
+
+|===
+
+[[sec_7.35]]
+=== file name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of a file within a system.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.36]]
+=== file reference
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The file name of an externally referenced
+text file.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.37]]
+=== headline
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Words set at the head of a passage
+or page to introduce or categorize.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.38]]
+=== horizontal datum EPSG code
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Horizontal reference as an EPSG code
+representing a valid entry in the EPSG Geodetic Parameter Dataset,
+as maintained by the Geodesy Subcommittee of the IOGP Geomatics Committee,
+and provided online at epsg.org.
+
+*3395) EPSG3395 (World Mercator)*
+
+[underline]#IHO Definition:# A global Mercator projection commonly
+used for mapping applications requiring accurate distance measurements
+near the equator.
+
+*3857) EPSG3857 (Pseudo-Mercator)*
+
+[underline]#IHO Definition:# A popular web mapping projection used
+by Google Maps, OpenStreetMap, and Bing Maps. Distorts at the poles
+but is widely used in online maps.
+
+*4326) EPSG4326 (WGS84)*
+
+[underline]#IHO Definition:# World Geodetic System 1984, used globally
+for GPS and geographic coordinates. Specifies coordinates in latitude
+and longitude degrees
+
+[underline]#Remarks:#
+
+* codeListType=open enumeration; encoding=other: [something]
+
+|===
+
+[[sec_7.39]]
+=== IMO maritime service
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A maritime service as identified by
+the International Maritime Organization (IMO).
+
+. *vessel traffic service*
++
+--
+[underline]#IHO Definition:# Any service implemented by a relevant
+authority primarily designed to improve safety and efficiency of traffic
+flow and the protection of the environment. It may range from simple
+information messages, to extensive organization of the traffic involving
+national or regional schemes.
+--
+
+. *aids to navigation service*
++
+--
+[underline]#IHO Definition:# A service providing up-to-date information
+of Aids to Navigation.
+--
+
+. *reserved for future use*
++
+--
+[underline]#IHO Definition:# An option that is reserved for future
+use.
+--
+
+. *port support service*
++
+--
+[underline]#IHO Definition:# A service that provides information necessary
+to organize and support port calls and varies depending on the local
+needs.
+--
+
+. *maritime safety information service*
++
+--
+[underline]#IHO Definition:# A service providing navigational and
+meteorological warnings, meteorological forecasts and other urgent
+safety-related messages broadcast to ships.
+--
+
+. *pilotage service*
++
+--
+[underline]#IHO Definition:# The services of a person who directs
+the movements of a vessel through pilot waters, usually a person who
+has demonstrated extensive knowledge of channels, aids to navigation,
+dangers to navigation, etc., in a particular area and is licensed
+for that area, are available.
+--
+
+. *tug service*
++
+--
+[underline]#IHO Definition:# A service that contributes to the safety
+of navigation, protection of the marine environment, and efficiency
+of marine transportation by conducting different types of operations
+including tugboats, such as ship assistance, salvage, towage, escort
+etc.
+--
+
+. *vessel shore reporting*
++
+--
+[underline]#IHO Definition:# A service providing information related
+to Vessel Shore Reporting and Ship reporting systems.
+--
+
+. *telemedical assistance service*
++
+--
+[underline]#IHO Definition:# A service to provide decision support
+and advice to the seafarer on board responsible for medical care.
+--
+
+. *maritime assistance service*
++
+--
+[underline]#IHO Definition:# A service to manage communications between
+the coastal State, ships' officers requiring assistance and other
+responsible maritime organizations: fleet owners, salvage companies,
+port authorities, brokers, etc.
+--
+
+. *nautical chart service*
++
+--
+[underline]#IHO Definition:# A service that provides geospatial information
+(in digital and / or printed format) to support safe maritime navigation
+with the aim to fulfill SOLAS regulation V/19.2.1.4 requirements for
+ships to carry "nautical charts and nautical publications to plan
+and display the ship's route for the intended voyage and to plot and
+monitor positions throughout the voyage".
+--
+
+. *nautical publications service*
++
+--
+[underline]#IHO Definition:# A service to provide information as a
+support to the navigation process. This comprises information to complement
+nautical charts, such as information on ports and sea areas, as well
+as the contact information of authorities and services for a sea area
+or port. It further describes regulations, restrictions, recommendations
+and other nautical information applicable in these areas, and aim
+to fulfill SOLAS regulation V/19.2.1.4 requirements for ships to carry
+"nautical charts and nautical publications to plan and display the
+ship's route for the intended voyage and to plot and monitor positions
+throughout the voyage".
+--
+
+. *ice navigation service*
++
+--
+[underline]#IHO Definition:# A service to provide ice navigation information
+to ships in and in the vicinity of possible ice infested regions.
+--
+
+. *meteorological information service*
++
+--
+[underline]#IHO Definition:# A service to provide meteorological information
+(digitally) to ships.
+--
+
+. *real-time hydrographic and environmental information services*
++
+--
+[underline]#IHO Definition:# A service providing hydrographic and
+environmental observations and forecasts, such as water level and
+surface current information.
+--
+
+. *search and rescue service*
++
+--
+[underline]#IHO Definition:# A service aimed at providing information
+about and assist with Search and Rescue functions.
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.40]]
+=== international carriage requirements
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# International Carriage requirements
+are carriage requirements based on the SOLAS-convention or similar
+international regulation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.41]]
+=== ISBN
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# International Standard Book Number.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.42]]
+=== ISO 216
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# ISO 216 is a paper-size standard established
+by the International Organization for Standardization (ISO).
+
+. *a0*
++
+--
+[underline]#IHO Definition:# The paper size A0, as defined in ISO
+216.
+--
+
+. *a1*
++
+--
+[underline]#IHO Definition:# The first size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+. *a2*
++
+--
+[underline]#IHO Definition:# The paper size A2, as defined in ISO
+216.
+--
+
+. *a3*
++
+--
+[underline]#IHO Definition:# The fourth size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+. *a4*
++
+--
+[underline]#IHO Definition:# The fifth size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+. *a5*
++
+--
+[underline]#IHO Definition:# The sixth size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+. *a6*
++
+--
+[underline]#IHO Definition:# The seventh size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+. *a7*
++
+--
+[underline]#IHO Definition:# The eighth size as output size on nautical
+paper chart. Referring to ISO 216.
+--
+
+* No remarks.
+
+|===
+
+[[sec_7.43]]
+=== ISSN
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# International Standard Serial Number.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.44]]
+=== issue date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Date up to which the data was made
+available by the Data Producer.
+
+[underline]#Remarks:#
+
+* Issue date in S-57 and S-101 ENCs defines the date when the ENC
+cell edition was issued. The issue date must be greater than the previous
+issue date of the dataset.
+
+|===
+
+[[sec_7.45]]
+=== issue time
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Time of day at which the data was
+made available by the Data Producer.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.46]]
+=== language
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The method of human communication,
+either spoken or written, consisting of the use of words in a structured
+and conventional way.
+
+[underline]#Remarks:#
+
+* The language is encoded by a 3 character code following ISO 639-3/T.
+
+|===
+
+[[sec_7.47]]
+=== linkage
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Location (address) for online access
+using a URL/URI address or similar addressing scheme.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.48]]
+=== maximum display scale
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The value considered by the Data Producer
+to be the maximum (largest) scale at which the data is to be displayed
+before it can be considered to be "grossly overscaled"
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.49]]
+=== minimum display scale
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Thesmallestintendedviewingscaleforthedata.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.50]]
+=== name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Theindividualnameof afeature.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.51]]
+=== name of resource
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Nameoftheonlineresource.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.52]]
+=== name usage
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Classification of the type and display
+level of the name of a feature in an end-user system.
+
+. *default name display*
++
+--
+[underline]#IHO Definition:# The name is intended to be displayed
+when the end-user system is set to the default name/text display setting.
+--
+
+. *alternate name display*
++
+--
+[underline]#IHO Definition:# The name is intended to be displayed
+when the end-user system is set to an alternate name/text display
+setting, for example an alternate language
+--
+
+[underline]#Remarks:#
+
+* For ECDIS, all encoded instances of the complex attribute
+*feature name* will be able to be viewed in the ECDIS Pick Report,
+regardless of the value populated for *name usage*.
+
+|===
+
+[[sec_7.53]]
+=== navigation purpose
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The navigational purpose of the dataset.
+
+. *port*
++
+--
+[underline]#IHO Definition:# For port and near shore operations.
+--
+
+. *transit*
++
+--
+[underline]#IHO Definition:# For coast and planning purposes.
+--
+
+. *overview*
++
+--
+[underline]#IHO Definition:# For ocean crossing and planning purposes
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.54]]
+=== not for navigation
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Indicates the dataset is not intended
+to be used for navigation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.55]]
+=== online description
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Description of online resources.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.56]]
+=== optimum display scale
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The largest intended viewing scale
+for the data.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.57]]
+=== original product number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The original identification of a product
+that has been re-branded or distributed under multiple identification
+schemes.
+
+[underline]#Remarks:#
+
+* Enter Original Chart Number for Original Product Number
+
+|===
+
+[[sec_7.58]]
+=== other data type description
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Description of a support file format
+other than those listed.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.59]]
+=== paper length
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The length in cm of the longer side
+of a paper.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.60]]
+=== paper width
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The length in cm of the shorter side
+of a paper.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.61]]
+=== postal code
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Known in various countries as a postcode,
+or ZIP code, the postal code is a series of letters and/or digits
+that identifies each postal delivery area.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.62]]
+=== price
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The amount of money expected, required,
+or given in payment for something.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.63]]
+=== print agency
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Name of the publishing institution
+of the paper chart for navigation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.64]]
+=== print nation
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The authority who printed a nautical
+paper chart.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.65]]
+=== producer nation
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The authority who produced a nautical
+product.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.66]]
+=== product number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Product number of a product or service.
+
+[underline]#Remarks:#
+
+* Encode Chart Number in the Product Number
+
+|===
+
+[[sec_7.67]]
+=== product reference
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A reference to another product.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.68]]
+=== protocol
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Connection protocol to be used.
+
+[example]
+ftp, http get KVP, http POST, etc.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.69]]
+=== protocol request
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Request used to access the resource.
+Structure and content depend on the protocol and standard used by
+the online resource, such as Web Feature Service standard.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.70]]
+=== publication date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The official publication date of a
+notice, product or service.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.71]]
+=== publication number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Publication number of the nautical
+product.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.72]]
+=== reported date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The date that the item was observed,
+done, or investigated.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.73]]
+=== reprint edition
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Reprinted version of nautical paper
+chart.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.74]]
+=== reprint nation
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The authority who reprinted a nautical
+paper chart.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.75]]
+=== service name
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The name of a service.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.76]]
+=== service status
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Types of status of services.
+
+. *provisional*
++
+--
+[underline]#IHO Definition:# Indicates a temporary, preliminary, or
+interim status. A provisional item is not yet finalized or fully approved.
+--
+
+. *released*
++
+--
+[underline]#IHO Definition:# Indicates a finalized, officially approved,
+or publicly available status. A released item is ready for general
+use or distribution.
+--
+
+. *deprecated*
++
+--
+[underline]#IHO Definition:# Indicates that a feature, method, product,
+or component is no longer recommended for use but is still available.
+--
+
+. *deleted*
++
+--
+[underline]#IHO Definition:# Indicates that a feature, method, product,
+or component is no longer available or has been permanently removed
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.77]]
+=== source
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The publication, document, or reference
+work from which information comes or is acquired.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.78]]
+=== source date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The production date of the source;
+for example the date of measurement.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.79]]
+=== source type
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Type of the source.
+
+. *law or regulation*
++
+--
+[underline]#IHO Definition:# Treaty, convention, or international
+agreement; law or regulation issued by a national or other authority.
+--
+
+. *official publication*
++
+--
+[underline]#IHO Definition:# Publication not having the force of law,
+issued by an international organisation or  a national or local administration.
+--
+
+. *mariner report, confirmed*
++
+--
+[underline]#IHO Definition:# Reported by mariner(s) and confirmed
+by another source.
+--
+
+. *mariner report, not confirmed*
++
+--
+[underline]#IHO Definition:# Reported by mariner(s) but not confirmed.
+--
+
+. *industry publications and reports*
++
+--
+[underline]#IHO Definition:# Shipping and other industry publications,
+including graphics, charts and web sites.
+--
+
+. *remotely sensed images*
++
+--
+[underline]#IHO Definition:# Information obtained from satellite images.
+--
+
+. *photographs*
++
+--
+[underline]#IHO Definition:# Information obtained from photographs.
+--
+
+. *products issued by HO service*
++
+--
+[underline]#IHO Definition:# Information obtained from products issued
+by Hydrographic Offices.
+--
+
+. *news media*
++
+--
+[underline]#IHO Definition:# Information obtained from news media.
+--
+
+. *traffic data*
++
+--
+[underline]#IHO Definition:# Information obtained from the analysis
+of traffic data.
+--
+
+. *maritime*
++
+--
+[underline]#IHO Definition:# A national or regional authority charged
+with administration of maritime affairs.
+--
+
+Remarks:
+
+* No remarks.
+
+|===
+
+[[sec_7.80]]
+=== specific usage
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The use for which the dataset is intended.
+
+. *navigational purpose overview*
++
+--
+[underline]#IHO Definition:# For use in the study of the characteristics
+of maritime zones, in the formulation of plans, in the selection of
+routes, etc., showing only relevant elements of the coastline, harbours,
+islands, principal navigational marks and obstructions, and submarine
+landforms.
+--
+
+. *navigational purpose general*
++
+--
+[underline]#IHO Definition:# A nautical chart with universality
+(i.e., generality) in use, characterized by the requirement that the
+chart must comprehensively describe various natural elements and socioeconomic
+elements, and that each element of the subject matter expressed is
+universal.
+--
+
+. *navigational purpose coastal*
++
+--
+[underline]#IHO Definition:# Used for marine navigation, mainly displaying
+submarine landforms, navigational marks, navigational obstacles and
+other elements related to navigation.
+--
+. *navigational purpose approach*
++
+--
+[underline]#IHO Definition:# Used for near-shore navigation, mainly
+showing the marine elements close to coastal areas.
+--
+
+. *navigational purpose harbour*
++
+--
+[underline]#IHO Definition:# Used for entering and leaving harbours,
+selecting anchorage, studying harbour topography, and carrying out
+the construction of harbours.
+--
+
+. *navigational purpose berthing*
++
+--
+[underline]#IHO Definition:# For ships berthing.
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.81]]
+=== support file format
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The format used for the support file.
+
+. *ASCII*
++
+--
+[underline]#IHO Definition:# UTF-8 text excluding control codes.
+--
+
+. *JPEG2000*
++
+--
+[underline]#IHO Definition:# JPEG2000 format.
+--
+
+. *HTML*
++
+--
+[underline]#IHO Definition:# Hypertext Markup Language.
+--
+
+. *XML*
++
+--
+[underline]#IHO Definition:# Extensible Markup Language.
+--
+
+. *XSLT*
++
+--
+[underline]#IHO Definition:# Extensible Stylesheet Language Transformations.
+--
+
+. *VIDEO*
++
+--
+[underline]#IHO Definition:# A digital recording of an image or set
+of images (such as a movie or animation).
+--
+
+. *TIFF*
++
+--
+[underline]#IHO Definition:# Tagged Image File Format (TIFF).
+--
+
+. *PDF/A or U/A*
++
+--
+[underline]#IHO Definition:# Portable Document Format.
+--
+
+. *LUA*
++
+--
+[underline]#IHO Definition:# Lua programming language.
+--
+
+. *other*
++
+--
+[underline]#IHO Definition:# Being the one or ones distinct from that
+or those first mentioned or implied.
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.82]]
+=== support file purpose
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The reason for inclusion of the support
+file.
+
+. *new*
++
+--
+[underline]#IHO Definition:# A file which is new.
+--
+
+. *replacement*
++
+--
+[underline]#IHO Definition:# A file which replaces an existing file.
+--
+
+. *deletion*
++
+--
+[underline]#IHO Definition:# Deletes an existing file
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.83]]
+=== telecommunication identifier
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Anidentifier,suchaswords,numbers,letters,symbols,oranycombinationofthose usedtoestablish acontacttoaparticularperson, organisationorservice.
+
+[underline]#Remarks:#
+
+*  No remarks.
+
+|===
+
+[[sec_7.84]]
+=== telecommunication service
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Classification of methods of communication
+over a distance by electrical, electronic,orelectromagnetic means.
+
+. *voice*
++
+--
+[underline]#IHO Definition:# The transfer or exchange of information
+by using sounds that are being made by  mouth and throat when speaking.
+--
+. *facsimile*
++
+--
+[underline]#IHO Definition:# Sometimes called telecopying or telefax
+(the latter short for telefacsimile), is the telephonic transmission
+of scanned printed material (both text and images), normally to a
+telephone number connected to a printer or other output device.
+--
+. *sms*
++
+--
+[underline]#IHO Definition:# Short Message Service is a form of text
+messaging communication on phones and  mobile phones.
+--
+. *data*
++
+--
+[underline]#IHO Definition:# Materials that serve as the basis for
+initiation.
+--
+. *streamed data*
++
+--
+[underline]#IHO Definition:# Data that is constantly received by and
+presented to an end-user while being delivered by a provider.
+--
+. *telex*
++
+--
+[underline]#IHO Definition:# A system of communication in which messages
+are sent over long distances by using a telephone system and are printed
+by using a special machine (called a teletypewriter).
+--
+. *telegraph*
++
+--
+[underline]#IHO Definition:# An apparatus, system or process for communication
+at a distance by electric transmission over wire.
+--
+. *email*
++
+--
+[underline]#IHO Definition:# Messages and other data exchanged between
+individuals using computers in a network.
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.85]]
+=== text
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A non-formatted digital text string
+
+[underline]#Remarks:#
+
+* Should be used, for example, to hold the information that is for
+short cautionary or explanatory notes. Therefore, text populated in
+text must not exceed 300 characters. Text may be in English, or in
+a national language. No formatting of text is possible within text.
+If formatted text, or text strings exceeding 300 characters, is required,
+then an alternate concept should be used.
+
+|===
+
+[[sec_7.86]]
+=== type of physical product
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The type of a physical (navigational)
+product, usually printed on paper
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.87]]
+=== type of product format
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The type of productformat.
+
+. *GML*
++
+--
+[underline]#IHO Definition:# Geography Markup Language. An XML-based
+geographic information encoding language developed by the Open GIS
+Consortium (OGC) to enhance the interoperability of geographic information.
+--
+
+. *ISO/IEC 8211*
++
+--
+[underline]#IHO Definition:# Specification for a data descriptive
+file for information interchange.
+--
+
+. *PDF*
++
+--
+[underline]#IHO Definition:# Portable Document Format. A file format
+developed by Adobe in 1993 to present documents, including text formatting
+and images, in a manner independent of application software, hardware,
+and operating systems.
+--
+
+. *HTML*
++
+--
+[underline]#IHO Definition:# Hypertext Markup Language.
+--
+
+. *ePub*
++
+--
+[underline]#IHO Definition:# E-book file format.
+--
+
+. *paper*
++
+--
+[underline]#IHO Definition:# For printing hydrographic charts, heavyweight,
+single layer paper is used. Such paper is generally made wholly or
+partly from rags and simulates hand-made paper. It is strong, moisture
+resistant and manufactured to withstand surface erasure.
+--
+
+. *HDF-5*
++
+--
+[underline]#IHO Definition:# Hierarchical Data Format version 5 is
+a file format and data model designed for storing and organizing large
+amounts of numerical data efficiently.
+--
+
+. *BSB*
++
+--
+[underline]#IHO Definition:# A file format used primarily for storing
+nautical charts in raster form.
+--
+
+. *GeoTiff*
++
+--
+[underline]#IHO Definition:# Extension of the TIFF specification to
+allow the storage of geo-referencing information.
+--
+
+. *application*
++
+--
+[underline]#IHO Definition:# Provision of data in a format including
+operational functionality, such as a software program designed to
+perform specific tasks or functions for the user.
+--
+
+. *XML*
++
+--
+[underline]#IHO Definition:# Extensible Markup Language.
+--
+
+. * PNG*
++
+--
+[underline]#IHO Definition:# Portable Network Graphics format.
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.88]]
+=== type of time interval unit
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The unit of a value indicating a time
+Time Interval..
+
+. *hour*
++
+--
+[underline]#IHO Definition:# A unit of time equal to 60 minutes or
+3600 seconds.
+--
+
+. *day*
++
+--
+[underline]#IHO Definition:# The duration of one rotation of the earth,
+or occasionally another celestial body, on its axis. It is measured
+by successive transits of a reference point on the celestial sphere
+over the meridian, and each type takes its name from the reference
+used.
+--
+
+. *month*
++
+--
+[underline]#IHO Definition:# A measure of time based on the motion
+of the moon in its orbit.
+--
+
+. *year*
++
+--
+[underline]#IHO Definition:# A period of one revolution of the earth
+around the sun.
+--
+
+[underline]#Remarks:#
+
+*  This attribute is used for periodically published data, such as
+S-111. The periodicity is entered as shown in the examples below.
++
+--
+For example, if you want to express 26hrs, you would express it as
+1day 2hour.
+
+For example, if you want to express 45days, you would express it as
+1month 15hour.
+
+For example, if you want to express 18months, you would express it
+as 1year 6month.
+--
+
+|===
+
+[[sec_7.89]]
+=== update date
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A date referring to the day a product
+or service was updated.
+
+[underline]#Remarks:#
+
+* Update Date in S-57 and S-101 ENCs defines the date when the latest
+update for the current ENC cell edition was issued. This field is
+used whenever there is an update or re-issue of the cell.
+
+|===
+
+[[sec_7.90]]
+=== update number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Update number of the ENC being referenced.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.91]]
+=== value of time
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The length or duration of a time interval,
+referred to a specified time interval unit.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.92]]
+=== version
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# Identification of a specific form
+or variation of an entity.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.93]]
+=== vertical datum
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# The reference level used for expressing
+the vertical measurements of points on the earth's surface. Also called
+datum level, reference plane, levelling datum, datum for sounding
+reduction, datum for heights.
+
+. *mean low water springs*
++
+--
+[underline]#IHO Definition:# The average height of the low waters
+of spring tides. This level is used as a tidal datum in some areas.
+--
+
+. *mean lower low water springs*
++
+--
+[underline]#IHO Definition:# The average height of lower low water
+springs at a place.
+--
+
+. *mean sea level*
++
+--
+[underline]#IHO Definition:# The average height of the surface of
+the sea at a tide station for all stages of the tide over a 19-year
+period, usually determined from hourly height readings measured from
+a fixed predetermined reference level.
+--
+
+. *lowest low water*
++
+--
+[underline]#IHO Definition:# An arbitrary level conforming to the
+lowest tide observed at a place, or somewhat lower.
+--
+
+. *mean low water*
++
+--
+[underline]#IHO Definition:# The average height of all low waters
+at a place over a 19-year period.
+--
+
+. *lowest low water springs*
++
+--
+[underline]#IHO Definition:# An arbitrary level conforming to the
+lowest water level observed at a place at spring tides during a period
+of time shorter than 19 years.
+--
+
+. *approximate mean low water springs*
++
+--
+[underline]#IHO Definition:# An arbitrary level, usually within 0.3m
+from that of Mean Low Water Springs (MLWS).
+--
+
+. *indian spring low water*
++
+--
+[underline]#IHO Definition:# An arbitrary tidal datum approximating
+the level of the mean of the lower low water at spring tides. It was
+first used in waters surrounding India.
+--
+
+. *low water springs*
++
+--
+[underline]#IHO Definition:# An arbitrary level, approximating that
+of mean low water springs (MLWS).
+--
+
+. *approximate lowest astronomical tide*
++
+--
+[underline]#IHO Definition:# An arbitrary level, usually within 0.3m
+from that of lowest astronomical tide (LAT).
+--
+
+. *nearly lowest low water*
++
+--
+[underline]#IHO Definition:# An arbitrary level approximating the
+lowest water level observed at a place, usually equivalent to the
+indian spring low water (ISLW).
+--
+
+. *mean lower low water*
++
+--
+[underline]#IHO Definition:# The average height of the lower low waters
+at a place over a 19-year period.
+--
+
+. *low water*
++
+--
+[underline]#IHO Definition:# The lowest level reached at a place by
+the water surface in one oscillation.
+--
+
+. *approximate mean low water*
++
+--
+[underline]#IHO Definition:# An arbitrary level, usually within 0.3m
+from that of mean low water (MLW).
+--
+
+. *approximate mean lower low water*
++
+--
+[underline]#IHO Definition:# An arbitrary level, usually within 0.3m
+from that of mean lower low water (MLLW).
+--
+
+. *mean high water*
++
+--
+[underline]#IHO Definition:# The average height of all high waters
+at a place over a 19-year period.
+--
+
+. *mean high water springs*
++
+--
+[underline]#IHO Definition:# The average height of the high waters
+of spring tides.
+--
+
+. *high water*
++
+--
+[underline]#IHO Definition:# The highest level reached at a place
+by the water surface in one oscillation.
+--
+
+. *approximate mean sea level*
++
+--
+[underline]#IHO Definition:# An arbitrary level, usually within 0.3m
+from that of mean sea level (MSL).
+--
+
+. *high water springs*
++
+--
+[underline]#IHO Definition:# An arbitrary level, approximating that
+of mean high water springs (MHWS).
+--
+
+. *mean higher high water*
++
+--
+[underline]#IHO Definition:# The average height of higher high waters
+at a place over a 19-year period.
+--
+
+. *equinoctial spring low water*
++
+--
+[underline]#IHO Definition:# The level of low water springs near the
+time of an equinox.
+--
+
+. *lowest astronomical tide*
++
+--
+[underline]#IHO Definition:# The lowest tide level which can be predicted
+to occur under average meteorological conditions and under any combination
+of astronomical conditions..
+--
+
+. *local datum*
++
+--
+[underline]#IHO Definition:# An arbitrary datum defined by a local
+harbour authority, from which levels and tidal heights are measured
+by this authority.
+--
+
+. *international Great Lakes datum 1985*
++
+--
+[underline]#IHO Definition:# A vertical reference system with its
+zero based on the mean water level at Rimouski/Pointe-au-Père, Quebec,
+over the period 1970 to 1988.
+--
+
+. *mean water level*
++
+--
+[underline]#IHO Definition:# The average of all hourly water levels
+over the available period of record.
+--
+
+. *lower low water large tide*
++
+--
+[underline]#IHO Definition:# The average of the lowest low waters,
+one from each of 19 years of observations.
+--
+
+. *higher high water large tide*
++
+--
+[underline]#IHO Definition:# The average of the highest high waters,
+one from each of 19 years of observations.
+--
+
+. *nearly highest high water*
++
+--
+[underline]#IHO Definition:# An arbitrary level approximating the
+highest water level observed at a place, usually equivalent to the
+high water springs.
+--
+
+. *highest astronomical tide*
++
+--
+[underline]#IHO Definition:# The highest tidal level which can be
+predicted to occur under average meteorological conditions and under
+any combination of astronomical conditions
+--
+
+. **local low water reference level**
++
+--
+[underline]#IHO Definition:# Low water reference level of the local
+area.
+--
+
+. *local high water reference level*
++
+--
+[underline]#IHO Definition:# High water reference level of the local
+area.
+--
+
+. *local mean water reference level*
++
+--
+[underline]#IHO Definition:# Mean water reference level of the local
+area.
+--
+
+. *equivalent height of water (german GlW)*
++
+--
+[underline]#IHO Definition:# A low water level which is the result
+of a defined low water discharge - called "equivalent discharge".
+--
+
+. *highest shipping height of water (german HSW)*
++
+--
+[underline]#IHO Definition:# Upper limit of water levels where navigation
+is allowed.
+--
+
+. *reference low water level according to danube commission*
++
+--
+[underline]#IHO Definition:# The water level at a discharge, which
+is exceeded 94% of the year within a period of 30 years.
+--
+
+. *highest shipping height of water according to danube commission*
++
+--
+[underline]#IHO Definition:# The water level at a discharge, which
+is exceeded 1% of the year within a period of 30 years.
+--
+
+. *dutch river low water reference level (OLR)*
++
+--
+[underline]#IHO Definition:# The water level at a discharge, which
+is exceeded 95% of the year within a period of 20 years.
+--
+
+. *russian project water level*
++
+--
+[underline]#IHO Definition:# Conditional low water level with established
+probability.
+--
+
+. *russian normal backwater level*
++
+--
+[underline]#IHO Definition:# Highest water level derived from the
+upper backwater stream in watercourse or reservoir under the normal
+operational conditions.
+--
+
+. *ohio river datum*
++
+--
+[underline]#IHO Definition:# The Ohio River datum.
+--
+
+. *dutch high water reference level*
++
+--
+[underline]#IHO Definition:# Dutch High Water Reference Level.
+--
+
+. *baltic sea chart datum 2000*
++
+--
+[underline]#IHO Definition:# The datum refers to each Baltic country's
+realization of the European Vertical Reference System (EVRS) with
+land-uplift epoch 2000, which is connected to the Normaal Amsterdams
+Peil (NAP).
+--
+
+. *dutch estuary low water reference level (OLW)*
++
+--
+[underline]#IHO Definition:# Dutch Estuary Low Water Reference Level
+(OLW).
+--
+
+. *international great lakes datum 2020*
++
+--
+[underline]#IHO Definition:# The 2020 update to the International
+Great Lakes Datum (IGLD), the official reference system used to measure
+water level heights in the Great Lakes, connecting channels, and the
+St. Lawrence River system.
+--
+
+. *sea floor*
++
+--
+[underline]#IHO Definition:# The bottom of the ocean and seas where
+there is a generally smooth gentle gradient. Also referred to as sea
+bed (sometimes seabed or sea-bed), and sea bottom.
+--
+
+. *sea surface*
++
+--
+[underline]#IHO Definition:# A two-dimensional (in the horizontal
+plane) field representing the air-sea interface, with high-frequency
+fluctuations such as wind waves and swell, but not astronomical tides,
+filtered out.
+--
+
+. *hydrographic zero*
++
+--
+[underline]#IHO Definition:# A vertical reference near the lowest
+astronomical tide (LAT), below which the sea level falls only very
+exceptionally
+--
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.94]]
+=== week number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A consecutive number that specifies
+a week within a year.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===
+
+[[sec_7.95]]
+=== year number
+
+[cols=1,options="unnumbered"]
+|===
+a| [underline]#IHO Definition:# A consecutive number that specifies
+a week within a year.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+|===

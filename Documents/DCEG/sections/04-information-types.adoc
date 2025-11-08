@@ -1,0 +1,368 @@
+
+== Information types
+
+=== Catalogue section header
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# A header identifying a section within a catalogue.
+8+h| [underline]#S-128 Information Type:# CatalogueSectionHeader
+8+h| [underline]#Super Type:#
+8+h| [underline]#Primitives:# None
+
+3+| _Real World_ 2+| _Paper Chart Symbol_ 3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| catalogue section number | 2+| | IN     | 1,1
+3+| catalogue section title  | 2+| | TE     | 0,1
+3+| information              | 2+| | C      | 0,1
+3+| file locator             | 2+| | (S) TE | 0,1
+3+| file reference           | 2+| | (S) TE | 0,1
+3+| headline                 | 2+| | (S) TE | 0,1
+3+| language                 | 2+| | (S) TE | 0,1
+3+| text                     | 2+| | (S) TE | 0,*
+
+8+a|
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | ProductPackage            | *CatalogueElements*      | theCatalogueElements | 1,1 | *CatalogueSectionHeader* | elementContainer              | 1,*
+| Association | Price Of Nautical Product | *PriceInformation*       | thePriceInformation  | 0,* | *CatalogueSectionHeader* | theCatalogueOfNauticalProduct | 0,*
+| Association | Production Details        | *ProducerInformation*    | theProducer          | 0,1 | *CatalogueSectionHeader* | catalogueHeader               | 0,*
+| Association | Distribution Details      | *DistributorInformation* | theDistributor       | 0,* | *CatalogueSectionHeader* | catalogueHeader               | 0,*
+
+|===
+
+=== Contact details
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# Information on how to reach a person
+or organisation by postal, internet, telephone, telex and radio systems.
+8+h| [underline]#S-128 Information Type:# ContactDetails
+8+h| [underline]#Super Type:#
+8+h| [underline]#Primitives:# None
+
+3+| _Real World_ 2+| _Paper Chart Symbol_ 3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| contact instructions         | 2+| | TE     | 1,1
+3+| contact address              | 2+| | C      | 0,*
+3+| administrative division      | 2+| | (S) TE | 0,1
+3+| city name                    | 2+| | (S) TE | 0,1
+3+| country name                 | 2+| | (S) TE | 0,1
+3+| delivery point               | 2+| | (S) TE | 0,*
+3+| postal code                  | 2+| | (S) TE | 0,1
+3+| information                  | 2+| | C      | 0,*
+3+| file locator                 | 2+| | (S) TE | 0,1
+3+| file reference               | 2+| | (S) TE | 0,1
+3+| headline                     | 2+| | (S) TE | 0,1
+3+| language                     | 2+| | (S) TE | 0,1
+3+| text                         | 2+| | (S) TE | 0,*
+3+| online resource              | 2+| | C      | 0,*
+3+| application profile          | 2+| | (S) TE | 0,1
+3+| linkage                      | 2+| | (S) TE | 1,1
+3+| name of resource             | 2+| | (S) TE | 0,1
+3+| online description           | 2+| | (S) TE | 0,1
+3+| protocol                     | 2+| | (S) TE | 0,1
+3+| protocol request             | 2+| | (S) TE | 0,1
+3+| telecommunications           | 2+| | C      | 0,*
+3+| contact instructions         | 2+| | (S) TE | 0,*
+3+| telecommunication identifier | 2+| | (S) TE | 0,*
+
+3+| telecommunication service |
+2+| 1: voice +
+2: facsimile +
+3: sms +
+4: data +
+5: streamed data  +
+6: telex +
+7: telegraph +
+8 : email
+| (S) EN | 0,*
+
+3+| source indication | 2+| | C | 0,*
+
+3+| category of authority |
+2+| 2: border control +
+3: police +
+4: port +
+5: immigration +
+6: health +
+7: coast guard  +
+8: agricultural +
+9: military +
+10: private company  +
+11: maritime police  +
+12: environmental +
+13: fishery +
+14: finance +
+15: maritime +
+16: customs +
+17: hydrographic office +
+18: RENC +
+19 : VARs
+| (S) EN | 1,*
+
+3+| country name  |          2+| | (S) TE | 0,1
+3+| reported date | (SORDAT) 2+| | (S) TD | 0,1
+3+| source        |          2+| | (S) TE | 0,1
+
+3+| source type |
+2+| 1: law or regulation  +
+2: official publication  +
+7: mariner report, confirmed +
+8: mariner report, not confirmed +
+9: industry publications and reports +
+10: remotely sensed images +
+11: photographs +
+12: products issued by HO service +
+13: news media  +
+14: traffic data +
+15 : maritime
+| (S) EN | 0,1
+
+3+| feature name | 2+| | (S) C  | 0,*
+3+| language     | 2+| | (S) TE | 1,1
+3+| name         | 2+| | (S) TE | 1,1
+
+3+| name usage |
+2+| 1: default name display +
+2: alternate name display
+| (S) EN | 0,1
+
+8+h|
+
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | Producer Contact | *theProducer* | theProducer | 0,1 | *ContactDetails* | theContactDetails | 0,*
+| Association | Distributor Contact | *DistributorInformation* | theDistributor | 0,1 | *ContactDetails* | theContactDetails | 0,*
+|===
+
+=== Indication of carriage requirement
+
+[cols="5",options="unnumbered"]
+|===
+5+| [underline]#IHO Definition:# An indication of the type or justification
+of a carriage requirement.
+5+h| [underline]#S-128 Information Type:# IndicationOfCarriageRequirement
+5+h| [underline]#Super Type:#
+5+h| [underline]#Primitives:# None
+
+| _Real World_ 2+| _Paper Chart Symbol_ 2+| _ECDIS Symbol_
+
+h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multiplicity
+
+| domestic carriage requirements      | | | TE     | 0,1
+| international carriage requirements | | | TE     | 0,1
+| feature name                        | | | C      | 0,*
+| language                            | | | (S) TE | 1,1
+| name                                | | | (S) TE | 1,1
+
+| name usage |
+| 1: default name display +
+2: alternate name display
+| (S) EN | 0,1
+
+5+a|
+
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+* This will be improved in further versions.
+
+[underline]#Distinction:#
+
+|===
+
+=== Price information
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# Pricing information of nautical products.
+8+| [underline]#S-128 Information Type:# PriceInformation
+8+| [underline]#Super Type:#
+8+h| [underline]#Primitives:# None
+
+2+| _Real World_ 3+| _Paper Chart Symbol_ 3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| information         | 2+| | C      | 0,1
+3+| file locator        | 2+| | (S)TE  | 0,1
+3+| file reference      | 2+| | (S)TE  | 0,1
+3+| headline            | 2+| | (S)TE  | 0,1
+3+| language            | 2+| | (S)TE  | 0,1
+3+| text                | 2+| | (S)TE  | 0,*
+3+| online resource     | 2+| | C      | 0,*
+3+| application profile | 2+| | (S) TE | 0,1
+3+| linkage             | 2+| | (S) TE | 1,1
+3+| name of resource    | 2+| | (S) TE | 0,1
+3+| online description  | 2+| | (S) TE | 0,1
+3+| protocol            | 2+| | (S) TE | 0,1
+3+| protocol request    | 2+| | (S) TE | 0,1
+3+| pricing             | 2+| | C      | 0,*
+3+| contract period     | 2+| | (S) TE | 0,1
+3+| currency            | 2+| | (S) TE | 1,1
+3+| price               | 2+| | (S) RE | 1,1
+3+| source indication   | 2+| | C      | 0,*
+
+3+| category of authority |
+2+| 2: border control +
+3: police +
+4: port +
+5: immigration +
+6: health +
+7: coast guard +
+8: agricultural +
+9: military +
+10: private company  +
+11: maritime police +
+12: environmental +
+13: fishery +
+14: finance +
+15: maritime +
+16: customs +
+17: hydrographic office +
+18: RENC +
+19: VARs
+| (S) EN | 0,1
+
+3+| country name  |          2+| | (S) TE | 0,1
+3+| reported date | (SORDAT) 2+| | (S)TD  | 0,1
+3+| source        |          2+| | (S) TE | 0,1
+
+3+| source type |
+2+| 1: law or regulation +
+2: official publication +
+7: mariner report, confirmed +
+8: mariner report, not confirmed +
+9: industry publications and reports +
+10: remotely sensed images +
+11: photographs +
+12: products issued by HO service +
+13: news media +
+14: traffic data +
+15: maritime
+| (S) EN | 0,1
+
+3+| feature name | 2+| | (S) C  | 0,*
+3+| language     | 2+| | (S) TE | 1,1
+3+| name         | 2+| | (S) TE | 1,1
+
+3+| name usage |
+2+| 1: default name display +
+2: alternate name display
+| (S) EN | 0,1
+
+8+a|
+
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | Price Of Element          | *CatalogueElement*       | theCatalogueElement           | 0,1 | *PriceInformation* | thePriceInformation | 0,*
+| Association | Price Of Nautical Product | *CatalogueSectionHeader* | theCatalogueOfNauticalProduct | 0,* | *PriceInformation* | thePriceInformation | 0,*
+
+|===
+
+=== Producer information
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# Information about the authority responsible
+for production.
+8+h| [underline]#S-128 Information Type:# ProducerInformation
+8+h| [underline]#Super Type:#
+8+h| [underline]#Primitives:# None
+
+2+| _Real World_
+3+| _Paper Chart Symbol_
+3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| agency responsible for production | 2+| | TE | 1,1
+3+| agency name                       | 2+| | TE | 0,1
+
+8+a|
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+* The purpose of having separate attributes for _agencyName_
+and _agencyResponsibleForProduction_ is to distinguish between the
+organization responsible for the S-128 dataset's content
+(_agencyResponsibleForProduction_) and the organization that actually
+carries out the production process (_agencyName_). This separation
+allow flexibility in cases where the producing agency acts on behalf
+of another responsible body, ensuring that both roles are clearly
+identified.
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | Production Contact | *ContactDetails* | theContactDetails | 0,* | *ProducerInformation* | theProducer | 0,1
+| Association | Production Details | *CatalogueSectionHeader* | catalogueHeader | 0,* | *ProducerInformation* | theProducer | 0,1
+
+|===
+
+=== Distributor information
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# Information related to a distributor.
+8+h| [underline]#S-128 Geo Feature:# DistributorInformation
+8+h| [underline]#Super Type:#
+8+h| [underline]#Primitives:# None
+
+2+| _Real World_ 3+| _Paper Chart Symbol_ 3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| distributor name | 2+| | TE | 1,1
+
+8+a|
+
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | Distribution Details | *CatalogueSectionHeader* | catalogueHeader   | 1,1 | *DistributorInformation* | theDistributor | 0,*
+| Association | Distributor Contact  | *ContactDetails*         | theContactDetails | 0,* | *DistributorInformation* | theDistributor | 0,1
+
+|===

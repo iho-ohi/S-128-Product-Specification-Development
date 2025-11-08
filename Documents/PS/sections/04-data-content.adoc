@@ -1,0 +1,288 @@
+
+[[sec_4]]
+== Data Content and Structure
+
+[[sec_4.1]]
+=== Introduction
+
+The S-128 product is based on the S-100 General Feature Model (GFM),
+and is a feature-based vector product. <<fig_4-1>> below shows how
+the S-128 Application Schema is realized from the S-100 GFM.All S-128
+features and information classes are derived from the abstract classes
+like CatalogueElement and NavigationalProduct defined in the S-128
+Application Schema, which realize the GFM meta-classes *S100_GF_FeatureType*
+and *S100_GF_InformationType* respectively.
+
+This section contains the Application Schema expressed in UML and
+an associated Feature Catalogue. The Feature Catalogue is included
+in Annex B, and provides a full description of each feature type including
+its attributes, attribute values, and relationships in the data product.
+
+The class comprising the S-128 Application Schema is the S-128 Domain
+model containing the features and information types that model the
+CNP application domain specifically. Geographic features in all three
+packages use the spatial types from <<S_100,part=7>>, which are imported
+as-is into the S-128 spatial type package and therefore can be used
+as types for S-128 spatial attributes. The spatial types package also
+contains definitions of 'union types' (combinations of the S-100 spatial
+types), since S-100 allows features to have different kinds of geometry
+but UML does not allow an attribute of a class to have multiple types.
+The S-128 Application Schema models spatial attributes as attributes
+of feature classes.
+
+[[fig_4-1]]
+.S-128 data model overview
+image::figure-4-1.png["",606,333]
+
+[[sec_4.2]]
+=== Application Schema
+
+The UML models shown in the Figures below are the overall CNP Application
+Schema.
+
+This section contains a general overview of the classes and relationships
+in the S-128 Application Schema. Detailed information about how to
+use the feature types and information types to encode CNP information
+is provided in the S-128 Data Classification and Encoding Guide (DCEG).
+
+The following conventions are used in the UML diagrams depicting the
+Application Schema:
+
+* Standard UML conventions for classes, associations, inheritance,
+roles, and multiplicities apply. These conventions are described
+in <<S_100,part=1>>.
+* _Italic_ font for a class name indicates an abstract class.
+* Feature classes are depicted with green background; the dark shade
+for abstract feature classes and the light shade for ordinary (non-abstract)
+feature classes.
+* Information type classes are depicted with blue background; the
+dark shade for abstract information type classes and the light shade
+for ordinary information types.
+* Association classes are depicted with a white background.
+* Complex attributes are depicted with a pink background.
+* Enumeration lists and codelists are depicted with a tan background.
+The numeric code corresponding to each listed value is shown to its
+right following an '=' sign.
+* No significance attaches to the colour of associations.
+* Where the association role or name is not explicitly shown, the
+default rules for roles and names apply:
+** The role name is 'the<CLASSNAME>' where <CLASSNAME> is the name
+of the class to which that association end is linked.
+** The association name is '<CLASSNAME1>_<CLASSNAME2>' where <CLASSNAME1>
+is the source and <CLASSNAME2> the target. In case of a feature/information
+association the feature is the source. For feature/feature or
+information/information associations without explicit names
+the source/target are indicated by an arrowhead.
+
+The class for geographic features is feature type and the class for
+information types is information type.
+
+The geographic features included in the S-128 are:
+
+* Electronic Product: Electronic navigation products like S-57 ENC,
+S-101 ENC, digital charts for special purposes and digital publications
+based upon such physical publications.
+* Physical Product: Navigation products published in paper format.
+* S-100 Service: A service that makes use of S-100 based product specifications
+to support data transfer.
+
+CatalogueElement and NavigationalProduct is an abstract classes from
+which the geographic feature classes in the Application Schema are
+derived. CatalogueElement has common attributes which are inherited
+by all S-128 geographic feature types _NavigationalProduct has common
+attributes product type products._ To make sense a derived class may
+impose additional constraints, which will be described in the definition
+of the derived class or the S-128 DCEG.
+
+Geographic features use spatial types defined in the geometry package
+for spatial attributes. Datasets comprised of S-128 features are described
+by metadata as defined in the S-128 metadata package. Metadata uses
+selected spatial types (specifically, it uses the polygon type to
+describe the coverage of a dataset).
+
+ContactDetails is the information type in the S-128 domain model.
+ContactDetails has attributes for contactInstructions, contactAddress,
+information, onlineResource, and telecommunications and sourceIndication.
+Information types may be associated to other information types or
+referenced by associations from feature types. A derived class may
+impose additional constraints, which will be described in the definition
+of the derived class or in the S-128 DCEG.
+
+<<fig_4-4>> show all S-128 enumerations and codelists. The EPSG codelist
+are not directly implemented in the data model, and full code list
+can be found at epsg.org. Local datums that can't be found in the
+code list is encoded using the wildcard and maybe add an example.
+
+[[fig_4-2]]
+.S-128 Application Schema (feature type, information type)
+image::figure-4-2.png["",606,485]
+
+[[fig_4-3]] 
+.S-128 Application Schema (complex attribute type)
+image::figure-4-3.png["",606,569]
+
+[[fig_4-4]]
+.S-128 Application Schema (enumeration type)
+image::figure-4-4.png["",468,858]
+
+[[sec_4.3]]
+=== Feature Catalogue
+
+[[sec_4.3.1]]
+==== Introduction
+
+The Feature Catalogue describes the feature types, information types,
+attributes, attribute values, associations and roles which may be
+used in the product. The S-128 Feature Catalogue is available in an
+XML document which conforms to the S-100 XML Feature Catalogue Schema
+and can be downloaded from the IHO Geospatial Information Registry
+ (https://registry.iho.int/[https://registry.iho.int]).
+
+[[sec_4.3.2]]
+==== Feature types
+
+Feature types contain descriptive attributes that characterize real-world
+entities. The word 'feature' may be used in one of two senses -- feature
+type and feature instance. A feature type is a class and is defined
+in a Feature Catalogue. A feature instance is a single occurrence
+of the feature type and represented as an object in a dataset. A feature
+instance is located by a relationship to one or more spatial instances.
+A feature instance may exist without referencing a spatial instance.
+
+[[sec_4.3.2.1]]
+===== Geographic
+
+Geographic (Geo) feature types carry the descriptive characteristics
+of a real world entity.
+
+[[sec_4.3.2.2]]
+===== Meta
+
+Meta features contain information about other features within a data
+set. Information defined by meta features override the default metadata
+values defined by the data set descriptive records. Meta attribution
+on individual features overrides attribution on meta features.
+
+[[sec_4.3.3]]
+==== Feature relationship
+
+A feature relationship links instances of one feature type with instances
+of the same or a different feature type.
+
+[[sec_4.3.4]]
+==== Information types
+
+Information types are identifiable pieces of information in a dataset
+that can be shared between other features. They have attributes but
+have no relationship to any geometry; information types may reference
+other information types.
+
+[[sec_4.3.5]]
+==== Attributes
+
+S-128 defines attributes as either simple or complex.
+
+[[sec_4.3.5.1]]
+===== Simple attributes
+
+S-128 uses eleven types of simple attributes; they are listed in the
+<<table_4-1>> below.
+
+[[table_4-1]]
+.Simple feature attributes
+[cols="142,445"]
+|===
+h| Type h| Definition
+| Boolean     | A logical value, either 'True' or 'False'
+| Real        | A signed Real (floating point) number consisting of a mantissa and an exponent
+| Enumeration | One of a list of predefined values
+| Integer     | A signed integer number. The representation of an integer is encapsulation and usage dependent
+| Text or CharacterString | General text
+
+| Date
+a| A date provides values for year, month and day according to the
+Gregorian Calendar. Character encoding of a date is a string which
+must follow the calendar date format (complete representation, basic
+format) for date specified by <<ISO_8601_1988>>
+
+[example]
+19980918 (YYYYMMDD)
+| Truncated Date
+a| A S100_TruncatedDate allows a date or partial date to be given.
+At least one of the year/month/day components must be present. Since
+S-128 uses XML formats for both dataset and metadata, the XML encoding
+of truncated dates must be used (that is, the <<ISO_8601>> basic format
+is not used in S-128). Components:
+
+YYYY Year integer between 0000 and 9999
+
+MM Month integer between 01 -- 12 (inclusive)
+
+DD Day integer between 01 and 28, 29, 30, or 31 (inclusive), consistent
+with year and month values if these are specified
+
+This type can be used to encode recurring instants
+(see <<S_100,part=3,clause=3-8>>).
+
+[example]
+The appropriate XML Schema type should be used: --12-17 representing
+17 December of any year (conforming to the XML type gMonthDay)
+
+<<S_100,part=10b>> provides further details about encoding in GML datasets
+
+| Time
+a| A time is given by an hour, minute and second. Character encoding
+of a time is a string that follows the local time (complete representation,
+basic format) format defined in <<ISO_8601_1988>>
+
+[example]
+183059 or 183059+0100 or 183059Z
+
+| Codelist | A type of flexible enumeration. A code list type is a
+list of literals which may be extended only in conformance with specified
+rules
+| URL
+a| A uniform resource locator (URL) is a URI that provides a means
+of locating the resource by describing its primary access mechanism
+(<<RFC_3986>>).
+
+[example]
+https://registry.iho.int/
+
+| URN
+a| A persistent, location-independent, resource identifier that follows
+the syntax and semantics for URNs specified in <<RFC_2141>>
+
+[example]
+urn:iho:s101:1:0:0:AnchorageArea
+
+|===
+
+[[sec_4.3.5.2]]
+===== Complex attributes
+
+Complex attributes are aggregations of other attributes that are either
+simple or complex. The aggregation is defined by means of attribute
+bindings.
+
+[[fig_4-5]]
+.timeIntervalOfProduct (complex attribute)
+image::figure-4-5.png["",471,213]
+
+[[sec_4.4]]
+=== Geometric representation
+
+Geometric representation is the digital description of the spatial
+component of an object as described in S-100 and <<ISO_19107_2019>>.
+This Product Specification uses type of geometry: GM_Surface. 
+
+CNPs are encoded as vector entities which conform to S-100 geometry
+configuration level 3a (<<S_100,part=7>>). S-128 further constrains Level
+3a with the following: The distance between two consecutive control
+points must not be less than stem:[0.3 "unitsml(mm)"] at a permitted
+display scale.
+
+The following exception applies to S-128:
+
+* Soundings features which use GM_Point or GM_Multipoint with three
+dimensional coordinates are not currently included in S-128.

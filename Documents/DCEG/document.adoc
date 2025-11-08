@@ -1,0 +1,35 @@
+= Data Classification and Encoding Guide - Annex A
+:series: S
+:docnumber: 128
+:doctype: standard
+:edition: 2.0.0
+:language: en
+:published-date: 2025-03-01
+:copyright-year: 2025
+:status: in-force
+:committee: ircc
+:workgroup: ibsc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-overview.adoc[]
+
+include::sections/02-general.adoc[]
+
+include::sections/03-geo-features.adoc[]
+
+include::sections/04-information-types.adoc[]
+
+include::sections/05-association-names.adoc[]
+
+include::sections/06-association-roles.adoc[]
+
+include::sections/07-descriptions.adoc[]
+
+include::sections/08-complex-attributes.adoc[]
+

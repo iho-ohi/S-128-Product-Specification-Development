@@ -1,0 +1,119 @@
+
+== Association Roles
+
+=== Catalogue header
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# The top section of a catalogue.
+
+|===
+
+=== Element container
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# A container of elements.
+
+|===
+
+=== The catalogue element
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to an element within a catalogue.
+
+|===
+
+=== The catalogue of nautical product
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to a Catalogue of Nautical product.
+
+|===
+
+=== The contact details
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Information on how to reach a person
+or organisation by postal, internet, telephone, telex and radio systems.
+
+|===
+
+=== The distributor
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to the distributor.
+
+|===
+
+=== The element
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to an element.
+
+|===
+
+=== The price information
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to price information.
+
+|===
+
+=== The producer
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to a producer.
+
+|===
+
+=== The reference
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to supporting material or
+information related to a specific element or data.
+
+|===
+
+=== The requirement
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to a requirement for a specific
+system or process.
+
+|===
+
+=== The source
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to the source of information
+or data.
+
+|===
+
+=== The main
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to the main product containing
+panel(s).
+
+|===
+
+=== The panel
+
+[cols=1,options="unnumbered,noheader"]
+|===
+| [underline]#IHO Definition:# Reference to the panel of a main product.
+
+|===

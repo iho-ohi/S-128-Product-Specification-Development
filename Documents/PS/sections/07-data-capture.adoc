@@ -1,0 +1,28 @@
+
+[[sec_7]]
+== Data Capture and Classification
+
+S-128 products must be generated from data obtained from the product
+creator and released by an appropriate CNP defining authority such
+as Hydrographic Offices. The product creator can be described for
+each product within a CNP.
+
+The production process used to generate CNP products may be described
+in the dataset metadata.
+
+[[table_7-1]]
+.Data capture information
+[cols="4"]
+|===
+h| Item Name h| Description h| Multiplicity h| Type
+| dataSource
+| Identification of the kinds of data sources usable to product datasets
+compliant with the consideringSpecification
+| 0..* | CharacterString
+| productionProcess
+| Link to a textual description of the production process
+(including encoding guide) applicable to the datasets compliant with
+the considering Specification
+| 0..* | CharacterString(URL)
+
+|===

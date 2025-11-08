@@ -1,0 +1,259 @@
+
+== General
+
+The S-128 Data Classification and Encoding Guide describes how data
+describing the real world should be captured using the types defined
+in the S-128 Feature Catalogue. It provides the encoding rules and
+guidance required to create S-128 CNPs. Within the model these sets
+of characteristics are defined in terms of feature, spatial and information
+types. A type is defined as a stereotype of class that is used to
+specify a domain of instances (objects) together with the operations
+applicable to the objects. A type may have attributes and may be related
+to other types.
+
+The types used within S-128 are described below. Within this document
+feature types, information types, associations and attributes appear
+in bold text.
+
+=== Feature types
+
+Feature types contain descriptive attributes and do not contain any
+geometry (that is, information about the shape and position of a real
+world entity).
+
+Features have two aspects - feature type and feature instance. A feature
+type is a class and is defined in a Feature Catalogue. A feature instance
+is a single occurrence of the feature type and represented as an object
+in a dataset. A feature instance is located by a relationship to one
+or more spatial instances. A feature instance may exist without referencing
+a spatial instance.
+
+S-128 makes use of the following feature types:
+
+*Geographic (Geo) feature type* -- carries the descriptive characteristics
+of a real world entity.
+
+*Aggregated feature type* -- a relationship between two or more feature
+types where the aggregation feature is made up of component features.
+
+*Cartographic feature type* -- contains information about the cartographic
+representation (including text) of real world entities.
+
+*Meta feature type* -- contains information about other features
+
+=== Geometric primitives
+
+The allowable geometric primitive for each feature type is defined
+in the Feature Catalogue. Within this document, allowable primitives
+are included in the tables containing a description of each feature
+type. Allowable geometric primitives are point, pointset, curve and
+surface.
+
+Each spatial value must be referenced by at least one feature instance.
+
+Within this document, allowable primitives are included in the description
+of each feature type. It is recommended that curves and surface boundaries
+should not be encoded at a point density greater than 0.3mm at the
+maximum display scale for the ENC data.
+
+A curve consists of one or more curve segments. Each curve segment
+is defined as a loxodromic line on WGS84. Long lines may need to have
+additional coordinates inserted to cater for the effects of projection
+change.
+
+The presentation of line styles may be affected by curve length. Therefore,
+the encoder must be aware that splitting a curve into numerous small
+curves may result in poor symbolization.
+
+=== Information types
+
+An information type is an identifiable object that can be associated
+with features in order to carry information particular to the associated
+features. An example of the use of an information type may be the
+requirement to include a note about overhead cables. Information types
+can also be associated with other information types. This may be done
+where there is further supplementary information that is relevant
+to the information type. Information types carry attributes but not
+geometry.
+
+=== Attributes
+
+Attributes may be simple type or complex type. Complex (C) attributes
+are aggregates of other attributes that can be simple type or complex
+type. Simple attributes are assigned to one of 11 types.
+
+The binding of attributes to feature types, the binding of attributes
+to attributes to construct complex attributes, and attribute multiplicity
+is defined in the Feature Catalogue. Within this document, the allowable
+attributes are included in the description of each feature type, as
+well as the allowable values for enumeration type attributes.
+
+==== Multiplicity
+
+In order to control the number of allowed attribute values or sub-attribute
+instances within a complex attribute, S-100 uses the concept of multiplicity.
+This defines lower and upper limits for the number of values, whether
+the order of the instances has meaning and if an attribute is mandatory
+or not. Common examples are shown in the table below:
+
+Format: _MinOccurs_, _MaxOccurs_ (if * Infinite) _(ordered)_ -- sequential
+
+[[table_2-1]]
+.Multiplicity of attributes
+|===
+h| Multiplicity h| Explanation
+| 0,1           | An instance is not required; there can be only one instance.
+| 1,1           | An instance is required and there must only be one instance.
+| 0,*           | An instance is not required and there can be an infinite number of instances.
+| 1,*           | An instance is required and there can be an infinite number of instances.
+| 1,* (ordered) | An instance is required and there can be an infinite number of instances, the order of which has a specific meaning.
+| 2,2           | Two instances are required and no more than two.
+|===
+
+==== Simple attribute types
+
+Each simple attribute is assigned to one of 11 types:
+
+EN:: Enumeration: A fixed list of valid identifiers of named literal
+values. Attributes of an enumerated type may only take values from
+this list.
+
+BO:: Boolean: A value representing binary logic. The value can be
+either True or False. The default state for Boolean type attributes
+(that is, where the attribute is not populated for the feature) is
+False.
+
+RE:: Real: A signed Real (floating point) number consisting of a mantissa
+and an exponent. The representation of a real is encapsulation and
+usage dependent.
++
+--
+Examples: 23.501, -0.0001234, -23.0, 3.141296
+--
+
+IN:: Integer: A signed integer number. The representation of an integer
+is encapsulation and usage dependent.
++
+--
+Examples: 29, -65547
+--
+
+TE:: Free text: A CharacterString, that is an arbitrary-length sequence
+of characters including accents and special characters from a repertoire
+of one of the adopted character sets.
+
+TD:: Truncated Date: A truncated date allows a partial date to be
+encoded as an extension to the ISO 8601 compliant date attribute type
+values for year, month and day according to the Gregorian Calendar.
+Character encoding of a date is a string which follows the calendar
+date format (complete representation, basic format) for date specified
+by ISO 8601:2004.
++
+--
+Example: 19980918 (YYYYMMDD)
+--
+
+TI:: Time: A time is given by an hour, minute and second. Character
+encoding of a time is a string that follows the local time
+(complete representation, basic format) format defined in ISO 8601:2004.
++
+--
+Time zone according to UTC is optional. Example: 183059 or 183059+0100
+or 183059Z
+
+The complete representation of the time of 27 minutes and 46 seconds
+past 15 hours locally in Geneva (in winter one hour ahead of UTC),
+and in New York (in winter five hours behind UTC), together with the
+indication of the difference between the time scale of local time
+and UTC, are used as examples.
+
+Geneva: 152746+0100
+
+New York: 152746-0500
+--
+
+DA:: Date: A date provides values for year, month and day according
+to the Gregorian Calendar. +
+Example (XML/GML): 1998-09-18 (YYYY-MM-DD)
+
+DT:: Date and Time: A DateTime is a combination of a date and a time
+type. Character encoding of a DateTime shall follow ISO 8601:2004
+(see TD and TI above and clause 2.4.1).
++
+--
+[example]
+19850412T101530
+--
+
+UR:: URL: A uniform resource locator (URL) is a URI that provides
+a means of locating the resource by describing its primary access
+mechanism (RFC 3986).
++
+--
+[example]
+http://registry.iho.int
+--
+
+UN:: URN: A persistent, location-independent, resource identifier
+that follows the syntax and semantics for URNs specified in RFC 2141.
++
+--
+[example]
+urn:mrn:iho:s127:1:0:0:RouteingMeasure
+--
+
+Real or integer attribute values must not be padded by non-significant
+zeroes. For example, for a signal period of 2.5 seconds, the value
+populated for the attribute signal period must be 2.5 and not 02.50.
+
+==== Mandatory and conditional attributes
+
+Some attributes are mandatory and must be populated for a given feature
+type. There are some reasons why attribute values may be considered
+mandatory:
+
+* They are fundamental to the definition of a feature;
+* They are required to support correct portrayal of a feature instance;
+* Certain features make no logical sense without specific attributes;
+* Some attributes are required for safety of navigation.
+
+Within this document, mandatory attributes (multiplicity 1,1; 1,n
+(stem:[n > 1]); or 1,++*++) are identified in the description of each
+feature type.
+
+==== Missing attribute values
+
+Where a value of a mandatory attribute is not known, the attribute
+must be populated with an empty (null) value. Where the value of a
+non-mandatory attribute is not known, the attribute should not be
+included in the dataset. In a base dataset, when an attribute code
+is present but the attribute value is missing, it means that the producer
+wishes to indicate that this attribute value is unknown.
+
+In an Update dataset, when an attribute code is present but the attribute
+value is missing it means:
+
+* That the value of this attribute is to be replaced by an empty (null)
+value if it was present in the original dataset; or
+* That an empty (null) value is to be inserted if the attribute was
+not present in the original dataset.
+
+==== Textual information
+
+The complex attribute information contains information as text using
+the sub-attribute text, or the name of an external file using the
+sub-attribute file reference.
+
+Character strings contained in information sub-attribute text must
+be UTF-8 character encoding. Information should generally be used
+for short notes or to transfer information which cannot be encoded
+by other attributes, or to give more detailed information about a
+feature. Text populated in text must not exceed 300 characters.
+
+The exchange language for textual information should be English, therefore
+it is not required to populate the sub-attribute language for an English
+version of textual information. Languages other than English may be
+used as a supplementary option, for which language must be populated
+with an appropriate value to indicate the language. Generally this
+means, when a national language is used in the textual attributes,
+the English translation must also exist.

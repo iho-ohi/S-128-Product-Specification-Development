@@ -1,0 +1,119 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of languages</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Alpha-3 code</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of languages - Part 2: Alpha-3 code</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de langue</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Code alpha-3</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de langue - Partie 2: Code alpha-3</title>
+  <uri type="src">https://www.iso.org/standard/4767.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4767.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 639-2</docidentifier>
+  <docidentifier type="iso-reference">ISO 639-2(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:639:-2:stage-95.99</docidentifier>
+  <docnumber>639</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>1998</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 639:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 639:2023</docidentifier>
+      <date type="circulated">
+        <on>2023-11-08</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of languages</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Alpha-3 code</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of languages - Part 2: Alpha-3 code</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de langue</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Code alpha-3</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de langue - Partie 2: Code alpha-3</title>
+      <uri type="src">https://www.iso.org/standard/4767.html</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4767.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 639-2:1998</docidentifier>
+      <docidentifier type="iso-reference">ISO 639-2:1998(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:639:-2:stage-95.99</docidentifier>
+      <docnumber>639</docnumber>
+      <date type="published">
+        <on>1998-11</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="fr" script="Latn">
+La présente partie de l'ISO 639 fournit deux jeux de codets à trois caractères pour la représentation des noms de langue, l'un destiné à des applications en terminologie, l'autre destiné à des applications bibliographiques. Les deux jeux de codets sont les mêmes, excepté pour vingt-cinq langues qui ont des codets différents à cause du critère utilisé pour les former . À l'origine, des codets de langues ont été créés à l'usage des bibliothèques, des services documentaires et des éditeurs, pour indiquer la langue dans l'échange d'information, particulièrement entre des systèmes informatisés. Ces codets ont été utilisés largement à l'intérieur de la communauté des bibliothèques, et ils peuvent être adoptés pour toute application qui requiert l'expression de la langue sous forme codée, en terminologie ou en lexicographie. Le code alpha-2 a été créé pour un usage pratique pour la plupart des grandes langues du monde, langues qui sont les plus souvent représentées dans le corpus de la littérature mondiale. De nouveaux codets sont créés quand il devient évident qu'il existe un corpus significatif de littérature dans une langue particulière. Les langages créés pour être utilisés exclusivement par des machines, comme les langages de programmation, ne sont pas inclus dans le présent code.
+</abstract>
+      <status>
+        <stage>95</stage>
+        <substage>99</substage>
+      </status>
+      <copyright>
+        <from>1998</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 639:2023</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 639:2023</docidentifier>
+          <date type="circulated">
+            <on>2023-11-08</on>
+          </date>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="37" type="TC" identifier="ISO/TC 37/SC 2">Terminology workflow and language coding</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>01.140.20</code>
+      <text>Information sciences</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>4767</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

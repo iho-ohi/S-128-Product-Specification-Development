@@ -1,0 +1,56 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="main" format="text/plain">URN Syntax</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc2141</uri>
+  <docidentifier type="IETF" primary="true">RFC 2141</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC2141</docidentifier>
+  <docnumber>RFC2141</docnumber>
+  <date type="published">
+    <on>1997-05</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">R. Moats</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>RFC Publisher</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="authorizer"/>
+    <organization>
+      <name>RFC Series</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p>Uniform Resource Names (URNs) are intended to serve as persistent, location-independent, resource identifiers. This document sets forward the canonical syntax for URNs. [STANDARDS-TRACK]</p>
+  </abstract>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC8141</formattedref>
+      <docidentifier type="IETF" primary="true">RFC8141</docidentifier>
+    </bibitem>
+  </relation>
+  <series>
+    <title format="text/plain">RFC</title>
+    <number>2141</number>
+  </series>
+  <series type="stream">
+    <title format="text/plain">IETF</title>
+  </series>
+  <keyword>URN-SYNTAX</keyword>
+  <keyword>Uniform</keyword>
+  <keyword>Resource</keyword>
+  <keyword>Names</keyword>
+  <ext schema-version="v1.0.1">
+    <stream>IETF</stream>
+  </ext>
+</bibdata>

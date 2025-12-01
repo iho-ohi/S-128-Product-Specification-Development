@@ -1,0 +1,132 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Data product specifications</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Data product specifications</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Spécifications de contenu informationnel</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Spécifications de contenu informationnel</title>
+  <uri type="src">https://www.iso.org/standard/85092.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:85092:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/08/50/85092.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19131</docidentifier>
+  <docidentifier type="iso-reference">ISO 19131(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19131:stage-60.60</docidentifier>
+  <docnumber>19131</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19131:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19131:2007</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19131:2007/Amd 1:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19131:2007/Amd 1:2011</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Data product specifications</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Data product specifications</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Spécifications de contenu informationnel</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Spécifications de contenu informationnel</title>
+      <uri type="src">https://www.iso.org/standard/85092.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:85092:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/08/50/85092.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19131:2022</docidentifier>
+      <docidentifier type="iso-reference">ISO 19131:2022(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19131:stage-60.60</docidentifier>
+      <docnumber>19131</docnumber>
+      <date type="published">
+        <on>2022-11</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document describes requirements for the specification of geographic data products, based upon the concepts of other International Standards in the ISO 19100 family of standards. It also provides guidance in the creation of data product specifications, so that they can be easily understood and fit for their intended purpose.
+This document specifies XML encoding of data product specifications.
+This document provides OWL representation of the underlying UML model. See Annex F.
+This document is intended for use by data producers, data providers, service providers and potential users of data products.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le présent document décrit les exigences relatives à la spécification de contenu informationnel géographique, en s'appuyant sur les concepts présentés dans les autres Normes internationales de la série de normes ISO 19100. Il fournit également des recommandations en matière de création de spécifications de contenu informationnel, de sorte que ces contenus puissent être compris et utilisés dans le cadre pour lequel ils ont été prévus.
+Le présent document spécifie le codage XML des spécifications de contenu informationnel.
+Le présent document fournit une représentation OWL du modèle UML sous-jacent. Voir Annexe F.
+Le présent document est destiné aux producteurs de données, aux fournisseurs de données, aux prestataires de services et aux utilisateurs potentiels de contenu informationnel.</abstract>
+      <status>
+        <stage>60</stage>
+        <substage>60</substage>
+      </status>
+      <copyright>
+        <from>2022</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19131:2007</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19131:2007</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19131:2007/Amd 1:2011</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19131:2007/Amd 1:2011</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>85092</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

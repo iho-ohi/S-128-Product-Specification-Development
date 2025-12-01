@@ -1,0 +1,64 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="main" format="text/plain" language="en">IHO Universal Hydrographic Data Model</title>
+  <title type="main" format="text/plain" language="fr">Modèle universel de données hydrographiques de l’OHI</title>
+  <uri type="pdf">https://iho.int/uploads/user/pubs/standards/s-100/S-100_Version_1.0.0.pdf</uri>
+  <docidentifier type="IHO" primary="true">S-100</docidentifier>
+  <docnumber>100</docnumber>
+  <date type="published">
+    <from>2010-01-01</from>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO</abbreviation>
+      <uri>www.iho.int</uri>
+    </organization>
+  </contributor>
+  <edition>1.0.0</edition>
+  <version>
+    <revision-date>2010-01-01</revision-date>
+  </version>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>in-force</stage>
+  </status>
+  <copyright>
+    <from>2010</from>
+    <owner>
+      <organization>
+        <name>International Hydrographic Organization</name>
+        <abbreviation>IHO</abbreviation>
+        <uri>www.iho.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="main">
+    <title type="original" format="text/plain">
+      <variant language="en" script="Latn">Standards and Specifications</variant>
+      <variant language="fr" script="Latn">Normes et Spécifications</variant>
+    </title>
+    <place>Monaco</place>
+    <organization>International Hydrographic Organization</organization>
+    <number>S</number>
+  </series>
+  <place>Monaco</place>
+  <validity>
+    <validityBegins>2010-01-01 00:00</validityBegins>
+  </validity>
+  <ext schema-version="v1.0.0">
+    <editorialgroup>
+      <committee>
+        <name>Hydrographic Services and Standards Committee</name>
+        <abbreviation>HSSC</abbreviation>
+        <workgroup>
+          <name>S-100 Working Group</name>
+          <abbreviation>S-100WG</abbreviation>
+        </workgroup>
+      </committee>
+    </editorialgroup>
+  </ext>
+</bibdata>

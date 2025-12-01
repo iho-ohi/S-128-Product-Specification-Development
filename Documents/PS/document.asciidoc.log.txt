@@ -1,0 +1,149 @@
+= Catalogue of Nautical Products
+:series: S
+:docnumber: 128
+:doctype: standard
+:edition: 2.0.0
+:language: en
+:published-date: 2025-03-01
+:copyright-year: 2025
+:status: in-force
+:committee: ircc
+:workgroup: ibsc
+:mn-document-class: iho
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:imagesdir: images
+
+
+[.preface]
+== metanorma-extension
+
+[.boilerplate]
+--
+Changes to this Product Specification are coordinated by the IHO Nautical
+Information Provision Working Group (NIPWG). New editions will be
+made available via the IHO web site. Maintenance of the Product Specification
+shall conform to IHO Technical Resolution 2/2007 (as amended).
+--
+
+=== document history
+
+[source,yaml]
+----
+- date:
+  - type: updated
+    value: 2018-12-28
+  edition: "0.0.1"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: First Draft
+- date:
+  - type: updated
+    value: 2019-11-20
+  edition: "0.7.5"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Working Draft
+- date:
+  - type: published
+    value: 2022-03-11
+  edition: "1.0.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Release 1.0.0
+- date:
+  - type: published
+    value: 2022-05
+  edition: "1.0.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      subdivision: Hydrographic Services and Standards Committee
+      abbreviation: HSSC
+  amend:
+    - description: Initial published version for evaluation and testing.
+- date:
+  - type: updated
+    value: 2023-10
+  edition: "1.1.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Updated to align with S-100 Edition 5.0.0
+- date:
+  - type: updated
+    value: 2024-02
+  edition: "1.2.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Revised Data Modeling
+- date:
+  - type: updated
+    value: 2024-03
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Updated to align with S-100 Edition 5.2.0 and Applied feedback from NIPWG
+- date:
+  - type: updated
+    value: 2024-07
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: Korea Hydrographic and Oceanographic Agency
+      abbreviation: KHOA
+  amend:
+    - description: Applied feedback from NIPWG
+- date:
+  - type: updated
+    value: 2025-05
+  edition: "2.0.0"
+  contributor:
+  - organization:
+      name: International Hydrographic Organization
+      abbreviation: IHO CL xx/2025
+  amend:
+    - description: First operational version of S-128
+----
+
+#include::sections/01-overview.adoc[]
+
+#include::sections/02-specification-scopes.adoc[]
+
+#include::sections/03-dataset-identification.adoc[]
+
+#include::sections/04-data-content.adoc[]
+
+#include::sections/05-crs.adoc[]
+
+#include::sections/06-data-quality.adoc[]
+
+#include::sections/07-data-capture.adoc[]
+
+#include::sections/08-maintenance.adoc[]
+
+#include::sections/09-portrayal.adoc[]
+
+#include::sections/10-encoding.adoc[]
+
+#include::sections/11-data-product-delivery.adoc[]
+
+#include::sections/12-metadata.adoc[]

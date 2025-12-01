@@ -406,3 +406,6 @@ Gemfile.lock
 /_site
 /_files
 /relaton
+*.log.txt
+Documents/*/document.err.html
+Documents/*/document.xml.abort

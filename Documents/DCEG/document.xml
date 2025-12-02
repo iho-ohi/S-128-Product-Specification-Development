@@ -118,15 +118,15 @@
 </description></amend></bibitem></relation><series type="main">
 <title>Standards and Specifications</title>
 <abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>128</docnumber></structuredidentifier></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
-<note><p>Changes to this Product Specification are coordinated by the IHO Nautical
+<note id="_085ad905-c021-b97f-9dbf-6430dfb3de6b" type="boilerplate"><p id="_45bc0589-ed56-a16f-f109-ae9eb20a2c88">Changes to this Product Specification are coordinated by the IHO Nautical
 Information Provision Working Group (NIPWG). New editions will be
 made available via the IHO web site. Maintenance of the Product Specification
 shall conform to IHO Technical Resolution 2/2007 (as amended).</p>
 </note>
 
-<clause>
-<title>document history</title>
-<sourcecode><body>- date:
+<clause id="_7858087a-2999-9a86-d5dd-d33eef45df24" obligation="normative">
+<title id="_590c01ce-1222-d27a-9f50-f66ad3f8ecaa">document history</title>
+<sourcecode id="_e34f1b39-8390-2673-fb60-969bef558f13" lang="yaml"><body>- date:
   - type: published
     value: 2022-03-11
   edition: "1.0.0"
@@ -590,7 +590,7 @@ shall conform to IHO Technical Resolution 2/2007 (as amended).</p>
 
 <p id="_52d7621c-13da-521b-a1b4-a615329eb97b">Within this document, mandatory attributes (multiplicity 1,1; 1,n
 (<stem block="false" type="MathML"><math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mstyle>
+  <mstyle displaystyle="false">
     <mi>n</mi>
     <mo>&gt;</mo>
     <mn>1</mn>

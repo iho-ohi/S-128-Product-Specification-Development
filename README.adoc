@@ -8,6 +8,8 @@ This document is available in its rendered forms here:
 
 * https://iho-ohi.github.io/S-128-Product-Specification/[IHO S-128 (HTML)]
 
+Metanorma: https://github.com/iho-ohi/S-128-Product-Specification-Development/blob/main/Documents/PS/document.html[Product Specification]
+
 == Purpose
 
 This is the IHO repository for developing the next edition of

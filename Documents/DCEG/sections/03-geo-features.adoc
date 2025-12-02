@@ -1,0 +1,498 @@
+
+== Geo Features
+
+=== Catalogue element
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# An element within a catalogue of
+elements.
+8+h| [underline]#S-128 Geo Feature:# CatalogueElement
+8+h| [underline]#Super Type:#
+8+h| [underline]#Primitives:# Surface
+
+3+| _Real World_
+
+2+| _Paper Chart Symbol_
+
+3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| agency responsible for production | 2+| | TE | 0,1
+
+3+| catalogue element classification |
+2+| 1: ENC +
+2: bathymetric chart +
+3: water level product +
+4: surface current product +
+5: MSI service +
+6: AtoN information +
+7: catalogue service +
+8: routing service +
+9: ice information +
+10: routing information +
+11: special purpose chart +
+12: nautical publication +
+13: printed nautical chart
+| EN | 1,*
+
+3+| catalogue element identifier | 2+| | UN | 0,1
+
+3+| classification | 2+| | TE | 0,1
+
+3+| IMO maritime service |
+2+| 1: vessel traffic service +
+2: aids to navigation service +
+3: reserved for future use +
+4: port support service +
+5: maritime safety information service +
+6: pilotage service +
+7: tug service +
+8: vessel shore reporting +
+9: telemedical assistance service +
+10: maritime assistance service +
+11: nautical chart service +
+12: nautical publications service +
+13: ice navigation service +
+14: meteorological information service +
+15: real-time hydrographic and environmental information services +
+16: search and rescue service
+| EN | 0,*
+
+3+| not for navigation | 2+| | BO     | 1,1
+3+| feature name       | 2+| | C      | 0,*
+3+| language           | 2+| | (S) TE | 1,1
+3+| name               | 2+| | (S) TE | 1,1
+
+3+| name usage |
+2+| 1: default name display +
+2 : alternate name display
+| (S) EN | 0,1
+
+3+| information         | 2+| | C     | 0,*
+3+| file locator        | 2+| | (S)TE | 0,1
+3+| file reference      | 2+| | (S)TE | 0,1
+3+| headline            | 2+| | (S)TE | 0,1
+3+| language            | 2+| | (S)TE | 0,1
+3+| text                | 2+| | (S)TE | 0,*
+3+| online resource     | 2+| | C     | 0,1
+3+| application profile | 2+| | (S)TE | 0,1
+3+| linkage             | 2+| | (S)TE | 1,1
+3+| name of resource    | 2+| | (S)TE | 0,1
+3+| online description  | 2+| | (S)TE | 0,1
+3+| protocol            | 2+| | (S)TE | 0,1
+3+| protocol request    | 2+| | (S)TE | 0,1
+3+| source indication   | 2+| | C     | 0,1
+
+3+| category of authority |
+2+| 2: border control  +
+3: police +
+4: port +
+5: immigration +
+6: health +
+7: coast guard +
+8: agricultural +
+9: military +
+10: private company  +
+11: maritime police  +
+12: environmental +
+13: fishery +
+14: finance +
+15: maritime +
+16: customs +
+17: hydrographic office +
+18: RENC +
+19 : VARs
+| (S)EN | 0,1
+
+3+| country name  |          2+| | (S)TE | 0,1
+3+| reported date | (SORDAT) 2+| | (S)TD | 0,1
+3+| source        |          2+| | (S)TE | 0,1
+
+3+| source type |
+2+| 1: laworregulation +
+2: official publication +
+7: mariner report, confirmed +
+8: mariner report, notconfirmed +
+9: industry publications andreports +
+10: remotelysensed images +
+11: photographs +
+12: products issued by HOservice +
+13: newsmedia +
+14: traffic data +
+15: maritime
+| (S)EN | 0,1
+
+3+| feature name | 2+| | (S)C   | 0,*
+3+| language     | 2+| | (S) TE | 1,1
+3+| name         | 2+| | (S) TE | 1,1
+
+3+| name usage |
+2+| 1: default name display +
+2 : alternate name display
+| (S) EN | 0,1
+
+3+| support file                | 2+|                   | C     | 0,*
+3+| comment                     | 2+|                   | (S)TE | 0,1
+3+| digital signature reference | 2+| 8: ECDSA-384-SHA2 | (S)EN | 1,1
+3+| digital signature value     | 2+|                   | (S)TE | 0,1
+3+| edition number              | 2+|                   | (S)TE | 0,1
+3+| file locator                | 2+|                   | (S)TE | 1,1
+3+| file name                   | 2+|                   | (S)TE | 1,1
+3+| issue date                  | 2+|                   | (S)DA | 0,1
+3+| other data type description | 2+|                   | (S)TE | 0,1
+
+3+| support file format |
+2+| 1: ASCII +
+2: JPEG2000 +
+3: HTML +
+4: XML +
+5: XSLT +
+6: VIDEO +
+7: TIFF +
+8: PDF/A or U/A +
+9: LUA +
+100: other
+| (S)EN | 1,1
+
+3+| support file purpose |
+2+| 1: new +
+2: replacement +
+3: deletion
+| (S)EN | 1,1
+
+3+| default locale             |          2+| | (S)C   | 1,1
+3+| character encoding         |          2+| | (S) TE | 1,1
+3+| country name               |          2+| | (S) TE | 1,1
+3+| language                   |          2+| | (S) TE | 0,1
+3+| support file specification |          2+| | (S)C   | 1,1
+3+| edition date               |          2+| | (S) DA | 1,1
+3+| name                       |          2+| | (S) TE | 1,1
+3+| version                    |          2+| | (S)TE  | 1,1
+3+| time interval of product   |          2+| | C      | 0,1
+3+| expiration date            |          2+| | (S) DA | 0,1
+3+| issue date                 |          2+| | (S) DA | 1,1
+3+| issuance cycle             |          2+| | (S) C  | 0,1
+3+| periodic date range        |          2+| | (S) C  | 0,1
+3+| date end                   | (SORDAT) 2+| | (S) TD | 1,1
+3+| date start                 | (SORDAT) 2+| | (S) TD | 1,1
+3+| time interval of cycle     |          2+| | (S) C  | 0,1
+
+3+| type of time interval unit |
+2+| 1: hour +
+2: day +
+3: month +
+4 : year
+| (S) EN | 1,*
+
+3+| value of time | 2+| | (S) IN | 1,1
+
+8+a|
+[underline]#NIT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| [underline]#Feature/Information Associations#
+.2+h| Type
+.2+h| Association Name
+6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+
+| Association | Product Mapping      | *CatalogueElement*                | theSource           | 1,1 | *CatalogueElement* | theReference        | 0,*
+| Association | Carriage Requirement | *IndicationOfCarriageRequirement* | theRequirement      | 0,* | *CatalogueElement* | theElement          | 1,*
+| Association | Price Of Element     | *PriceInformation*                | thePriceInformation | 0,* | *CatalogueElement* | theCatalogueElement | 0,1
+| Association | Product Package      | *CatalogueSectionHeader*          | elementContainer    | 1,* | *CatalogueElement* | theCatalogueElement | 1,1
+|===
+
+=== Navigational product
+
+[cols="8",options="unnumbered"]
+|===
+8+| [underline]#IHO Definition:# A physical or electronic product,
+that is primarily intended for navigation.
+8+h| [underline]#S-128 Geo Feature:# NavigationalProduct
+8+h| [underline]#Super Type:# CatalogueElement
+8+h| [underline]#Primitives:# Surface
+
+3+| _Real World_
+2+| _Paper Chart Symbol_
+3+| _ECDIS Symbol_
+
+3+h| S-128 Attribute h| S-57 Acronym 2+h| Allowable Encoding Value h| Type h| Multiplicity
+
+3+| approximate grid resolution | 2+| | RE | 0,*
+3+| compilation scale | 2+| | IN | 0,*
+
+3+| distribution status |
+2+| 1: production +
+2: withdrawn
+| EN | 0,1
+
+3+| edition number        | 2+| | IN | 0,1
+3+| maximum display scale | 2+| | IN | 0,1
+3+| minimum display scale | 2+| | IN | 0,1
+
+3+| navigation purpose |
+2+| 1: port +
+2: transit +
+3: overwiew
+| EN | 0,3
+
+3+| optimum display scale   | 2+| | IN | 0,1
+3+| original product number | 2+| | TE | 0,1
+3+| producer nation         | 2+| | UN | 0,1
+3+| product number          | 2+| | TE | 0,1
+
+3+| specific usage |
+2+| 1: navigational purpose overview +
+2: navigational purpose general +
+3: navigational purpose coastal +
+4: navigational purpose approach +
+5: navigational purpose harbour +
+6: navigational purpose berthing
+| EN | 0,1
+
+3+| update date   | 2+| | DA | 0,1
+3+| update number | 2+| | IN | 0,1
+
+3+| horizontal datum EPSG code |
+2+| 3395: EPSG3395 (World Mercator) +
+3857: EPSG3857 (Pseudo-Mercator) +
+4326: EPSG4326 (WGS84)
+| EN | 0,1
+
+3+| vertical datum |
+2+| 1: mean low water springs +
+2: mean lower low water springs +
+3: mean sea level +
+4: lowest low water +
+5: mean low water +
+6: lowest low water springs +
+7: approximate mean low water springs +
+8: indian spring low water +
+9: low water springs +
+10: approximate lowest astronomical tide +
+11: nearly lowest low water +
+12: mean lower low water +
+13: low water +
+14: approximate mean low water +
+15: approximate mean lower low water +
+16: mean high water +
+17: mean high water springs +
+18: high water +
+19: approximate mean sea level +
+20: high water springs +
+21: mean higher high water +
+22: equinoctial spring low water +
+23: lowest astronomical tide +
+24: local datum +
+25: international Great Lakes datum  +
+198526: mean water level +
+27: lower low water large tide +
+28: higher high water large tide +
+29: nearly highest high water +
+30: highest astronomical tide +
+31: local low water reference level +
+32: local high water reference level +
+33: local mean water reference level +
+34: equivalent height of water (german GlW) +
+35: highest shipping height of water (german HSW) +
+36: reference low water level according to danube commission +
+37: highest shipping height of water according to danube commission +
+38: dutch river low water reference level (OLR) +
+39: russian project water level +
+40: russian normal backwater level +
+41: ohio river datum +
+43: dutch high water reference level +
+44: baltic sea chart datum 2000
+45: dutch estuary low water reference level (OLW) +
+46: international great lakes datum  +
+202047: sea floor +
+48: sea surface +
+49: hydrographic zero
+| EN | 0,1
+
+8+a|
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+8+h| Feature/Information associations
+.2+h| Type .2+h| Association Name 6+h| Association Ends
+h| Class h| Role h| Mult h| Class h| Role h| Mult
+| Association | Correlated | *NavigationalProduct* | theMain | 0,* | *NavigationalProduct* | thePanel | 0,*
+
+|===
+
+=== Electronic product
+
+[cols="5",options="unnumbered"]
+|===
+5+| [underline]#IHO Definition:# Electronic navigation product.
+5+h| [underline]#S-128 Geo Feature:# ElectronicProduct
+5+h| [underline]#Super Type:# NavigationalProduct
+5+h| [underline]#Primitives:# Surface
+
+| _Real World_
+2+| _Paper Chart Symbol_
+2+| _ECDIS Symbol_
+
+h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multiplicity
+
+| compression flag | | | BO | 0,1
+| dataset name     | | | TE | 0,1
+| issue date       | | | DA | 1,1
+| issue time       | | | DA | 0,1
+
+| type of product format |
+| 1: GML +
+2: ISO/IEC8211 +
+3: PDF +
+4: HTML +
+5: ePub +
+6: paper +
+7: HDF-5 +
+8: BSB +
+9: GeoTiff +
+10: application +
+11: XML +
+12: PNG
+| EN | 1,1
+
+| product specification | | | C      | 0,1
+| edition date          | | | (S) DA | 1,1
+| ISSN                  | | | (S) TE | 0,1
+| name                  | | | (S) TE | 1,1
+| version               | | | (S) TE | 1,1
+
+5+a|
+
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+* Issue Date in S-57 and S-101 ENCs defines the date when the ENC
+cell edition was issued. The issue date must be greater than the previous
+issue date of the dataset.
+
+[underline]#Distinction:#
+
+|===
+
+=== Physical product
+
+[cols="5",options="unnumbered"]
+|===
+5+| [underline]#IHO Definition:# A product printed on paper.
+5+h| [underline]#S-128 Geo Feature:# PhysicalProduct
+5+h| [underline]#Super Type:# NavigationalProduct
+5+h| [underline]#Primitives:# Surface
+
+| _Real World_
+2+| _Paper Chart Symbol_
+2+| _ECDIS Symbol_
+
+h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multiplicity
+
+| edition date             | | | DA     | 1,1
+| ISBN                     | | | TE     | 0,1
+| publication number       | | | TE     | 0,1
+| reference to NM          | | | C      | 0,1
+| publication date         | | | DA     | 1,1
+| week of year             | | | (S) C  | 0,1
+| week number              | | | (S) IN | 1,1
+| year number              | | | (S) IN | 1,1
+| type of physical product | | | TE     | 0,1
+| print information        | | | C      | 0,1
+| print agency             | | | (S) TE | 0,1
+| print nation             | | | (S) TE | 0,1
+| reprint edition          | | | (S) TE | 0,1
+| reprint nation           | | | (S) TE | 0,1
+| print size               | | | (S) C  | 1,1
+
+| ISO 216 |
+| 1: a0 +
+2: a1 +
+3: a2 +
+4: a3 +
+5: a4 +
+6: a5 +
+7: a6 +
+8: a7
+| (S) EN | 0,1
+
+| custom paper size | | | (S) C  | 0,1
+| paper length      | | | (S) RE | 1,1
+| paper width       | | | (S) RE | 1,1
+
+5+a|
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+|===
+
+=== S100 service
+
+[cols="5",options="unnumbered"]
+|===
+5+| [underline]#IHO Definition:# A service that makes use of S-100
+based product specifications to support data transfer.
+5+h| [underline]#S-128 Geo Feature:# S100Service
+5+h| [underline]#Super Type:# CatalogueElement
+5+h| [underline]#Primitives:# Surface
+
+| _Real World_ 2+| _Paper Chart Symbol_ 2+| _ECDIS Symbol_
+
+h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multiplicity
+
+| compression flag | | | BO | 0,1
+| service name     | | | TE | 0,1
+
+| service status |
+| 1: provisional +
+2: released +
+3: deprecated +
+4: deleted
+| EN | 0,1
+
+| type of product format |
+| 1: GML +
+2: ISO/IEC 8211 +
+3: PDF +
+4: HTML +
+5: ePub +
+6: paper +
+7: HDF-5 +
+8: BSB +
+9: GeoTiff +
+10: application +
+11: XML +
+12: PNG
+| EN | 1,1
+
+| service specification | | | C      | 0,1
+| edition date          | | | (S) DA | 1,1
+| name                  | | | (S) TE | 1,1
+| version               | | | (S) TE | 1,1
+| product specification | | | C      | 0,1
+| edition date          | | | (S) DA | 1,1
+| ISSN                  | | | (S) TE | 0,1
+| name                  | | | (S) TE | 1,1
+| version               | | | (S) TE | 1,1
+
+5+a|
+[underline]#INT 1 Reference:#
+
+[underline]#Remarks:#
+
+[underline]#Distinction:#
+
+|===

@@ -1,0 +1,120 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Schema for coverage geometry and functions</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Schema for coverage geometry and functions</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Schéma de la géométrie et des fonctions de couverture</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Schéma de la géométrie et des fonctions de couverture</title>
+  <uri type="src">https://www.iso.org/standard/40121.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40121.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19123</docidentifier>
+  <docidentifier type="iso-reference">ISO 19123(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19123:stage-95.99</docidentifier>
+  <docnumber>19123</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19123-1:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19123-1:2023</docidentifier>
+      <date type="circulated">
+        <on>2023-06-21</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Schema for coverage geometry and functions</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Schema for coverage geometry and functions</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Schéma de la géométrie et des fonctions de couverture</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Schéma de la géométrie et des fonctions de couverture</title>
+      <uri type="src">https://www.iso.org/standard/40121.html</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40121.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19123:2005</docidentifier>
+      <docidentifier type="iso-reference">ISO 19123:2005(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19123:stage-95.99</docidentifier>
+      <docnumber>19123</docnumber>
+      <date type="published">
+        <on>2005-08</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19123:2005 defines a conceptual schema for the spatial characteristics of coverages. Coverages support mapping from a spatial, temporal or spatiotemporal domain to feature attribute values where feature attribute types are common to all geographic positions within the domain. A coverage domain consists of a collection of direct positions in a coordinate space that may be defined in terms of up to three spatial dimensions as well as a temporal dimension. Examples of coverages include rasters, triangulated irregular networks, point coverages and polygon coverages. Coverages are the prevailing data structures in a number of application areas, such as remote sensing, meteorology and mapping of bathymetry, elevation, soil and vegetation. 
+ISO 19123:2005 defines the relationship between the domain of a coverage and an associated attribute range. The characteristics of the spatial domain are defined whereas the characteristics of the attribute range are not part of ISO 19123:2005.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L'ISO 19123:2005 définit un schéma conceptuel des caractéristiques spatiales des couvertures. Les couvertures servent de base à la cartographie réalisée à partir d'un domaine spatial, temporel ou spatio-emporel permettant ainsi d'obtenir les valeurs attributaires d'entités dont les types d'attributs sont communs à toutes les positions géographiques existant dans le domaine. Un domaine de couverture se compose d'un ensemble de positions directes dans un espace de coordonnées qui peut être défini comme tridimensionnel ou bien temporel. Parmi les exemples de couverture, citons les matrices, les réseaux irréguliers de triangles, les couvertures de points et les couvertures de polygones. Les couvertures sont les structures de données courantes dans divers champs d'application, notamment la télédétection, la météorologie, la bathymétrie, l'altitude, le sol et la végétation.
+L'ISO 19123:2005 définit la relation entre le domaine d'une couverture et une plage d'attributs associée. Les caractéristiques du domaine spatial sont définies, mais les caractéristiques des attributs ne font pas partie du domaine d'application de l'ISO 19123:2005.</abstract>
+      <status>
+        <stage>95</stage>
+        <substage>99</substage>
+      </status>
+      <copyright>
+        <from>2005</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19123-1:2023</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19123-1:2023</docidentifier>
+          <date type="circulated">
+            <on>2023-06-21</on>
+          </date>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>40121</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

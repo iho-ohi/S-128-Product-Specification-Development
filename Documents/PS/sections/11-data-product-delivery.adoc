@@ -1,0 +1,285 @@
+
+[[sec_11]]
+== Data Product Delivery
+
+[[sec_11.1]]
+=== Data product delivery information
+
+This data Product Specification defines GML as the primary format
+in which CNP data products are delivered. The delivery format is described
+by the following items (from <<ISO_19131_2008>>) format name, version,
+specification, language, and character set.
+
+++*++ GML is an XML encoding for the transport and storage of geographic
+information, including both the geometry and the properties of geographic
+features, between distributed systems. The XML Schema for the GML
+Application Schema is provided in a Schema document S128.xsd which
+imports other Schema(s) defining common types. (All files are available
+on the S-100 distribution site https://github.com/IHO-S100WG).
+Feature instances shall validate against S128.xsd and conform to all
+other requirements specified in this data Product Specification including
+all constraints not captured in the XML Schema document.
+
+[[sec_11.1.1]]
+==== Dataset loading
+
+Datasets must always be loaded in the order of base dataset first,
+then update datasets in the corrected sequential order. Systems are
+not to load updates out of order, for example if update 1-5 is present
+and update 6 is missing, update 7 must not be loaded.
+
+[[sec_11.1.2]]
+==== New Editions
+
+When a New Edition of a dataset is received, the system must replace
+the previous Edition, along with any updates, with the New Edition
+of the dataset. Loading of subsequent updates follows the same rule
+as above.
+
+[[sec_11.1.3]]
+==== Update
+
+When an update to a dataset is received by the system it must add
+new features or replace definitions but it's not possible to delete
+features. For full details of the updating procedure please refer
+to S-100 Edition 5.2, Part 10b, clause 10b-11.5 Updating.
+
+Data servers can create a single S-128 catalogue per S-100 product
+type, for example an S-128 for S-101 and an S-128 for S-102, or a
+mixed S-128 catalogue file with multiple products. When an S-128 is
+created for one product type, the S-128 should not alter the revision
+status of the other products in the ECDIS.
+
+Not every S-100 Exchange Set will contain an S-128 file. If an S-128
+file has not been received and updated within 4 weeks of the last
+S-128 file loaded, the ECDIS update status of all products must be
+set to 'Not Up To Date'.
+
+[[sec_11.2]]
+=== Dataset
+
+[[sec_11.2.1]]
+==== Datasets
+
+A dataset is a grouping of features, attributes, geometry, and metadata
+which comprises a specific coverage. The types of CNP datasets produces
+and contained within an Exchange Set are listed in <<table_11-1>>
+below:
+
+[[table_11-1]]
+.CNP dataset types
+[cols="67,136"]
+|===
+h| Dataset h| Explanations
+
+| New dataset (base dataset)
+| No data has previously been produced for this area; or there is
+a significant change from the existing, for example, coverage or extent.
+a| New Edition of a dataset
+(base dataset)
+| No data has previously been produced for this area. Each New Edition
+of a dataset must have the same name as the dataset that it replaces
+and should have the same spatial extents. The Edition number in the
+dataset discovery metadata shall increment up by one from the previous
+Edition.
+
+| Update dataset
+| A delta change of the latest Edition of a dataset. If there is more
+than one update dataset, the subsequent update will be a delta of
+the base dataset +
++ earlier update datasets.
+
+| Re-issue (base dataset)
+| Including all the updates applied to the original dataset up to
+the date of the reissue. A Re-issue does not contain any new information
+additional to that previously issued by updates.
+| Cancellation
+a| Indicates the dataset or Catalogue should no longer be used and
+can be deleted.
+
+For a cancellation, set:
+
+* fileName = fileName of the cancelled dataset
+* purpose = cancellation
+* issueDate and issueTime = the issue date and time of the cancellation
+* replacedData = true if and only if the cancelled dataset is replaced
+by another dataset; otherwise false. This attribute must be populated
+for a cancellation.
+* dataReplacement = fileName of the replacement dataset (if and only
+if the cancelled dataset is replaced by another dataset). This attribute
+must be populated when replacedData = true.
+* all other mandatory attributes to the same values as in the discovery
+metadata block for the dataset being cancelled.
+
+|===
+
+Where the limit of a Data Coverage feature for a base CNP dataset
+is to be changed, this must be done by issuing a New Edition of the
+dataset.
+
+[[sec_11.2.1.1]]
+===== Content of update datasets
+
+Update datasets can only contain replacements, deletions, and additions
+of whole feature instances or information instances. This means that
+when a feature or information instance is updated, the new version
+must contain all the attributes of the old instance, including any
+inline spatial attributes (that is, inline geometry), except those
+attributes that are being removed.
+
+An association to an instance of a feature or information type is
+treated as an attribute of the referring instance, and therefore adding
+or deleting an association means the original referring instance must
+be replaced with a new version. The instance at the other end of the
+association needs to be replaced if and only if it contains a reference
+to the first instance.
+
+Spatial objects that are not inline (that is, geometry that is encoded
+as an independent spatial object in the dataset) are treated like
+any other object; that is, it needs to be updated if and only if the
+primitive has changed (for example, a coordinate is updated).
+
+Feature and information type instances are deleted without replacement
+by setting the fixedDateRange.dateEnd attribute of the instance to
+the date of deletion, which will usually be the issue date of the
+update.
+
+[[sec_11.2.1.2]]
+===== Dataset size
+
+CNP datasets should not exceed 100MB.
+
+[[sec_11.2.2]]
+==== Dataset file naming
+
+All dataset files will have unique world-wide file identifiers.
+The file identifier of the dataset should not be used to describe
+the physical content of the file. The dataset file metadata that accompanies
+the file will inform the user of the name and purpose of the file
+(new, replacement or deletion).
+
+In this encoding the dataset files are named according to the specifications
+given below:
+
+128CCCCXXXXXXXXXXXXXX.GML
+
+The main part forms an identifier where:
+
+* The first three characters are always "128" and identify the dataset
+as an S-128 dataset.
+* The next four characters identify the issuing agency by its alphanumeric
+agency code in the S-100 tab of the IHO Producer Code Register in
+the IHO GI Registry (that is, the IHO is identified as "00AA", not "1810").
+* The eighth up to the twenty first characters can be used in any
+way by the producer to provide a unique file name for the dataset.
+The following characters are allowed in the dataset name: A to Z,
+0 to 9 and the special character _ (underscore). The ninth through
+twenty first characters are optional (that is, at least one character
+must be used).
+
+[[sec_11.2.3]]
+==== Update dataset file naming
+
+All Update dataset files will have an identical name to the base dataset,
+aside from the separator and update number sequence.
+
+In this encoding the Update dataset files are named according to the
+specifications given below:
+
+128CCCCXXXXXXXXXXXXXX_XXX.GML
+
+The main part forms an identifier where:
+
+* The first up to the twenty first characters are the same as the
+dataset being updated and therefore conform to the rules described
+in <<sec_11.2.2>>.
+* The next character must be an underscore "_".
+* The next three characters must be numerical (000-999) to indicate
+the place of the update dataset in the update sequence.
+
+[[sec_11.3]]
+=== Support files
+
+Support files contain ancillary textual or graphic information in
+separate (linked to the dataset) files. The following formats are
+allowed for support files:
+
+* Plain text files must contain only general text as defined in this
+Standard. Files must use the UTF- 8 character set encoding.
+* HTML and XML files must contain only text and markup as defined
+in the relevant W3C standards. Files must use the UTF-8 character
+set encoding. References in datasets to HTML and XML support files
+must treat them as text files (that is, they should not be referenced
+using attributes intended for picture files).
+* Picture files must be in the Tagged Image File Format (TIFF) [Edition 6.0].
+
+Support files shall be used for data management and additional information
+to users. Portraying and using support files in ECDIS or other systems
+is not mandatory. <<table_11-2>> describes the constraints on support
+file formats and provides the corresponding file extensions.
+
+[[table_11-2]]
+.Support file formats and extensions
+[cols="75,88,453"]
+|===
+h| File type h| Extension h| Description
+
+.3+| Text | TXT | Plain-text files
+| HTM | HTML files must only include inline or embedded Cascading
+Style Sheet (CSS)information and must not contain embedded Javascript
+or other dynamic content;for example DHTML, Flash etc
+| XML | XML documents must only be included in accordance with guidance
+provided within the Data Classification and Encoding Guide
+(<<S128AnnexA>>) and must not contain embedded Javascript or other dynamic
+content
+| Picture | TIF | BaselineTIFF6.0
+
+|===
+
+[[sec_11.3.1]]
+==== Support file naming
+
+All support files will have unique world-wide file identifiers.
+The file identifier of support information should not be used to describe
+the physical content of the file. The support file metadata that accompanies
+the file will inform the user of the name and purpose of the file
+(new, replacement or deletion).
+
+In this encoding the support files are named according to the specifications
+given below:
+
+128CCCCXXXXXXXXXXXXXX.YYY
+
+The main part forms an identifier where:
+
+* The first three characters are always "128" and identify the dataset
+as an S-128 dataset.
+* The next four characters identify the issuing agency by its alphanumeric
+agency code in the S-100 tab of the IHO Producer Code Register in
+the IHO GI Registry (that is, the IHO is identified as "00AA", not
+"1810"). 
+* The eighth up to the twenty first characters can be used in any
+way by the producer to provide a unique file name for the dataset.
+The following characters are allowed in the dataset name: A to Z,
+0 to 9, and the special character _ (underscore). The ninth through
+twenty first characters are optional (that is, at least one character
+must be used).
+* .YYY -- support file extension. The YYY portion must conform to
+the file format as described in <<table_11-2>> above.
+
+[[sec_11.4]]
+=== Exchange Set
+
+Data which conforms to this product specification must be delivered
+by means of an Exchange Set.
+
+An Exchange Set will consist of one or more CNP datasets. An Exchange
+Set may also include one or more support files containing supplementary
+information encoded in separate files. These are linked to the CNP
+dataset features, by feature and information type attributes defined
+in the Application Schema; for example, *fileReference*. Each Exchange
+Set will include a single (XML) Catalogue file. S-128 Exchange Set
+Catalogues conform to S-100 Edition 5.2.0, Part 17, Figure 17-6 without
+modification, containing discovery metadata for each CNP dataset as
+well as support files. S-128 Exchange Set structure conforms to S-100
+Edition 5.2.0, Part 17, Figure 17-2 without modification.

@@ -1,0 +1,185 @@
+
+== Association Names
+
+=== Carriage requirement
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+
+[underline]#IHO Definition:# A carriage requirement required by SOLAS
+or other regulation.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Element     | *Catalogue Element*                  | 1,*
+                 | The Requirement | *Indication Of Carriage Requirement* | 0,*
+
+|===
+
+=== Distribution details
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+
+[underline]#IHO Definition:# Details related to distribution
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | Catalogue Header | *Catalogue Section Header* | 0,*
+| The Distributor | *Distributor Information* | 0,*
+
+|===
+
+=== Distributor contact
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+
+[underline]#IHO Definition:# Contact information of distributor
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Distributor | *Distributor Information* | 0,1
+| The Contact Details | *Contact Details* | 0,*
+
+|===
+
+=== Product mapping
+
+[cols="5",options="unnumbered"]
+|===
+5+a| [underline]#IHO Definition:# Mapping between traditional products
+and S-100 Products.
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role 2+h| Associated With h| Multiplicity
+.2+| Association | The Source    2+| *Catalogue Element* | 1,1
+                 | The Reference 2+| *Catalogue Element* | 0,*
+
+h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multiplicity
+
+| category of product mapping |
+| 1: higher priority alternative +
+2: lower priority alternative +
+3: recommended enhancement provider +
+4 : recommended enhancement user
+| EN | 1,1
+
+|===
+
+=== Price of element
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+
+[underline]#IHO Definition:# An association of price information to
+a catalogue element
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Catalogue Element | *Catalogue Element* | 0,1
+                 | The Price Information | *Price Information* | 0,*
+
+|===
+
+=== Price of nautical product
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+[underline]#IHO Definition:# The price of a nautical product
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Catalogue Of Nautical Product | *Catalogue Section Header* | 1,1
+                 | The Price Information             | *Price Information*        | 0,*
+
+|===
+
+=== Producer contact
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+[underline]#IHO Definition:# Contact information of producer
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Producer        | *Producer Information* | 0,1
+                 | The Contact Details | *Contact Details*      | 0,*
+|===
+
+=== Production details
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+[underline]#IHO Definition:# Contact information of a producing organization
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | Catalogue Header | *Catalogue Section Header* | 0,1
+                 | The Producer     | *Producer Information*     | 0,*
+|===
+
+=== Product package
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+[underline]#IHO Definition:# A package or distinct set of products
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Catalogue Element | *Catalogue Element*        | 1,1
+                 | Element Container     | *Catalogue Section Header* | 1,*
+|===
+
+=== Correlated
+
+[cols="4",options="unnumbered"]
+|===
+4+a|
+[underline]#IHO Definition:# A supplementary or secondary part of
+the product, which may appear multiple times, offering control or
+display functionalities depending on its configuration
+
+[underline]#Remarks:#
+
+* No remarks.
+
+h| Role Type h| Role h| Associated With h| Multiplicity
+.2+| Association | The Main  | *Navigational Product* | 0,*
+                 | The Panel | *Navigational Product* | 0,*
+|===

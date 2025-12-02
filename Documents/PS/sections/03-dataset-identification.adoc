@@ -1,0 +1,52 @@
+
+[[sec_3]]
+== Dataset Identification
+
+This section describes how to identify data sets that conform to the
+Specification. A dataset that conforms to this Product Specification
+may be identified by its discovery metadata as defined in <<sec_12>>
+of this Specification. The information identifying the data product
+may include the following items from S-100 Edition 5.2.0, clause 11-6
+(adapted from <<ISO_19131_2008>>).
+
+*Title:*:: Catalogue of Nautical Products
+
+*Alternate Title:*:: CNP
+
+*Abstract:*:: Catalogue of Nautical Product (CNP) is a vector dataset
+containing all relevant information regarding Catalogue of Nautical
+Products like nautical charts and nautical publications.
+
+*Geographic Description:*:: *EX_GeographicDescription:* For example,
+official name of region
+
+*Spatial Resolution:*:: MD_Resolution>equivalentScale.denominator
+(integer) or MD_Resolution>levelOfDetail (CharacterString).
+For example, "All scales"
+
+*Purpose:*:: Describing status of nautical products, and to allow
+the producer to exchange Catalogue of Nautical Products with interested
+stakeholders
+
+*Language:*:: English
+
+*Classification:*:: 
++
+--
+Data can be classified as one of the following:
+
+. Unclassified
+. Restricted
+. Confidential
+. Secret
+. Top Secret
+. Sensitive But Unclassified
+. For Official Use Only
+. Protected
+. Limited Distribution
+--
+
+*Spatial Representation Type:*:: MD_SpatialRepresentationTypeCode:
+vector
+
+*Point of Contact:*:: Producing Agency

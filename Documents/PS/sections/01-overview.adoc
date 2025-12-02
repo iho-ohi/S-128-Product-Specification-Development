@@ -1,0 +1,505 @@
+
+[[sec_1]]
+== Overview
+
+[[sec_1.1]]
+=== Introduction
+
+This document has been produced by the IHO Nautical Information Provision
+Working Group (NIPWG) in response to a requirement to produce a data
+product that can be used as a Nautical Publication Information Overlay
+(NPIO) within an Electronic Chart Display and Information System (ECDIS).
+It is based on the IHO S-100 framework Specification and the ISO 19100
+series of standards. It is a vector Product Specification that is
+primarily intended for encoding the content of Catalogues of Nautical
+Products, for navigational purposes.
+
+Catalogue of Nautical Products (CNP) datasets describe the availability
+of paper charts, ENCs and other nautical products, applications for
+navigational purposes, online services and e-Navigation services.
+This includes their issue date, status, producing agency, and coverage.
+
+[[sec_1.2]]
+[bibliography]
+=== References
+
+* [[[S_100,IHO S-100]]] _IHO Universal Hydrographic Data Model_, Edition 5.2.0
+
+* [[[ISO_8601_2004,ISO 8601:2004]]] _Data elements and interchange formats - Information interchange - Representation of dates and times._
+
+* [[[ISO_19101_1_2014,ISO 19101-1:2014]]] Geographic Information -- _Reference Model -- Part 1 -- Fundamentals_
+
+* [[[ISO_19101_2_2018,ISO 19101-2:2018]]] _Geographic Information -- Reference model_.
+
+* [[[ISO_TS_19103_2005,ISO/TS 19103:2005]]] _Geographic Information -- Conceptual schema language_.
+
+* [[[ISO_19106_2004,ISO 19106:2004]]] _Geographic Information -- Profiles_.
+
+* [[[ISO_19107_2019,ISO 19107:2019]]] _Geographic Information -- Spatial schema_.
+
+* [[[ISO_19108_2002,ISO 19108:2002]]]_Geographic Information -- Temporal Schema._
+
+* [[[ISO_19110_2005,ISO 19110:2005]]] _Geographic Information - Methodology for Feature Cataloguing_
+
+* [[[ISO_19111_2007,ISO 19111:2007]]]_Geographic information - Spatial referencing by coordinates_.
+
+* [[[ISO_19115_1_2018,nofetch(ISO 19115-1:2018)]]] _Geographic information -- Metadata, Amended by Amendment 1_.
+
+* [[[ISO_19115_2_2019,ISO 19115-2:2019]]] _Geographic information - Metadata: Extensions for imagery and gridded data_.
+
+* [[[ISO_19117_2012,ISO 19117:2012]]] _Geographic information - Portrayal_
+
+* [[[ISO_19123_2005,ISO 19123:2005]]] _Geographic information - Schema for coverage geometry and functions._
+
+* [[[ISO_19129_2009,ISO/TS 19129:2009]]] _Geographic information - Imagery gridded and coverage data framework_.
+
+* [[[ISO_19131_2008,ISO 19131]]] _Geographic information - Data product specifications_.
+
+* [[[ISO_19136_2020,ISO 19136-1:2020]]] _Geographic Information -- Geography Markup Language_.
+
+* [[[ISO_19136_2_2015,ISO 19136-2:2015]]] _Geographic Information -- Geography Markup Language_.
+
+* [[[ISO_TS_19139_2007,ISO/TS 19139:2007]]] _Geographic Information -- Metadata -- XML schema implementation_.
+
+* [[[ISO_19157_2013,ISO 19157:2013]]] _Geographic Information -- Data Quality_
+
+* [[[ISO_19101,hidden(ISO 19101)]]]
+
+* [[[ISO_19123,hidden(ISO 19123)]]]
+
+* [[[ISO_19115,hidden(ISO 19115)]]]
+
+* [[[ISO_19115_1_2014,ISO 19115-1:2014]]]
+
+* [[[ISO_19109,hidden(ISO 19109)]]]
+
+* [[[ISO_8601,hidden(ISO 8601)]]]
+
+* [[[ISO_8601_1988,hidden(ISO 8601:1988)]]]
+
+* [[[ISO_639_2,hidden(ISO 639-2)]]]
+
+* [[[ISO_3166_2,hidden(ISO 3166-2)]]]
+
+* [[[ISO_10646_1,hidden(ISO/IEC 10646-1)]]]
+
+* [[[ISO_8211,hidden(ISO 8211)]]]
+
+* [[[ISO_15444,hidden(ISO/IEC 15444 (all parts))]]]
+
+* [[[ISO_19005,hidden(ISO 19005 (all parts))]]]
+
+* [[[ISO_32000,hidden(ISO 32000 (all parts))]]]
+
+* [[[RFC_3986,hidden(RFC 3986)]]]
+
+* [[[RFC_2141,hidden(RFC 2141)]]]
+
+* [[[S128AnnexA,dropid(repo:(current-metanorma-collection/IHO S-128 Annex A))]]],
+span:title[S-128 -- Annex A: Data Classification and Encoding Guide],
+span:edition[2.0.0],
+span:organization[International Hydrographic Organization]
+
+[[sec_1.3]]
+=== Terms, definitions and abbreviations
+
+[[sec_1.3.1]]
+==== Use of Language
+
+Within this document:
+
+* "Must" indicates a mandatory requirement.
+* "Should" indicates an optional requirement, that is the recommended
+process to be followed, but is not mandatory.
+* "May" means "allowed to" or "could possibly", and is not mandatory.
+
+[[sec_1.3.2]]
+[heading="Terms and definitions"]
+==== Terms and definitions
+
+The S-100 framework is based on the ISO 19100 series of geographic
+standards. The terms and definitions provided here are used to standardize
+the nomenclature found within that framework, whenever possible.
+They are taken from the references cited in <<sec_1.2>>. Modifications
+have been made when necessary.
+
+===== Application
+
+Manipulation and processing of data in support of user requirements.
+
+.[source]
+<<ISO_19101>>
+
+===== Application Schema
+
+Conceptual schema for data required by one or more applications.
+
+.[source]
+<<ISO_19101>>
+
+===== Conceptual Model
+
+Model that defines concepts of a universe of discourse.
+
+.[source]
+<<ISO_19101>>
+
+===== Conceptual Schema
+
+Formal description of a conceptual model.
+
+.[source]
+<<ISO_19101>>
+
+===== Coverage
+
+{{Feature}} that acts as a function to return values from its range
+for any direct position within its spatial, temporal or spatiotemporal
+{{Domain}}.
+
+[.source]
+<<ISO_19123>>
+
+[example]
+Raster image, polygon overlay, digital elevation matrix.
+
+===== Data Product
+
+{{Dataset}} or {{Dataset Series}} that conforms to a
+{{Data Product Specification}}.
+
+===== Data Product Specification
+
+Detailed description of a {{Dataset}} or {{Dataset Series}} together
+with additional information that will enable it to be created, supplied
+to, and used by another party.
+
+NOTE: A data Product Specification provides a description of the universe
+of discourse and a specification for mapping the universe of discourse
+to a dataset. It may be used for production, sales, end-use, or other
+purpose.
+
+===== Dataset
+
+Identifiable collection of data.
+
+[.source]
+<<ISO_19115>>
+
+NOTE: A dataset may be a smaller grouping of data which, though limited
+by some constraint such as spatial extent or feature type, is located
+physically within a larger dataset. Theoretically, a dataset may be
+as small as a single feature or feature attribute contained within
+a larger dataset. A hardcopy map or chart may be considered a dataset.
+
+===== Dataset Series
+
+Collection of {{Dataset,datasets}} sharing common characteristics.
+
+[.source]
+<<ISO_19115>>
+
+===== Domain
+
+Well-defined set.
+
+[.source]
+<<ISO_TS_19103_2005>>
+
+NOTE: Well-defined means that the definition is both necessary and
+sufficient, as everything that satisfies the definition is in the
+set and everything that does not satisfy the definition is necessarily
+outside the set.
+
+===== Feature
+
+Abstraction of real world phenomena.
+
+.[source]
+<<ISO_19101>>
+
+NOTE: A feature can occur as a type or an instance. Feature type or
+feature instance will be used when only one is meant.
+
+===== Feature Association
+
+Relationship that links instances of one {{Feature}} type with instances
+of the same or a different {{Feature}} type.
+
+[.source]
+<<ISO_19110_2005>>
+
+===== Feature Attribute
+
+Characteristic of a {{Feature}}.
+
+[.source]
+<<ISO_19101_1_2014,clause=4.1.12>>
+
+[example]
+A feature attribute named "colour" can have an attribute value "green"
+which belongs to the data type "text".
+
+[example]
+A feature attribute named length can have an attribute value "82.4"
+which belongs to the data type "real".
+
+NOTE: A feature attribute has a type name, a data type and a value
+domain associated to it. A feature attribute for a feature instance
+also has an attribute value taken from the value domain.
+
+NOTE: In a Feature Catalogue a feature attribute can include a value
+domain but does not specify attribute values for feature instance.
+
+NOTE: In UML, attribute associations and operations are representation
+types and are not fundamental to the type of a characteristic nor
+to the type of feature. All three are equally capable of representing
+the same characteristics of a feature. Every implementation of a characteristic
+is allowed to use the representation type that is most appropriate
+and can use several different representations for a single characteristic
+if required.
+
+Feature associations and feature operations therefore are different
+types of feature attribute, the distinction between them being based
+on storage and access mechanism rather than semantics.
+
+===== Geographic Data
+
+Data with implicit or explicit reference to a location relative to
+the Earth.
+
+[.source]
+<<ISO_19109>>
+
+NOTE: Geographic information is also used as a term for information
+concerning phenomena implicitly or explicitly associated with a location
+relative to the Earth.
+
+===== Metadata
+
+Information about a resource.
+
+[.source]
+<<ISO_19115_1_2014,clause=4.10>>
+
+===== Model
+
+Abstraction of some aspects of reality.
+
+[.source]
+<<ISO_19109>>
+
+===== Portrayal
+
+Presentation of information to humans.
+
+NOTE: Within the scope of this International Standard Portrayal is
+restricted to the portrayal of geographic information".
+
+[.source]
+<<ISO_19117_2012,clause=4.20>>
+
+===== Quality
+
+Totality of characteristics of a product that bear on its ability
+to satisfy stated and implied needs.
+
+.[source]
+<<ISO_19101>>
+
+===== Universe of Discourse
+
+View of the real or hypothetical world that includes everything of
+interest.
+
+.[source]
+<<ISO_19101>>
+
+[[sec_1.3.3]]
+==== Abbreviations
+
+This Product Specification adopts the following convention for symbols
+and abbreviated terms:
+
+ASCII:: American Standard Code for Information Interchange
+
+CNP:: Catalogue of Nautical Products
+
+DCEG:: Data Classification and Encoding Guide
+
+ECDIS:: Electronic Chart Display and Information Systems
+
+ENC:: Electronic Navigational Chart
+
+GML:: Geography Markup Language
+
+IHO:: International Hydrographic Organization
+
+IOC:: International Oceanographic Commission
+
+ISO:: International Organization for Standardization
+
+NIPWG:: IHO Nautical Information Provision Working Group
+
+NPIO:: NNautical Publication Information Overlay
+
+UML:: Unified Modeling Language
+
+URI:: Uniform Resource Identifier
+
+URL:: Uniform Resource Locator
+
+WMS:: Web Map Service
+
+WFS:: Web Feature Service
+
+www:: World Wide Web
+
+WGS:: World Geodetic System
+
+XML:: eXtensible Markup Language
+
+XSLT:: eXtensible Stylesheet Language Transformations
+
+[[sec_1.4]]
+=== General S-128 data product description
+
+NOTE: This clause contains general information about the data product
+
+*Title:*:: Catalogue of Nautical Products Product Specification
+
+*Abstract:*:: Catalogue of Nautical Products (CNP) datasets describe
+the availability and reliability of paper chart, ENC, S-100 based
+nautical products, application for navigational purpose, online service
+and e-Navigation services. This includes their issue date, publication
+status, producing agency, and source indication. CNP is intended to
+exchange status of nautical products and to be a supplement to ENC,
+and therefore does not describe the geographic information in detail
+equal to ENC, rather it is shown as a coverage of nautical products.
+
+*Content:*:: Datasets conforming to this Specification will contain
+Catalogues of some of relevant nautical products information for the
+area of coverage such as paper chart, ENC, Nautical Publication, S-100
+based nautical products and e- Navigation service.
+
+*Spatial Extent:*
+
+*Description:*:: Global coverage of maritime areas.
+
+*East Bounding Longitude:*:: stem:[180 "unitsml(deg)"]
+
+*West Bounding Longitude:*:: stem:[-180 "unitsml(deg)"]
+
+*North Bounding Latitude:*:: stem:[90 "unitsml(deg)"]
+
+*South Bounding Latitude:*:: stem:[-90 "unitsml(deg)"]
+
+*Purpose:*:: Describing status of nautical products, and to allow
+the producer to exchange catalogue of nautical products with interested
+stakeholders.
+
+[[sec_1.5]]
+=== Data product specification metadata
+
+NOTE: This information uniquely identifies this Product Specification
+and provides information about its creation and maintenance. For further
+information on dataset metadata see <<sec_12>>.
+
+*Title:*:: Catalogue of Nautical Products
+
+*S-100 Version:*:: 5.2.0
+
+*S-128 Version:*:: 2.0.0
+
+*Date:*:: March 2025
+
+*Language:*:: English
+
+*Classification:*:: Unclassified
+
+*Contact:*::
++
+--
+International Hydrographic Organization (IHO) +
+4b quai Antoine 1er, +
+B.P 445 +
+MC 98011 MONACO CEDEX +
+Telephone: +377 93 10 81 00 +
+Fax: + 377 93 10 81 40 +
+Email: mailto:info@iho.int[info@iho.int]
+--
+
+*URL:*:: https://iho.int/[https://iho.int]
+
+*Identifier:*:: S-128
+
+*Maintenance:*:: Amendments to this Specification will be produced
+on a needs basis. For reporting issues with this Specification which
+need correction, use the contact information.
+
+[[sec_1.6]]
+=== IHO Product Specification maintenance
+
+[[sec_1.6.1]]
+==== Introduction
+
+Changes to S-128 will be released by the IHO as a new edition, revision,
+or clarification.
+
+[[sec_1.6.2]]
+==== New Edition
+
+New Editions of S-128 introduce significant changes. _New Editions_
+enable new concepts, such as the ability to support new functions
+or applications, or the introduction of new constructs or data types.
+_New Editions_ are likely to have a significant impact on either existing
+users or future users of S-10n.
+
+[[sec_1.6.3]]
+==== Revision
+
+_Revisions_ are defined as substantive semantic changes to S-128.
+Typically, revisions will change S-128 to correct factual errors;
+introduce necessary changes that have become evident as a result of
+practical experience or changing circumstances. A _revision_ must
+not be classified as a clarification. _Revisions_ could have an impact
+on either existing users or future users of S-128. All cumulative
+_clarifications_ must be included with the release of approved corrections
+revisions.
+
+Changes in a revision are minor and ensure backward compatibility
+with the previous versions within the same Edition. Newer revisions,
+for example, introduce new features and attributes. Within the same
+Edition, a dataset of one version could always be processed with a
+later version of the feature and portrayal catalogues.
+
+In most cases a new feature or portrayal catalogue will result in
+a revision of S-128.
+
+[[sec_1.6.4]]
+==== Clarification
+
+Clarifications are non-substantive changes to S-128. Typically, clarifications:
+remove ambiguity; correct grammatical and spelling errors; amend or
+update cross references; insert improved graphics in spelling, punctuation
+and grammar. A clarification must not cause any substantive semantic
+change to S-128.
+
+Changes in a clarification are minor and ensure backward compatibility
+with the previous versions within the same Edition. Within the same
+Edition, a dataset of one clarification version could always be processed
+with a later version of the feature and portrayal catalogues, and
+a Portrayal Catalogue can always rely on earlier versions of the Feature
+Catalogues.
+
+[[sec_1.6.5]]
+==== Version numbers
+
+The associated version control numbering to identify changes (n) to
+S-128 must be as follows:
+
+New Editions denoted as *n*.0.0
+
+Revisions denoted as n.*n*.0
+
+Clarifications denoted as n.n.*n*

@@ -1,0 +1,43 @@
+
+[[sec_9]]
+== Portrayal
+
+S-128 portrayal is covered by the portrayal model as defined in S-100.
+The Portrayal Catalogue defines symbology and the portrayal rules
+for each feature/attribute combination contained in the Feature Catalogue.
+
+S-128 uses the portrayal process defined in <<S_100,part=9>>.
+
+[[sec_9.1]]
+=== Portrayal Catalogue
+
+Citation information for the Portrayal Catalogue is provided in <<table_9-1>>
+below
+
+[[table_9-1]]
+.S-128 Portrayal Catalogue
+[cols="4"]
+|===
+h| No. h| ISO class or attribute h| Type h| Value
+| --           | CI_Citation           | Class                          | --
+| 1            | title                 | CharacterString                | S-128 Portrayal Catalogue
+| 2            | date                  | CI_Date (class)                | --
+| 2.1          | date                  | DateTime                       | 2024-02-16 (or later - see note)
+| 2.2          | dateType              | CI_DateTypeCode (ISO codelist) | publication
+| 3            | edition               | CharacterString                | 1.0.0
+| 4            | editionDate           | DateTime                       | 2024-02-16 (or later - see note)
+| 5            | citedResponsibleParty | CI_Responsibility (class)      | --
+| 5.1 | role | CI_RoleCode +
+(ISO codelist) | publisher
+
+| 5.2          | party                 | CI_Organisation (class)        | --
+| 5.2.1        | name                  | CharacterString                | International Hydrographic Organization
+| 6            | otherCitationDetails  | CharacterString                | (reserved)
+| 7            | onlineResource        | CI_OnlineResource (class)      | --
+| 7.1          | linkage               | CharacterString (URL)          | https://registry.iho.int/
+| 7.2          | name                  | CharacterString                | S-128 Portrayal Catalogue
+| 7.3          | description           | CharacterString
+| XML Portrayal Catalogue accompanied by related files for symbols,
+colour profiles, rules, etc
+
+|===

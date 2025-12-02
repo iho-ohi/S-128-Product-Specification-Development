@@ -1,0 +1,83 @@
+
+[[sec_10]]
+== Data Product Format (Encoding)
+
+[[sec_10.1]]
+=== Introduction
+
+The principal encoding will be the Open Geospatial Consortium (OGC),
+Geography Markup Language (GML) format. GML is an XML grammar designed
+to express geographical features. It serves as a modelling language
+for geographic systems as well as an open interchange format for geographic
+transactions.
+
+*Format Name:*::   GML
+*Version:*::       3.2.1
+*Character Set:*:: UTF-8
+*Specification:*:: https://www.ogc.org/[https://www.ogc.org]
+
+[[sec_10.2]]
+=== Coordinate encoding in spatial primitives
+
+Values of latitude and longitude must not be more accurate than 7
+decimal places. Coordinates must be encoded as decimals in the format
+described in <<sec_10.2.1>>.
+
+Geometry may be encoded either inline or by reference to a spatial
+primitives located elsewhere in the dataset that encodes the actual
+coordinate values. The GML conventions for references and axis order
+must be followed. The CRS shall be identified using the URI convention
+for SRS specified by OGC, which is http://www.opengis.net/def/crs/EPSG/0/4326
+(<<S_100,part=10b>>). The axis order is latitude/longitude.
+
+[[sec_10.2.1]]
+==== Encoding of coordinates as decimals
+
+Values should be coded as decimal numbers with 7 or fewer digits after
+the decimal. The normative encoding is in degrees, with an accuracy
+of stem:[10^{-7}] degrees; that is, 7 digits after the decimal point.
+
+The decimal point must be indicated by the "." character.
+
+Trailing zeroes after the decimal point (and the decimal point itself
+if appropriate) may be omitted at producer discretion, but the accuracy
+must still be as indicated (for example, stem:[10^{-7}] degrees for
+coordinates of default accuracy).
+
+[[sec_10.3]]
+=== Numeric attribute encoding
+
+Floating point and integer attribute values must not contain leading
+zeros. Floating point attribute values must not contain non-significant
+trailing zeros.
+
+[[sec_10.4]]
+=== Text attribute values
+
+Character strings must be encoded using the character set defined
+in <<ISO_10646_1>>, in Unicode Transformation Format-8 (UTF-8).
+
+[[sec_10.5]]
+=== Mandatory attribute values
+
+There are four reasons why attribute values may be considered mandatory:
+
+* They determine whether a feature is in the display base.
+* Certain features make no logical sense without specific attributes.
+* Some attributes are necessary to determine which symbol is to be
+displayed.
+* Some attributes are required for safety of navigation.
+
+All mandatory attributes are identified in the Feature Catalogue and
+summarized in <<S128AnnexA>>.
+
+[[sec_10.6]]
+=== Data overlap
+
+S-128 datasets can overlap other S-128 datasets.
+
+[[sec_10.7]]
+=== Data extent
+
+Datasets must not cross the stem:[180 "unitsml(deg)"] meridian of
+longitude.

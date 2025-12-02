@@ -1,0 +1,106 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Data elements and interchange formats</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Information interchange</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Representation of dates and times</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Data elements and interchange formats - Information interchange - Representation of dates and times</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Éléments de données et formats d'échange</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Échange d'information</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Représentation de la date et de l'heure</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Éléments de données et formats d'échange - Échange d'information - Représentation de la date et de l'heure</title>
+  <uri type="src">https://www.iso.org/standard/15903.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/01/59/15903.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 8601:1988</docidentifier>
+  <docidentifier type="iso-reference">ISO 8601:1988(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99</docidentifier>
+  <docnumber>8601</docnumber>
+  <date type="published">
+    <on>1988-06</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>1988</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2014:1976</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2014:1976</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2015:1976</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2015:1976</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2711:1973</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2711:1973</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 3307:1975</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 3307:1975</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 4031:1978</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 4031:1978</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 8601:2000</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601:2000</docidentifier>
+      <date type="circulated">
+        <on>2000-12-21</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 8601:1988/Cor 1:1991</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601:1988/Cor 1:1991</docidentifier>
+      <date type="circulated">
+        <on>2000-12-21</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="154" type="TC" identifier="ISO/TC 154">Processes, data elements and documents in commerce, industry and administration</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>01.140.30</code>
+      <text>Documents in administration, commerce and industry</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>15903</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

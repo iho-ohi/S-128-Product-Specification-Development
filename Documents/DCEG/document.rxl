@@ -1,0 +1,118 @@
+<bibdata type="standard">
+<title language="en" type="main">Data Classification and Encoding Guide - Annex A</title>
+<docidentifier primary="true" type="IHO">S-128</docidentifier><docnumber>128</docnumber><date type="published"><on>2025-03-01</on></date><contributor><role type="author"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Hydrographic Organization</name>
+<subdivision type="Committee">
+<name>ircc</name>
+</subdivision><subdivision type="Workgroup">
+<name>ibsc</name>
+</subdivision></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>2.0.0</edition><language>en</language><script>Latn</script><status><stage>in-force</stage></status><copyright><from>2025</from><owner><organization>
+<name>International Hydrographic Organization</name>
+<abbreviation>IHO</abbreviation></organization></owner></copyright><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="published">
+    <on>2022-03-11</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision>Nautical Information Provision Working Group</subdivision>
+      <abbreviation>NIPWG</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.0.0</edition>
+<amend change="modify"><description><p id="_434c9992-2468-42a0-78a5-59529b6b729f">Release 1.0.0</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="updated">
+    <on>2022-05</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision>Hydrographic Services and Standards Committee</subdivision>
+      <abbreviation>HSSC</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.0.0</edition>
+<amend change="modify"><description><p id="_b234364a-e367-d688-c9a0-51699f53783c">Initial published version for evaluation and testing.</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="updated">
+    <on>2023-10</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Korea Hydrographic and Oceanographic Agency</name>
+      <abbreviation>KHOA</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.1.0</edition>
+<amend change="modify"><description><p id="_911d5193-a26b-c896-f144-7ee882bcbc8e">Align with S-100 Ed 5.0.0 evaluation and testing.</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="updated">
+    <on>2024-02</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <subdivision>Hydrographic Services and Standards Committee</subdivision>
+      <abbreviation>HSSC</abbreviation>
+    </organization>
+  </contributor>
+  <edition>1.2.0</edition>
+<amend change="modify"><description><p id="_f3571082-95c0-4c64-4a05-6e4d1b97688e">Initial published version for evaluation and testing.</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="updated">
+    <on>2024-03</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Korea Hydrographic and Oceanographic Agency</name>
+      <abbreviation>KHOA</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.0.0</edition>
+<amend change="modify"><description><p id="_e5b3620e-21b7-03cb-59b3-05bca4acb9eb">Updated to align with S-100 Edition 5.2.0 and Applied feedback from NIPWG</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="updated">
+    <on>2024-07</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Korea Hydrographic and Oceanographic Agency</name>
+      <abbreviation>KHOA</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.0.0</edition>
+<amend change="modify"><description><p id="_4cc23551-52fc-8345-4af8-7f421a98cc31">Applied feedback from NIPWG</p>
+</description></amend></bibitem></relation><relation type="updatedBy"><bibitem schema-version="v1.2.9">
+  <docidentifier type="IHO">S-128</docidentifier>
+  <date type="published">
+    <on>2025-03</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Hydrographic Organization</name>
+      <abbreviation>IHO CL xx/2025</abbreviation>
+    </organization>
+  </contributor>
+  <edition>2.0.0</edition>
+<amend change="modify"><description><p id="_ed48f674-4fc6-983e-e996-2eff9eb36b01">First operational Edition of S-128 Annex A</p>
+</description></amend></bibitem></relation><series type="main">
+<title>Standards and Specifications</title>
+<abbreviation>S</abbreviation></series><ext><doctype>standard</doctype><flavor>iho</flavor><structuredidentifier><docnumber>128</docnumber></structuredidentifier></ext></bibdata>

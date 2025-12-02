@@ -1,0 +1,135 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Document management</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Portable document format</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Document management – Portable document format</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Gestion de documents</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Format de document portable</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Gestion de documents – Format de document portable</title>
+  <uri type="src">https://www.iso.org/standard/51502.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51502:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/05/15/51502.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 32000 (all parts)</docidentifier>
+  <docidentifier type="iso-reference">ISO 32000(E) (all parts)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:32000</docidentifier>
+  <docnumber>32000</docnumber>
+  <date type="published">
+    <on>2008-07</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2008</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Document management</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Portable document format</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: PDF 1.7</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Document management - Portable document format - Part 1: PDF 1.7</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Gestion de documents</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Format de document portable</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: PDF 1.7</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Gestion de documents - Format de document portable - Partie 1: PDF 1.7</title>
+      <uri type="src">https://www.iso.org/standard/51502.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:51502:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/05/15/51502.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 32000-1:2008</docidentifier>
+      <docidentifier type="iso-reference">ISO 32000-1:2008(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:32000:-1:stage-90.93</docidentifier>
+      <docnumber>32000</docnumber>
+      <date type="published">
+        <on>2008-07</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 32000-1:2008 specifies a digital form for representing electronic documents to enable users to exchange and view electronic documents independent of the environment in which they were created or the environment in which they are viewed or printed. It is intended for the developer of software that creates PDF files (conforming writers), software that reads existing PDF files and interprets their contents for display and interaction (conforming readers) and PDF products that read and/or write PDF files for a variety of other purposes (conforming products).
+ISO 32000-1:2008 does not specify the following:
+• specific processes for converting paper or electronic documents to the PDF format;
+• specific technical design, user interface or implementation or operational details of rendering;
+• specific physical methods of storing these documents such as media and storage conditions;
+• methods for validating the conformance of PDF files or readers;
+• required computer hardware and/or operating system.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">ISO 32000-1:2008 specifies a digital form for representing electronic documents to enable users to exchange and view electronic documents independent of the environment in which they were created or the environment in which they are viewed or printed. It is intended for the developer of software that creates PDF files (conforming writers), software that reads existing PDF files and interprets their contents for display and interaction (conforming readers) and PDF products that read and/or write PDF files for a variety of other purposes (conforming products).
+ISO 32000-1:2008 does not specify the following:
+• specific processes for converting paper or electronic documents to the PDF format;
+• specific technical design, user interface or implementation or operational details of rendering;
+• specific physical methods of storing these documents such as media and storage conditions;
+• methods for validating the conformance of PDF files or readers;
+• required computer hardware and/or operating system.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2008</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 32000-2:2020</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 32000-2:2020</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 32000-2:2017</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 32000-2:2017</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="171" type="TC" identifier="ISO/TC 171/SC 2">Document file formats, EDMS systems and authenticity of information</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.30</code>
+      <text>IT applications in information, documentation and publishing</text>
+    </ics>
+    <ics>
+      <code>37.100.99</code>
+      <text>Other standards related to graphic technology</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>51502 (all parts)</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

@@ -1,0 +1,116 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Country subdivision code</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions - Part 2: Country subdivision code</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de pays et de leurs subdivisions</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Code pour les subdivisions de pays</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de pays et de leurs subdivisions - Partie 2: Code pour les subdivisions de pays</title>
+  <uri type="src">https://www.iso.org/standard/72483.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:72483:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/07/24/72483.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 3166-2</docidentifier>
+  <docidentifier type="iso-reference">ISO 3166-2(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:3166:-2:stage-90.93</docidentifier>
+  <docnumber>3166</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>4</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 3166-2:2013</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 3166-2:2013</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Country subdivision code</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions - Part 2: Country subdivision code</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de pays et de leurs subdivisions</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Code pour les subdivisions de pays</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Codes pour la représentation des noms de pays et de leurs subdivisions - Partie 2: Code pour les subdivisions de pays</title>
+      <uri type="src">https://www.iso.org/standard/72483.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:72483:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/07/24/72483.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 3166-2:2020</docidentifier>
+      <docidentifier type="iso-reference">ISO 3166-2:2020(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:3166:-2:stage-90.93</docidentifier>
+      <docnumber>3166</docnumber>
+      <date type="published">
+        <on>2020-08</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>4</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document specifies basic guidelines for the implementation and maintenance of country subdivision codes. 
+This code is intended for use in any application requiring the expression of current country subdivision names in coded form. </abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le présent document spécifie les principes directeurs pour la mise en application et la mise à jour des codes pour les subdivisions de pays.
+Ces codes sont destinés à toute application nécessitant l'expression des noms de subdivisions de pays sous une forme codée.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2020</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 3166-2:2013</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 3166-2:2013</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="46" type="TC" identifier="ISO/TC 46">Information and documentation</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>01.140.30</code>
+      <text>Documents in administration, commerce and industry</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>72483</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

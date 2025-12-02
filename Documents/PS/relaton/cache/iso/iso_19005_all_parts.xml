@@ -1,0 +1,171 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Document management</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Electronic document file format for long-term  preservation</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Document management – Electronic document file format for long-term  preservation</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Gestion de documents</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Format de fichier des documents électroniques pour une conservation à long terme</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Gestion de documents – Format de fichier des documents électroniques pour une conservation à long terme</title>
+  <uri type="src">https://www.iso.org/standard/38920.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:38920:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/89/38920.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19005 (all parts)</docidentifier>
+  <docidentifier type="iso-reference">ISO 19005(E) (all parts)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19005</docidentifier>
+  <docnumber>19005</docnumber>
+  <date type="published">
+    <on>2005-10</on>
+  </date>
+  <date type="corrected">
+    <on>2005-11</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19005-1:2005/Cor 1:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19005-1:2005/Cor 1:2007</docidentifier>
+      <date type="circulated">
+        <on>2020-12-09</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19005-1:2005/Cor 2:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19005-1:2005/Cor 2:2011</docidentifier>
+      <date type="circulated">
+        <on>2020-12-09</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Document management</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Electronic document file format for long-term  preservation</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Use of PDF 1.4 (PDF/A-1)</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Document management - Electronic document file format for long-term  preservation - Part 1: Use of PDF 1.4 (PDF/A-1)</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Gestion de documents</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Format de fichier des documents électroniques pour une conservation à long terme</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Utilisation du PDF 1.4 (PDF/A-1)</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Gestion de documents - Format de fichier des documents électroniques pour une conservation à long terme - Partie 1: Utilisation du PDF 1.4 (PDF/A-1)</title>
+      <uri type="src">https://www.iso.org/standard/38920.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:38920:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/89/38920.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19005-1:2005</docidentifier>
+      <docidentifier type="iso-reference">ISO 19005-1:2005(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19005:-1:stage-90.93</docidentifier>
+      <docnumber>19005</docnumber>
+      <date type="published">
+        <on>2005-10</on>
+      </date>
+      <date type="corrected">
+        <on>2005-11</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19005-1:2005 specifies how to use the Portable Document Format (PDF) 1.4 for long-term preservation of electronic documents. It is applicable to documents containing combinations of character, raster and vector data.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">ISO 19005-1:2005 specifies how to use the Portable Document Format (PDF) 1.4 for long-term preservation of electronic documents. It is applicable to documents containing combinations of character, raster and vector data.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2005</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19005-1:2005/Cor 1:2007</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19005-1:2005/Cor 1:2007</docidentifier>
+          <date type="circulated">
+            <on>2020-12-09</on>
+          </date>
+        </bibitem>
+      </relation>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19005-1:2005/Cor 2:2011</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19005-1:2005/Cor 2:2011</docidentifier>
+          <date type="circulated">
+            <on>2020-12-09</on>
+          </date>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19005-4:2020</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19005-4:2020</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19005-3:2012</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19005-3:2012</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19005-2:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19005-2:2011</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="171" type="TC" identifier="ISO/TC 171/SC 2">Document file formats, EDMS systems and authenticity of information</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.30</code>
+      <text>IT applications in information, documentation and publishing</text>
+    </ics>
+    <ics>
+      <code>37.100.99</code>
+      <text>Other standards related to graphic technology</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>38920 (all parts)</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

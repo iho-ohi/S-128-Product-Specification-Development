@@ -1,0 +1,347 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">JPEG 2000 image coding system</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Information technology – JPEG 2000 image coding system</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Technologies de l'information</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Système de codage d'images JPEG 2000</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Technologies de l'information – Système de codage d'images JPEG 2000</title>
+  <uri type="src">https://www.iso.org/standard/87632.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:87632:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/08/76/87632.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO/IEC 15444 (all parts)</docidentifier>
+  <docidentifier type="iso-reference">ISO/IEC 15444(E) (all parts)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:15444</docidentifier>
+  <docnumber>15444</docnumber>
+  <date type="published">
+    <on>2024-11</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>5</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2024</from>
+    <owner>
+      <organization>
+        <name>ISO/IEC</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-1:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-1:2019</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-29</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">JPEG 2000 image coding system</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Core coding system</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Information technology - JPEG 2000 image coding system - Part 1: Core coding system</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Technologies de l'information</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Système de codage d'images JPEG 2000</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Système de codage de noyau</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Technologies de l'information - Système de codage d'images JPEG 2000 - Partie 1: Système de codage de noyau</title>
+      <uri type="src">https://www.iso.org/standard/87632.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:87632:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/08/76/87632.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-1:2024</docidentifier>
+      <docidentifier type="iso-reference">ISO/IEC 15444-1:2024(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso-iec:15444:-1:stage-60.60</docidentifier>
+      <docnumber>15444</docnumber>
+      <date type="published">
+        <on>2024-11</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Electrotechnical Commission</name>
+          <abbreviation>IEC</abbreviation>
+          <uri>www.iec.ch</uri>
+        </organization>
+      </contributor>
+      <edition>5</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This Recommendation | International Standard defines a set of lossless (bit-preserving) and lossy compression methods for coding bi-level, continuous-tone grey-scale, palletized colour, or continuous-tone colour digital still images.
+This Recommendation | International Standard:
+? specifies decoding processes for converting compressed image data to reconstructed image data;
+? specifies a codestream syntax containing information for interpreting the compressed image data;
+? specifies a file format;
+? provides guidance on encoding processes for converting source image data to compressed image data;
+? provides guidance on how to implement these processes in practice.
+NOTE ? As this specification was first published as common text only after ISO/IEC JTC1 had approved the first edition in 2000, edition numbers in the ITU and ISO/IEC versions are offset by one. This is the third edition of ITU-T T.800 and the fourth edition of ISO/IEC 15444-1.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">This Recommendation | International Standard defines a set of lossless (bit-preserving) and lossy compression methods for coding bi-level, continuous-tone grey-scale, palletized colour, or continuous-tone colour digital still images.
+This Recommendation | International Standard:
+? specifies decoding processes for converting compressed image data to reconstructed image data;
+? specifies a codestream syntax containing information for interpreting the compressed image data;
+? specifies a file format;
+? provides guidance on encoding processes for converting source image data to compressed image data;
+? provides guidance on how to implement these processes in practice.
+NOTE ? As this specification was first published as common text only after ISO/IEC JTC1 had approved the first edition in 2000, edition numbers in the ITU and ISO/IEC versions are offset by one. This is the third edition of ITU-T T.800 and the fourth edition of ISO/IEC 15444-1.</abstract>
+      <status>
+        <stage>60</stage>
+        <substage>60</substage>
+      </status>
+      <copyright>
+        <from>2024</from>
+        <owner>
+          <organization>
+            <name>ISO/IEC</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 15444-1:2019</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 15444-1:2019</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-9:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-9:2023</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-9:2005</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-9:2005</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-8:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-8:2023</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-8:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-8:2007</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-6:2013</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-6:2013</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-6:2003</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-6:2003</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-5:2021</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-5:2021</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-5:2015</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-5:2015</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-5:2003</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-5:2003</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-4:2024</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-4:2024</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-4:2021</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-4:2021</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-4:2004</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-4:2004</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-4:2002</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-4:2002</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-4</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-4</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-3:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-3:2007</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-3:2002</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-3:2002</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-2:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-2:2023</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-2:2021</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-2:2021</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-2:2004</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-2:2004</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-17:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-17:2023</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-16:2021</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-16:2021</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-16:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-16:2019</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-15:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-15:2019</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-14:2013</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-14:2013</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-13:2008</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-13:2008</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-12:2015</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-12:2015</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-12:2012</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-12:2012</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-12:2008</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-12:2008</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-12:2005</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-12:2005</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-12:2004</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-12:2004</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-11:2007</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-11:2007</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-10:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-10:2011</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 15444-10:2008</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 15444-10:2008</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="1" type="IEC" identifier="ISO/IEC JTC 1/SC 29">Coding of audio, picture, multimedia and hypermedia information</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.040.30</code>
+      <text>Coding of graphical and photographical information</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>87632 (all parts)</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

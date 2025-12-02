@@ -1,0 +1,10 @@
+
+[[sec_2]]
+== Specification Scopes
+
+This Product Specification describes one data product and therefore
+requires only one scope which is described below:
+
+*Scope ID:*::   Catalogue of Nautical Products
+*Level:*::      005-dataset
+*Level name:*:: CNP Dataset

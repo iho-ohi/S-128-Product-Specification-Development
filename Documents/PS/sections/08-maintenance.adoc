@@ -1,0 +1,81 @@
+
+[[sec_8]]
+== Maintenance
+
+[[sec_8.1]]
+=== Introduction
+
+Datasets are maintained as needed and must include mechanisms for
+CNP updating. Data updates will be made by New Editions or updates.
+The maintenance and update frequency of CNP datasets should be defined
+by the producers (official national authority) implementing this Specification.
+
+Data Producers must use applicable sources to maintain and update
+data and provide a brief description of the sources that were used
+to produce the dataset in the appropriate metadata field.
+
+[[sec_8.2]]
+=== Production process for base and update datasets
+
+Data Producers should follow their established production processes
+for maintaining and updating datasets. Data is produced against the
+DCEG and checked against the appropriate set of validation checks
+in IHO Publication S-158:128.
+
+[[sec_8.3]]
+=== Dataset updates and cancellation
+
+The purpose of issue of the dataset is indicated in the "purpose"
+field of the dataset discovery metadata. In order to terminate a dataset,
+an update dataset file is created for which the Edition number must
+be set to 0 (000). This convention is only used to cancel a base dataset
+file.
+
+Where a dataset is cancelled and its name is reused at a later date,
+the issue date must be greater than the issue date of the cancelled
+dataset.
+
+When the dataset is cancelled, it must be removed from the system.
+
+An Exchange Set may contain base dataset files and update dataset
+files for the same datasets. Under these circumstances the update
+dataset files must follow in the correct sequential order from the
+last update applied to the base dataset file.
+
+[[sec_8.4]]
+=== Support file updates
+
+The purpose of issue is indicated in the "purpose" field of the support
+file discovery metadata. Support files carrying the "deletion" flag
+in metadata must be removed from the system. When a feature or information
+type pointing to a text, picture, or application file is deleted or
+updated so that it no longer references the file, the system software
+must check to see whether any other feature or information type references
+the same file, before that file is deleted.
+
+Updates, in form of a New Edition or a replacement, or deletions of
+a support file may require concurrent updates to feature or information
+type instance attributes that depend on the file; for example, fileReference,
+and fileLocator attributes.
+
+[[sec_8.5]]
+=== Feature and Portrayal Catalogues
+
+For each new version of the S-128 Product Specification a new Feature
+and Portrayal Catalogue may be released. The system must be able to
+manage datasets and their Catalogues that are created on different
+versions of the S-128 Product Specification.
+
+[[sec_8.6]]
+=== Feature history, version, and change tracking
+
+If applications or production systems require versioning of individual
+instances of feature or information types, maintenance of histories,
+or change tracking, the methods for versioning, history management,
+and change tracking and display are left to the application or production
+system.
+
+[[sec_8.7]]
+=== Dataset encryption
+
+Dataset encryption should follow S-100 Edition 5.2, Part 15.

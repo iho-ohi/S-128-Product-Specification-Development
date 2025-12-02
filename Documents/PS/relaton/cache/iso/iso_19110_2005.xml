@@ -1,0 +1,80 @@
+<bibdata type="standard" schema-version="v1.2.9">
+  <fetched>2025-11-29</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Methodology for feature cataloguing</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Methodology for feature cataloguing</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Méthodologie de catalogage des entités</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Méthodologie de catalogage des entités</title>
+  <uri type="src">https://www.iso.org/standard/39965.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/99/39965.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19110:2005</docidentifier>
+  <docidentifier type="iso-reference">ISO 19110:2005(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19110:stage-95.99</docidentifier>
+  <docnumber>19110</docnumber>
+  <date type="published">
+    <on>2005-02</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">ISO 19110:2005 defines the methodology for cataloguing feature types and specifies how the classification of feature types is organized into a feature catalogue and presented to the users of a set of geographic data. ISO 19110:2005 is applicable to creating catalogues of feature types in previously uncatalogued domains and to revising existing feature catalogues to comply with standard practice. ISO 19110:2005 applies to the cataloguing of feature types that are represented in digital form. Its principles can be extended to the cataloguing of other forms of geographic data.
+ISO 19110:2005 is applicable to the definition of geographic features at the type level. ISO 19110:2005 is not applicable to the representation of individual instances of each type and excludes spatial, temporal, and portrayal schemas as specified in ISO 19107, ISO 19108, and the future ISO 19117, respectively. It also excludes collection criteria for feature instances.
+ISO 19910:2005 may be used as a basis for defining the universe of discourse being modelled in a particular application, or to standardize general aspects of real world features being modelled in more than one application.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">L'ISO 19110:2005 définit la méthodologie de catalogage des types d'entités. Elle spécifie comment la classification des types d'entités est organisée dans un catalogue d'entités et présentée aux utilisateurs d'un jeu de données géographiques. L'ISO 19110:2005 s'applique à la création de catalogues de types d'entités dans des domaines jusqu'ici non catalogués et à la révision des catalogues d'entités existants pour qu'ils soient conformes aux pratiques normalisées. Elle s'applique au catalogage des types d'entités qui sont représentés sous forme numérique. Ses principes peuvent être élargis au catalogage d'autres formes de données géographiques.
+L'ISO 19110:2005 s'applique à la définition d'entités géographiques au niveau du type d'entité. Elle ne s'applique pas à la représentation des instances individuelles de chaque type. Elle exclut les schémas spatiaux, temporels et de présentation tels que spécifiés, respectivement dans l'ISO 19107, l'ISO 19108 et l'ISO 19117. Elle exclut également les critères de collecte pour les instances d'entités.
+L'ISO 19110:2005 peut être utilisée comme base permettant de définir l'univers du discours modélisé dans une application particulière ou pour normaliser les aspects généraux d'entités du monde réel modélisés dans plusieurs applications.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19110:2016</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19110:2016</docidentifier>
+      <date type="circulated">
+        <on>2016-11-28</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19110:2005/Amd 1:2011</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19110:2005/Amd 1:2011</docidentifier>
+      <date type="circulated">
+        <on>2016-11-28</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.3">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>39965</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

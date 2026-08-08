@@ -2,6 +2,36 @@
 [[sec_8]]
 == Complex Attributes
 
+A complex attribute is an aggregate of other attributes, which may
+themselves be simple or complex. It has no value of its own: it is a
+container, and the information is carried by the sub-attributes bound to
+it. This clause defines the complex attributes used by S-128 and lists
+the sub-attributes belonging to each, with a cross-reference to the
+definition of every sub-attribute in the clause "Attribute and Enumerate
+Descriptions".
+
+The sub-attributes listed here are those the complex attribute may
+contain. Whether a given sub-attribute is optional or mandatory, and how
+many instances of it are permitted, is not a property of the complex
+attribute in isolation but of its binding to the type on which it is
+encoded, and is recorded in the attribute rows of the tables in the
+clauses "Geo Features" and "Information types". In those tables a complex
+attribute is followed by its sub-attributes, each marked (S), and the
+multiplicity shown against a sub-attribute applies within a single
+instance of its parent. Where the parent complex attribute is not
+encoded, no obligation attaching to its sub-attributes arises.
+
+Two consequences follow for the encoder. A complex attribute must not be
+encoded unless at least one of its sub-attributes is populated, since an
+empty container conveys nothing. And where a complex attribute may be
+repeated, each repetition is a self-contained set of sub-attribute
+values: information belonging to one occurrence must not be distributed
+across several, nor several occurrences combined into one.
+
+Each entry below records the IHO definition of the complex attribute, the
+sub-attributes it comprises, and any remarks bearing on its use, followed
+by a note of the types on which it is encoded.
+
 [[sec_8.1]]
 === contact address
 
@@ -25,6 +55,10 @@ it.
 
 |===
 
+*contact address* is encoded on *ContactDetails*, where it carries the
+postal contact for a producer or distributor. Where an organisation has
+more than one address, each is encoded as a separate instance.
+
 [[sec_8.2]]
 === custom paper size
 
@@ -42,6 +76,11 @@ height y.
 * No remarks.
 
 |===
+
+*custom paper size* is encoded within *print information* on
+*PhysicalProduct*. It is used only where the sheet does not correspond to
+a standard size; where it does, the size is recorded using *ISO 216*
+instead, and the two should not both be encoded for the same sheet.
 
 [[sec_8.3]]
 === default locale
@@ -62,6 +101,11 @@ automatically unless an alternative is specified.
 
 |===
 
+*default locale* is encoded on *CatalogueElement* and is therefore
+available on every feature type in the model. It records the language and
+character encoding that apply to the textual content of the catalogued
+item in the absence of any more specific indication.
+
 [[sec_8.4]]
 === feature name
 
@@ -74,13 +118,21 @@ the name at various system display settings.
 [underline]#Sub-attributes:#::
 *language* (see <<sec_7.46>>) +
 *name* (see <<sec_7.50>>) +
-*name usage*(see <<sec_7.52>>)
+*name usage* (see <<sec_7.52>>)
 
 [underline]#Remarks:#
 
 * No remarks.
 
 |===
+
+*feature name* is encoded on *CatalogueElement*, and consequently on
+every type deriving from it, as well as on *ContactDetails*,
+*IndicationOfCarriageRequirement* and *PriceInformation*. It may be
+repeated, which is how a name is provided in more than one language; the
+sub-attribute *name usage* governs which of the names encoded is
+intended for display, as described in the clause "Attribute and Enumerate
+Descriptions".
 
 [[sec_8.5]]
 === information
@@ -104,6 +156,13 @@ of a single external text file that contains the text.
 
 |===
 
+*information* is encoded on *CatalogueElement*, *CatalogueSectionHeader*,
+*ContactDetails* and *PriceInformation*. It is the general mechanism for
+carrying explanatory text, and its use is governed by the clause
+"Textual information", which limits the sub-attribute *text* to 300
+characters and requires *language* to be populated for content in a
+language other than English.
+
 [[sec_8.6]]
 === issuance cycle
 
@@ -122,6 +181,11 @@ service.
 
 |===
 
+*issuance cycle* is encoded on *CatalogueElement* and records the pattern
+by which a catalogued item is reissued. It works with *time interval of
+cycle* and *periodic date range* to express both the length of the cycle
+and the periods within it.
+
 [[sec_8.7]]
 === online resource
 
@@ -130,7 +194,7 @@ service.
 a| [underline]#IHO Definition:# Information about online sources from
 which a resource or data can be obtained.
 
-[underline]#Sub-attributes:#
+[underline]#Sub-attributes:#::
 *application profile* (see <<sec_7.4>>) +
 *linkage* (see <<sec_7.47>>) +
 *name of resource* (see <<sec_7.51>>) +
@@ -143,6 +207,12 @@ which a resource or data can be obtained.
 * No remarks.
 
 |===
+
+*online resource* is encoded on *CatalogueElement*, *ContactDetails* and
+*PriceInformation*. It identifies a network location from which a
+resource may be obtained or at which further information is held. Where
+several resources are available, each is encoded as a separate instance
+rather than by combining addresses in a single *linkage*.
 
 [[sec_8.8]]
 === periodic date range
@@ -158,9 +228,13 @@ or occurrence.
 
 [underline]#Remarks:#
 
-* No remarks
+* No remarks.
 
 |===
+
+*periodic date range* is encoded on *CatalogueElement*, and is used with
+*issuance cycle* to express the periods during which a catalogued item is
+issued or is applicable.
 
 [[sec_8.9]]
 === pricing
@@ -180,6 +254,12 @@ a| [underline]#IHO Definition:# A decision or establishment of a price.
 
 |===
 
+*pricing* is encoded on *PriceInformation* and carries the commercial
+terms. Both *currency* and *price* are mandatory within an instance of
+it, as noted in the clause "Information types"; where an item is offered
+on more than one set of terms, each is encoded as a separate instance of
+*pricing*.
+
 [[sec_8.10]]
 === print information
 
@@ -197,9 +277,14 @@ paper charts.
 
 [underline]#Remarks:#
 
-* No remarks
+* No remarks.
 
 |===
+
+*print information* is encoded on *PhysicalProduct* and gathers the
+characteristics of the printed sheet. It contains *print size*, which is
+mandatory within it, and must therefore not be encoded unless the sheet
+dimensions are known.
 
 [[sec_8.11]]
 === print size
@@ -218,6 +303,10 @@ a| [underline]#IHO Definition:# Size of nautical paper charts.
 
 |===
 
+*print size* is encoded within *print information* on *PhysicalProduct*.
+It expresses the sheet dimensions either as a standard size, using
+*ISO 216*, or as explicit dimensions, using *custom paper size*.
+
 [[sec_8.12]]
 === product specification
 
@@ -234,9 +323,15 @@ to which a nautical product adheres.
 
 [underline]#Remarks:#
 
-* No remarks..
+* No remarks.
 
 |===
+
+*product specification* is encoded on *ElectronicProduct* and on
+*S100Service*. It identifies the specification governing the data. On
+*S100Service* it must be distinguished from *service specification*,
+which governs the service delivering that data; where both apply, both
+are encoded.
 
 [[sec_8.13]]
 === reference to NM
@@ -252,11 +347,21 @@ Mariners.
 
 [underline]#Remarks:#
 
-* The date of the last group of NMs consulted for its correction,
-even if this group and possibly preceding groups did not in fact contain
-any updates to be made to the product in question.
+* This attribute records the date of the last group of Notices to
+Mariners consulted for the correction of the product, even where that
+group, and possibly preceding groups, contained no updates to be applied
+to the product in question.
+
+* The value therefore states how far the product has been checked
+against the Notices to Mariners, and not merely when it was last
+altered.
 
 |===
+
+*reference to NM* is encoded on *PhysicalProduct* and records the
+correction state of the printed product by reference to Notices to
+Mariners. It contains *week of year*, whose sub-attributes are each
+mandatory when it is encoded.
 
 [[sec_8.14]]
 === service specification
@@ -276,6 +381,10 @@ to which a nautical service adheres.
 * No remarks.
 
 |===
+
+*service specification* is encoded on *S100Service* only. It identifies
+the specification governing the service itself, as distinct from
+*product specification*, which governs the data the service delivers.
 
 [[sec_8.15]]
 === source indication
@@ -299,6 +408,11 @@ included or referenced in a dataset are derived.
 * No remarks.
 
 |===
+
+*source indication* is encoded on *CatalogueElement*, *ContactDetails*
+and *PriceInformation*. It records the provenance of the information
+encoded, and its sub-attribute *source type* classifies the kind of
+source from which that information was drawn.
 
 [[sec_8.16]]
 === support file
@@ -328,6 +442,10 @@ in addition to nautical products.
 
 |===
 
+*support file* is encoded on *CatalogueElement* and identifies an
+external file accompanying the catalogued item. It is used with *support
+file specification*, which identifies the format of that file.
+
 [[sec_8.17]]
 === support file specification
 
@@ -346,6 +464,12 @@ to which a support file adheres.
 * No remarks.
 
 |===
+
+*support file specification* is encoded on *CatalogueElement* and states
+the specification to which an associated support file conforms. A
+support file whose specification is not identified cannot reliably be
+interpreted by a consuming system, and the two should therefore be
+encoded together.
 
 [[sec_8.18]]
 === telecommunications
@@ -367,6 +491,13 @@ telephony, or broadcasting.
 
 |===
 
+*telecommunications* is encoded on *ContactDetails* and carries a means
+of contact other than a postal address. Each channel is encoded as a
+separate instance, and within an instance the sub-attributes
+*telecommunication identifier* and *telecommunication service* are
+populated together, since an identifier cannot be interpreted without
+knowing the service to which it applies.
+
 [[sec_8.19]]
 === time interval of cycle
 
@@ -384,6 +515,12 @@ over which data is produced.
 * No remarks.
 
 |===
+
+*time interval of cycle* is encoded on *CatalogueElement* and expresses
+the length of an issuance cycle. Its sub-attribute *type of time interval
+unit* determines the unit in which the interval is expressed, and the
+conventions for combining units are given in the clause "Attribute and
+Enumerate Descriptions".
 
 [[sec_8.20]]
 === time interval of product
@@ -404,6 +541,11 @@ product is updated or renewed.
 
 |===
 
+*time interval of product* is encoded on *CatalogueElement* and expresses
+the period to which the catalogued item itself relates, as distinct from
+*time interval of cycle*, which expresses the period at which it is
+reissued.
+
 [[sec_8.21]]
 === week of year
 
@@ -421,3 +563,11 @@ within a specific year.
 * No remarks.
 
 |===
+
+*week of year* is encoded within *reference to NM* on *PhysicalProduct*.
+Its sub-attributes *week number* and *year number* are each mandatory
+when it is encoded, since a week number without a year does not identify
+a particular Notice to Mariners.
+
+This completes the description of the S-128 model, its attributes and
+their permitted values.

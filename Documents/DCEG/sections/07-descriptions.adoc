@@ -3,6 +3,32 @@
 [[sec_7]]
 == Attribute and Enumerate Descriptions
 
+This clause defines the attributes used by the feature types and
+information types described in the preceding clauses, together with the
+values permitted for those attributes that are of enumeration type. The
+entries are arranged alphabetically by attribute name, and are intended
+to be consulted as required rather than read in sequence.
+
+Each entry gives the IHO definition of the attribute, which is the
+authoritative statement of its meaning. Where the attribute is an
+enumeration, the permitted values follow the definition as a numbered
+list, each with its own definition; the numbers are those encoded in a
+dataset and are the values shown in the attribute rows of the tables in
+the clauses "Geo Features" and "Information types". Where guidance on
+the use of an attribute is necessary, it appears under Remarks.
+
+An entry marked "No remarks." carries no guidance beyond its definition.
+This is not an omission: for the majority of attributes the definition is
+sufficient, and the constraints that govern encoding — which types the
+attribute may be used on, whether it is mandatory, how many instances are
+permitted and whether their order is significant — are properties of the
+binding between the attribute and the type rather than of the attribute
+itself. Those constraints are recorded in the tables of the clauses "Geo
+Features" and "Information types", and are read together with the
+definition given here. The attributes defined in this clause that are of
+complex type are described further in the clause "Complex Attributes",
+where their sub-attributes are listed.
+
 [[sec_7.1]]
 === administrative division
 
@@ -68,12 +94,20 @@ products.
 
 [underline]#Remarks:#
 
-* A single value may be provided when all axes have a common resolution.
-For multiple value provision, use axis order as specified in dataset.
-May be approximate for ungeorectified data. For example, for 5 metre
-resolution, the value 5 must be encoded. If the grid cell size varies
-over the extent of the grid, an approximated value based on model
-parameters or production metadata should be used. For S-111, approximateGridResolution is mandatory for grid formats, thus with multiplicity [1..++*++]. It is also mandatory for S-104.
+* A single value may be provided where all axes have a common
+resolution. Where a value is provided for each axis, the axis order must
+be that specified in the dataset. The value may be approximate for
+ungeorectified data.
+
+* The value is expressed in metres, without a unit of measure. For a
+resolution of 5 metres, the value 5 must be encoded.
+
+* Where the grid cell size varies over the extent of the grid, an
+approximated value based on model parameters or production metadata
+should be used.
+
+* In S-111 this attribute is mandatory for grid formats, and therefore
+carries a multiplicity of [1..++*++]. It is also mandatory in S-104.
 
 |===
 
@@ -82,7 +116,7 @@ parameters or production metadata should be used. For S-111, approximateGridReso
 
 [cols=1,options="unnumbered"]
 |===
-a| [underline]#IHO Definition:#Classification of a catalogue element.
+a| [underline]#IHO Definition:# Classification of a catalogue element.
 
 . *ENC*
 +
@@ -610,7 +644,7 @@ PO Box.
 
 [cols=1,options="unnumbered"]
 |===
-a| [underline]#IHO Definition:#Specifies the algorithm used to compute
+a| [underline]#IHO Definition:# Specifies the algorithm used to compute
 digital signature value.
 
 [start=8]
@@ -744,12 +778,18 @@ or other information in a support file.
 
 [underline]#Remarks:#
 
-* Application schemas must describe how the associated file is identified.
-The associated file will commonly be named in a file reference co-attribute
-of the same complex attribute. Each DCEG must specify requirements
-for the format of the associated file and the semantics of file locator.
-For example, the value of file locator may be an HTML ID in an HTML
-file, line number in a text file) or a bookmark in a PDF file.
+* Application schemas must describe how the associated file is
+identified. The associated file is commonly named in a *file reference*
+co-attribute of the same complex attribute, and the two are therefore
+populated together; a *file locator* encoded without a corresponding
+*file reference* identifies a position within a file that has not been
+named.
+
+* Each Data Classification and Encoding Guide must specify the
+requirements for the format of the associated file and the semantics of
+*file locator*. The form the value takes accordingly depends on the type
+of the file: it may be an HTML identifier in an HTML file, a line number
+in a text file, or a bookmark in a PDF file.
 
 |===
 
@@ -824,7 +864,15 @@ and longitude degrees
 
 [underline]#Remarks:#
 
-* codeListType=open enumeration; encoding=other: [something]
+* This attribute is an open enumeration. The values listed above are
+those in common use, but a value outside that list may be encoded where
+it represents a valid entry in the EPSG Geodetic Parameter Dataset.
+
+NOTE: [NIPWG REVIEW REQUIRED] The remark recorded against this attribute
+read "codeListType=open enumeration; encoding=other: [something]". The
+placeholder indicates that the encoding to be used for a value outside
+the listed enumeration has not been settled. The intended encoding
+requires confirmation.
 
 |===
 
@@ -1099,9 +1147,13 @@ available by the Data Producer.
 
 [underline]#Remarks:#
 
-* Issue date in S-57 and S-101 ENCs defines the date when the ENC
-cell edition was issued. The issue date must be greater than the previous
-issue date of the dataset.
+* In S-57 and S-101 ENCs, *issue date* denotes the date on which the
+ENC cell edition was issued. The value must be later than the issue date
+of the preceding edition of the same dataset.
+
+* The value describes the product being catalogued and not the catalogue
+itself. Where a product is carried forward unchanged into a new edition
+of the catalogue, its issue date must be carried forward with it.
 
 |===
 
@@ -1130,7 +1182,13 @@ and conventional way.
 
 [underline]#Remarks:#
 
-* The language is encoded by a 3 character code following ISO 639-3/T.
+* The language must be encoded as a three character code following
+ISO 639-3/T.
+
+* As stated in the clause "Textual information", the exchange language is
+English, and *language* need not be populated for an English version of
+textual information. It must be populated wherever a language other than
+English is used.
 
 |===
 
@@ -1227,9 +1285,14 @@ setting, for example an alternate language
 
 [underline]#Remarks:#
 
-* For ECDIS, all encoded instances of the complex attribute
-*feature name* will be able to be viewed in the ECDIS Pick Report,
-regardless of the value populated for *name usage*.
+* In ECDIS, all encoded instances of the complex attribute *feature
+name* may be viewed in the ECDIS Pick Report, regardless of the value
+populated for *name usage*. The value therefore governs which name is
+displayed on the chart itself, and does not suppress a name from
+interrogation by the mariner.
+
+* Where several instances of *feature name* are encoded on a feature, no
+more than one of them should be given the value default name display.
 
 |===
 
@@ -1316,7 +1379,13 @@ schemes.
 
 [underline]#Remarks:#
 
-* Enter Original Chart Number for Original Product Number
+* Where the catalogued product is a chart that has been re-branded or
+issued under more than one identification scheme, the original chart
+number must be encoded as the value of this attribute.
+
+* This attribute is distinct from *product number*, which carries the
+identification under which the product is currently issued. Both should
+be populated where the two differ.
 
 |===
 
@@ -1442,7 +1511,13 @@ a| [underline]#IHO Definition:# Product number of a product or service.
 
 [underline]#Remarks:#
 
-* Encode Chart Number in the Product Number
+* Where the catalogued product is a chart, the chart number must be
+encoded as the value of this attribute.
+
+* The value is the identification under which the product is currently
+issued. Where the product was previously issued under a different
+identification, that earlier value is encoded using *original product
+number*.
 
 |===
 
@@ -1902,11 +1977,13 @@ file.
 
 [cols=1,options="unnumbered"]
 |===
-a| [underline]#IHO Definition:# Anidentifier,suchaswords,numbers,letters,symbols,oranycombinationofthose usedtoestablish acontacttoaparticularperson, organisationorservice.
+a| [underline]#IHO Definition:# An identifier, such as words, numbers,
+letters, symbols, or any combination of those, used to establish a
+contact to a particular person, organisation or service.
 
 [underline]#Remarks:#
 
-*  No remarks.
+* No remarks.
 
 |===
 
@@ -1981,16 +2058,20 @@ individuals using computers in a network.
 
 [cols=1,options="unnumbered"]
 |===
-a| [underline]#IHO Definition:# A non-formatted digital text string
+a| [underline]#IHO Definition:# A non-formatted digital text string.
 
 [underline]#Remarks:#
 
-* Should be used, for example, to hold the information that is for
-short cautionary or explanatory notes. Therefore, text populated in
-text must not exceed 300 characters. Text may be in English, or in
-a national language. No formatting of text is possible within text.
-If formatted text, or text strings exceeding 300 characters, is required,
-then an alternate concept should be used.
+* This attribute should be used to hold short cautionary or explanatory
+notes. Text populated in *text* must not exceed 300 characters.
+
+* Text may be in English or in a national language, subject to the
+conventions in the clause "Textual information". No formatting is
+possible within *text*.
+
+* Where formatted text is required, or where the text string would exceed
+300 characters, an alternate concept should be used. The sub-attribute
+*file reference* provides for content held in an external file.
 
 |===
 
@@ -2113,8 +2194,8 @@ perform specific tasks or functions for the user.
 
 [cols=1,options="unnumbered"]
 |===
-a| [underline]#IHO Definition:# The unit of a value indicating a time
-Time Interval..
+a| [underline]#IHO Definition:# The unit of a value indicating a Time
+Interval.
 
 . *hour*
 +
@@ -2149,18 +2230,23 @@ around the sun.
 
 [underline]#Remarks:#
 
-*  This attribute is used for periodically published data, such as
-S-111. The periodicity is entered as shown in the examples below.
+* This attribute is used for periodically published data, such as
+S-111. A periodicity is expressed as a combination of units, the larger
+unit being used as far as it will go and the remainder expressed in the
+next smaller unit, as shown in the examples below.
 +
 --
-For example, if you want to express 26hrs, you would express it as
-1day 2hour.
+A period of 26 hours is expressed as 1day 2hour.
 
-For example, if you want to express 45days, you would express it as
-1month 15hour.
+A period of 45 days is expressed as 1month 15hour.
 
-For example, if you want to express 18months, you would express it
-as 1year 6month.
+A period of 18 months is expressed as 1year 6month.
+
+NOTE: [NIPWG REVIEW REQUIRED] The second example above is reproduced as
+written. A period of 45 days would be expected to resolve to one month
+and fifteen days rather than one month and fifteen hours, and the unit
+given appears to be in error. The example has been left unaltered
+pending confirmation.
 --
 
 |===
@@ -2175,9 +2261,13 @@ or service was updated.
 
 [underline]#Remarks:#
 
-* Update Date in S-57 and S-101 ENCs defines the date when the latest
-update for the current ENC cell edition was issued. This field is
-used whenever there is an update or re-issue of the cell.
+* In S-57 and S-101 ENCs, *update date* denotes the date on which the
+latest update to the current ENC cell edition was issued. The attribute
+is used whenever the cell is updated or reissued.
+
+* *update date* is distinct from *issue date*, which records the issue of
+the edition itself. Where a product has been updated since its edition
+was issued, both should be populated.
 
 |===
 

@@ -1,7 +1,44 @@
 
 == Association Names
 
+An association is a semantic relationship between two types, and is the
+mechanism by which the feature types and information types described in
+the two preceding clauses are joined together to form a coherent
+catalogue. Associations are not attributes: they are not populated with a
+value but are established between two instances, and the meaning of the
+relationship is carried by the association itself.
+
+Every association has a name, which identifies the relationship, and two
+ends, each of which has a role name identifying the part the instance at
+that end plays in it. This clause defines the associations by name; the
+role names taken at the ends are defined in the clause "Association
+Roles" that follows. The two clauses are complementary and are read
+together, since neither an association nor a role is meaningful without
+the other.
+
+Each table below records the IHO definition of the association, any
+remarks bearing on its use, and the two ends. For each end, the table
+gives the role type, the role name, the type with which that end is
+associated, and the multiplicity. The multiplicity is read in the manner
+described in the clause "Multiplicity": it constrains the number of
+instances that may appear at that end of the relationship, and a lower
+limit of 1 or more makes the association mandatory for an instance of the
+type at the opposite end. The multiplicities recorded here correspond to
+those shown in the association rows of the feature and information type
+tables in the two preceding clauses, and the two must be read as a single
+statement of the constraint.
+
+Most associations carry no attributes of their own. Where an association
+does carry attributes, as Product Mapping does, they are listed in a
+further block beneath the association ends and are encoded on the
+relationship rather than on either of the instances it joins.
+
 === Carriage requirement
+
+Carriage Requirement relates a catalogue element to the regulatory
+provision under which the product it describes is required to be carried.
+It is the means by which a catalogue records that an item is not merely
+available but mandated, whether by SOLAS or by another instrument.
 
 [cols="4",options="unnumbered"]
 |===
@@ -20,7 +57,20 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 
 |===
 
+The multiplicity of 1,* at the *Catalogue Element* end means that where
+the association is established, it must reference at least one catalogue
+element and may reference many, so a single carriage requirement may
+apply across an entire class of products. The association is optional at
+the requirement end, and the great majority of catalogue elements will
+not participate in it.
+
 === Distribution details
+
+Distribution Details relates a catalogue section to the organisation
+through which the items in that section may be obtained. Distribution is
+recorded at section level rather than against individual elements,
+reflecting the common arrangement in which a distributor handles a whole
+class of products.
 
 [cols="4",options="unnumbered"]
 |===
@@ -38,7 +88,18 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 
 |===
 
+Both ends permit multiple instances, so a section may be served by
+several distributors and a distributor may serve several sections. Where
+an item is available from more than one source, this is expressed by
+establishing the association once for each distributor rather than by
+recording alternative sources as text.
+
 === Distributor contact
+
+Distributor Contact relates a distributor to the means by which it may be
+reached. It is the counterpart of Producer Contact, and exists separately
+because contact details are held as an independent information type that
+may be shared between organisations.
 
 [cols="4",options="unnumbered"]
 |===
@@ -56,7 +117,26 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 
 |===
 
+The multiplicity of 0,1 at the distributor end and 0,* at the contact
+details end means that one distributor may hold several sets of contact
+details, but a given set of contact details is attributed to at most one
+distributor. Where two organisations genuinely share contact
+arrangements, separate instances of *Contact Details* must be encoded.
+
 === Product mapping
+
+Product Mapping relates one catalogue element to another where the two
+describe equivalent or complementary content, and is the mechanism by
+which a traditional product is associated with its S-100 successor. Both
+ends are taken by *Catalogue Element*, so the association is reflexive:
+it joins two instances of the same type rather than two different types.
+
+Unlike the other associations in this clause, Product Mapping carries an
+attribute. *category of product mapping* has multiplicity 1,1 and must be
+populated whenever the association is established, since the
+relationship is directional and its meaning depends entirely on the
+value given. The value is encoded on the association itself and not on
+either of the catalogue elements it joins.
 
 [cols="5",options="unnumbered"]
 |===
@@ -77,12 +157,25 @@ h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multip
 | 1: higher priority alternative +
 2: lower priority alternative +
 3: recommended enhancement provider +
-4 : recommended enhancement user
+4: recommended enhancement user
 | EN | 1,1
 
 |===
 
+The two roles must not be interchanged. *The Source* is taken by the
+element from which the mapping is made and *The Reference* by the element
+to which it points, and reversing them inverts the meaning of *category
+of product mapping*. The multiplicity of 1,1 at the source end and 0,* at
+the reference end permits one element to point to several others, which
+is the arrangement required where a single traditional chart is
+superseded by more than one S-100 product.
+
 === Price of element
+
+Price Of Element relates an individual catalogue element to the price at
+which it may be obtained. It is one of the two associations by which
+pricing may be attached, the other being Price Of Nautical Product,
+described in the clause that follows.
 
 [cols="4",options="unnumbered"]
 |===
@@ -101,7 +194,20 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 
 |===
 
+The multiplicity of 0,1 at the *Catalogue Element* end and 0,* at the
+*Price Information* end means that an element carries at most one price
+through this association, while a single price instance may be shared by
+any number of elements. Where the price of an element changes according
+to the terms of supply, the variation is expressed within the *pricing*
+complex attribute of the price instance and not by establishing this
+association more than once.
+
 === Price of nautical product
+
+Price Of Nautical Product relates a catalogue section to a price applying
+to the section as a whole. It is used where a single price covers every
+item in a section, in preference to attaching the same price
+individually to each element by Price Of Element.
 
 [cols="4",options="unnumbered"]
 |===
@@ -118,7 +224,22 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 
 |===
 
+Where prices are attached at both section and element level for the same
+item, the two associations overlap and the resulting entry is ambiguous.
+Encoders should attach a price at one level only for any given item.
+
+NOTE: [NIPWG REVIEW REQUIRED] The multiplicity recorded at the
+*Catalogue Section Header* end of this association is 1,1 in the table
+below, but 0,* in the association rows of the *PriceInformation* table in
+the clause "Information types". The two statements are inconsistent and
+the intended constraint requires confirmation.
+
 === Producer contact
+
+Producer Contact relates a producing organisation to the means by which
+it may be reached. Contact details are held separately from
+*Producer Information* so that an organisation acting as both producer
+and distributor need be described only once.
 
 [cols="4",options="unnumbered"]
 |===
@@ -134,7 +255,18 @@ h| Role Type h| Role h| Associated With h| Multiplicity
                  | The Contact Details | *Contact Details*      | 0,*
 |===
 
+As with Distributor Contact, the multiplicity of 0,1 at the producer end
+means that a set of contact details is attributed to at most one
+producer. An organisation acting in both capacities is therefore
+associated with its contact details twice, once through this association
+and once through Distributor Contact.
+
 === Production details
+
+Production Details relates a catalogue section to the organisation
+responsible for producing the items within it. Where a catalogue draws
+together products from several producing authorities, the association is
+established for each of them against the sections to which it applies.
 
 [cols="4",options="unnumbered"]
 |===
@@ -150,7 +282,20 @@ h| Role Type h| Role h| Associated With h| Multiplicity
                  | The Producer     | *Producer Information*     | 0,*
 |===
 
+The association is optional at both ends, but a catalogue section whose
+producer is not identified gives the user no basis on which to judge the
+authority of its content. The association should therefore be
+established for every section wherever the producing organisation is
+known.
+
 === Product package
+
+Product Package relates a catalogue element to the section under which it
+is presented, and is the association that gives a catalogue its
+structure. Of all the associations defined in this clause it is the one
+most likely to be overlooked, since an element may be fully populated
+with attributes and still be absent from the catalogue if this
+association is not established.
 
 [cols="4",options="unnumbered"]
 |===
@@ -166,7 +311,20 @@ h| Role Type h| Role h| Associated With h| Multiplicity
                  | Element Container     | *Catalogue Section Header* | 1,*
 |===
 
+The multiplicity of 1,1 at the *Catalogue Element* end is the strongest
+constraint in the S-128 model. Every catalogue element must belong to
+exactly one section, and an element that does not participate in this
+association cannot be presented to a user however completely its
+attributes are populated. The multiplicity of 1,* at the section end
+means that a section must contain at least one element; an empty section
+must not be encoded.
+
 === Correlated
+
+Correlated relates one navigational product to another where the second
+forms a subordinate part of the first, such as a panel or inset carried
+on a chart. Both ends are taken by *Navigational Product*, making the
+association reflexive in the same manner as Product Mapping.
 
 [cols="4",options="unnumbered"]
 |===
@@ -183,3 +341,11 @@ h| Role Type h| Role h| Associated With h| Multiplicity
 .2+| Association | The Main  | *Navigational Product* | 0,*
                  | The Panel | *Navigational Product* | 0,*
 |===
+
+Both ends have multiplicity 0,*, so a main product may carry several
+panels and a panel may be shared between main products. As with Product
+Mapping, the roles are not interchangeable: *The Main* must be taken by
+the containing product and *The Panel* by the component it contains.
+
+This completes the associations defined by S-128. The role names taken at
+the ends of these associations are defined in the clause that follows.

@@ -1,6 +1,33 @@
 
 == Association Roles
 
+Each end of an association carries a role name, which identifies the part
+played by the instance at that end. The role name is what distinguishes
+the two ends of a relationship from one another, and it is therefore
+essential wherever an association is directional or reflexive: in
+Product Mapping and in Correlated, both ends are taken by the same type,
+and only the role names record which instance is the source and which the
+reference, or which is the main product and which the panel.
+
+A role name is not encoded as an attribute value. It is a property of the
+association, and identifies the end at which an instance is attached.
+The default naming rule given in the S-128 Product Specification applies
+throughout: unless an explicit role name is shown, the role is named
+'the<CLASSNAME>', where <CLASSNAME> is the name of the class to which
+that end is linked. The role names defined below follow that rule with
+the exception of *Catalogue Header* and *Element Container*, which are
+named for the part they play rather than for the class at the end.
+
+The clauses below define each role name used in S-128 and, for each,
+identify the associations in which it appears. Role names are presented
+here in the spaced and capitalised form used for headings; in the
+association rows of the feature and information type tables in the
+clauses "Geo Features" and "Information types" the same names appear in
+the concatenated form used by the Feature Catalogue, so that *The
+Catalogue Element* below and theCatalogueElement in those tables denote
+one and the same role. The associations themselves are defined in the
+clause "Association Names".
+
 === Catalogue header
 
 [cols=1,options="unnumbered,noheader"]
@@ -8,6 +35,11 @@
 | [underline]#IHO Definition:# The top section of a catalogue.
 
 |===
+
+*Catalogue Header* is taken by the *Catalogue Section Header* end of the
+Production Details and Distribution Details associations. It identifies
+the section of the catalogue whose content a given producer or
+distributor is responsible for.
 
 === Element container
 
@@ -17,6 +49,11 @@
 
 |===
 
+*Element Container* is taken by the *Catalogue Section Header* end of the
+Product Package association. It identifies the section within which a
+catalogue element is presented, and is named for the containing function
+it performs rather than for the class at that end.
+
 === The catalogue element
 
 [cols=1,options="unnumbered,noheader"]
@@ -25,6 +62,10 @@
 
 |===
 
+*The Catalogue Element* is taken by the *Catalogue Element* end of the
+Product Package and Price Of Element associations. It identifies the
+element that is placed within a section, or to which a price applies.
+
 === The catalogue of nautical product
 
 [cols=1,options="unnumbered,noheader"]
@@ -32,6 +73,11 @@
 | [underline]#IHO Definition:# Reference to a Catalogue of Nautical product.
 
 |===
+
+*The Catalogue Of Nautical Product* is taken by the *Catalogue Section
+Header* end of the Price Of Nautical Product association. It identifies
+the section to which a price applies where that price covers the section
+as a whole rather than an individual element.
 
 === The contact details
 
@@ -42,6 +88,11 @@ or organisation by postal, internet, telephone, telex and radio systems.
 
 |===
 
+*The Contact Details* is taken by the *Contact Details* end of the
+Producer Contact and Distributor Contact associations. It identifies the
+means by which the organisation at the opposite end of the association
+may be reached.
+
 === The distributor
 
 [cols=1,options="unnumbered,noheader"]
@@ -49,6 +100,11 @@ or organisation by postal, internet, telephone, telex and radio systems.
 | [underline]#IHO Definition:# Reference to the distributor.
 
 |===
+
+*The Distributor* is taken by the *Distributor Information* end of the
+Distribution Details and Distributor Contact associations. It identifies
+the organisation through which the items in a catalogue section may be
+obtained.
 
 === The element
 
@@ -58,6 +114,12 @@ or organisation by postal, internet, telephone, telex and radio systems.
 
 |===
 
+*The Element* is taken by the *Catalogue Element* end of the Carriage
+Requirement association. It identifies the catalogue element to which a
+carriage requirement applies, and is distinct from *The Catalogue
+Element*, which is used by the Product Package and Price Of Element
+associations.
+
 === The price information
 
 [cols=1,options="unnumbered,noheader"]
@@ -66,6 +128,10 @@ or organisation by postal, internet, telephone, telex and radio systems.
 
 |===
 
+*The Price Information* is taken by the *Price Information* end of both
+the Price Of Element and Price Of Nautical Product associations. It
+identifies the price attaching to an element or to a section.
+
 === The producer
 
 [cols=1,options="unnumbered,noheader"]
@@ -73,6 +139,11 @@ or organisation by postal, internet, telephone, telex and radio systems.
 | [underline]#IHO Definition:# Reference to a producer.
 
 |===
+
+*The Producer* is taken by the *Producer Information* end of the
+Production Details and Producer Contact associations. It identifies the
+organisation responsible for producing the content of a catalogue
+section.
 
 === The reference
 
@@ -83,6 +154,12 @@ information related to a specific element or data.
 
 |===
 
+*The Reference* is taken by one end of the Product Mapping association,
+and identifies the catalogue element to which a mapping points. Because
+both ends of that association are taken by *Catalogue Element*, this role
+name and *The Source* are the only means of establishing the direction of
+the relationship, and they must not be interchanged.
+
 === The requirement
 
 [cols=1,options="unnumbered,noheader"]
@@ -91,6 +168,11 @@ information related to a specific element or data.
 system or process.
 
 |===
+
+*The Requirement* is taken by the *Indication Of Carriage Requirement*
+end of the Carriage Requirement association. It identifies the regulatory
+provision under which the associated catalogue elements are required to
+be carried.
 
 === The source
 
@@ -101,6 +183,12 @@ or data.
 
 |===
 
+*The Source* is taken by one end of the Product Mapping association, and
+identifies the catalogue element from which a mapping is made. It is the
+counterpart of *The Reference*, and the value of *category of product
+mapping* is to be read as describing the relationship of the source to
+the reference and not the reverse.
+
 === The main
 
 [cols=1,options="unnumbered,noheader"]
@@ -110,6 +198,12 @@ panel(s).
 
 |===
 
+*The Main* is taken by one end of the Correlated association, and
+identifies the navigational product that contains a panel. As with
+Product Mapping, both ends of the Correlated association are taken by the
+same type, so this role name and *The Panel* are the only means of
+establishing which product contains the other.
+
 === The panel
 
 [cols=1,options="unnumbered,noheader"]
@@ -117,3 +211,12 @@ panel(s).
 | [underline]#IHO Definition:# Reference to the panel of a main product.
 
 |===
+
+*The Panel* is taken by one end of the Correlated association, and
+identifies the subordinate component, such as a panel or inset, carried
+on the product at the opposite end. It is the counterpart of *The Main*
+and must not be interchanged with it.
+
+This completes the definition of the S-128 model. The clauses that follow
+describe the individual attributes and their permitted values, and the
+complex attributes constructed from them.

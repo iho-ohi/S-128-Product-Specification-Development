@@ -1,7 +1,50 @@
 
 == Information types
 
+This clause describes the information types defined by S-128. An
+information type carries attributes but no geometry, and is reached only
+through an association with a feature or with another information type,
+as described in the clause "Information types" above. Its purpose is to
+hold content that applies to more than one catalogued item, so that the
+content is encoded once and referenced wherever it applies.
+
+The tables follow the same form as those in the preceding clause, except
+that the row headed [underline]#Primitives:# records None throughout,
+since no information type may carry geometry. An information instance
+that is not the target of at least one association cannot be reached by a
+consuming system and must not be encoded; the associations available to
+each type are listed in the lower rows of its table, and are described in
+full in the clauses "Association Names" and "Association Roles".
+
+The six types below fall into three groups. *CatalogueSectionHeader*
+structures the catalogue itself, dividing it into the sections under
+which catalogue elements are presented. *ProducerInformation*,
+*DistributorInformation* and *ContactDetails* identify the organisations
+associated with the catalogued items and record how they may be reached.
+*PriceInformation* and *IndicationOfCarriageRequirement* carry commercial
+and regulatory information attaching to catalogue elements. None of the
+information types participates in an inheritance hierarchy, so each
+table below is complete in itself and no attributes are inherited from
+elsewhere.
+
 === Catalogue section header
+
+*CatalogueSectionHeader* models the division of a catalogue into
+sections, and is the means by which catalogue elements are grouped and
+ordered for presentation. It is the structural backbone of an S-128
+dataset: every catalogue element is placed within a section by the
+Product Package association, and a dataset therefore requires at least
+one instance of this type.
+
+*catalogue section number* has multiplicity 1,1 and must be populated. It
+determines the position of the section within the catalogue, and the
+values encoded across a dataset should form a coherent sequence, since a
+consuming system has no other basis on which to order the sections.
+*catalogue section title* is optional but should be populated wherever
+the section is intended to be presented to a user under a heading. The
+complex attribute *information* may be used to carry an explanatory note
+about the section as a whole, subject to the conventions in the clause
+"Textual information".
 
 [cols="8",options="unnumbered"]
 |===
@@ -30,7 +73,7 @@
 
 [underline]#Distinction:#
 
-8+h| Feature/Information associations
+8+h| [underline]#Feature/Information Associations#
 .2+h| Type .2+h| Association Name 6+h| Association Ends
 h| Class h| Role h| Mult h| Class h| Role h| Mult
 
@@ -41,7 +84,42 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 
 |===
 
+The associations listed above establish the four relationships in which a
+section header participates. Product Package attaches the catalogue
+elements presented within the section. Production Details and
+Distribution Details identify the organisations responsible for producing
+and distributing the content of the section, and Price Of Nautical
+Product attaches pricing that applies to the section as a whole rather
+than to an individual element.
+
+Pricing may therefore be encoded at either of two levels. Where a price
+applies to every element within a section it should be attached to the
+section header, and where prices differ between elements they must be
+attached to the individual elements by the Price Of Element association
+described under *CatalogueElement*.
+
 === Contact details
+
+*ContactDetails* models the means by which a person or organisation may
+be reached, and is used by both *ProducerInformation* and
+*DistributorInformation* rather than being attached to catalogue elements
+directly. Because a single organisation commonly acts in more than one
+capacity, encoding contact information as a separate information type
+allows one instance to serve several producers or distributors without
+repetition.
+
+*contact instructions* has multiplicity 1,1 and must be populated on
+every instance. The remaining attributes are optional and are organised
+into three complex attributes, each of which may be repeated: *contact
+address* for postal contact, *online resource* for contact through a
+network service, and *telecommunications* for voice, facsimile,
+electronic mail and similar channels. Within *telecommunications*, the
+sub-attribute *telecommunication service* identifies the channel to which
+a *telecommunication identifier* applies; an identifier encoded without
+its service cannot be interpreted, and the two should therefore be
+populated together. Where an organisation may be reached by several
+channels, each is encoded as a separate instance of *telecommunications*
+rather than by combining them in a single value.
 
 [cols="8",options="unnumbered"]
 |===
@@ -84,10 +162,10 @@ or organisation by postal, internet, telephone, telex and radio systems.
 2: facsimile +
 3: sms +
 4: data +
-5: streamed data  +
+5: streamed data +
 6: telex +
 7: telegraph +
-8 : email
+8: email
 | (S) EN | 0,*
 
 3+| source indication | 2+| | C | 0,*
@@ -98,11 +176,11 @@ or organisation by postal, internet, telephone, telex and radio systems.
 4: port +
 5: immigration +
 6: health +
-7: coast guard  +
+7: coast guard +
 8: agricultural +
 9: military +
-10: private company  +
-11: maritime police  +
+10: private company +
+11: maritime police +
 12: environmental +
 13: fishery +
 14: finance +
@@ -110,7 +188,7 @@ or organisation by postal, internet, telephone, telex and radio systems.
 16: customs +
 17: hydrographic office +
 18: RENC +
-19 : VARs
+19: VARs
 | (S) EN | 1,*
 
 3+| country name  |          2+| | (S) TE | 0,1
@@ -118,17 +196,17 @@ or organisation by postal, internet, telephone, telex and radio systems.
 3+| source        |          2+| | (S) TE | 0,1
 
 3+| source type |
-2+| 1: law or regulation  +
-2: official publication  +
+2+| 1: law or regulation +
+2: official publication +
 7: mariner report, confirmed +
 8: mariner report, not confirmed +
 9: industry publications and reports +
 10: remotely sensed images +
 11: photographs +
 12: products issued by HO service +
-13: news media  +
+13: news media +
 14: traffic data +
-15 : maritime
+15: maritime
 | (S) EN | 0,1
 
 3+| feature name | 2+| | (S) C  | 0,*
@@ -140,7 +218,7 @@ or organisation by postal, internet, telephone, telex and radio systems.
 2: alternate name display
 | (S) EN | 0,1
 
-8+h|
+8+a|
 
 [underline]#INT 1 Reference:#
 
@@ -148,7 +226,7 @@ or organisation by postal, internet, telephone, telex and radio systems.
 
 [underline]#Distinction:#
 
-8+h| Feature/Information associations
+8+h| [underline]#Feature/Information Associations#
 
 .2+h| Type .2+h| Association Name 6+h| Association Ends
 h| Class h| Role h| Mult h| Class h| Role h| Mult
@@ -157,7 +235,30 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 | Association | Distributor Contact | *DistributorInformation* | theDistributor | 0,1 | *ContactDetails* | theContactDetails | 0,*
 |===
 
+The two associations listed above are directed from
+*ProducerInformation* and *DistributorInformation* respectively, and both
+have multiplicity 0,* at the *ContactDetails* end. An organisation may
+therefore hold several sets of contact details — for example, separate
+details for sales and for technical support — and each is encoded as a
+distinct instance of this type.
+
 === Indication of carriage requirement
+
+*IndicationOfCarriageRequirement* records the regulatory basis on which a
+catalogued product is required to be carried, whether under SOLAS, under
+another international instrument, or under national legislation. It is
+attached to catalogue elements by the Carriage Requirement association,
+whose multiplicity permits a single instance to serve every element to
+which the same requirement applies.
+
+Both *domestic carriage requirements* and *international carriage
+requirements* are optional free text attributes, and are distinguished by
+the jurisdiction from which the requirement derives rather than by the
+waters in which it applies. Where a product is subject to requirements of
+both kinds, both attributes should be populated on the same instance. As
+free text attributes their content cannot be interpreted by a consuming
+system, and the conventions in the clause "Textual information"
+concerning language apply to them.
 
 [cols="5",options="unnumbered"]
 |===
@@ -194,7 +295,36 @@ h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multip
 
 |===
 
+The remark recorded in the table states that this type will be developed
+in a future edition. Until that development takes place, encoders should
+confine the content of both attributes to a plain statement of the
+requirement and the instrument from which it derives, and should not
+attempt to encode conditions or exemptions that a consuming system would
+be unable to interpret.
+
+*IndicationOfCarriageRequirement* declares no associations of its own in
+the table above; it is reached from *CatalogueElement* by the Carriage
+Requirement association, which is described in the clause "Association
+Names".
+
 === Price information
+
+*PriceInformation* records the cost of obtaining a catalogued item. It is
+encoded as an information type so that a single price may be attached
+either to an individual catalogue element, by the Price Of Element
+association, or to a catalogue section as a whole, by the Price Of
+Nautical Product association.
+
+The commercial content is carried by the complex attribute *pricing*,
+which may be repeated. Within a single instance of *pricing*, both
+*currency* and *price* have multiplicity 1,1 and must be populated; a
+price encoded without its currency cannot be interpreted, and the
+currency must therefore be given even where a producing authority
+publishes in one currency only. *contract period* is optional and
+distinguishes prices that apply for a stated term. Where an item is
+offered at different prices under different terms, each is encoded as a
+separate instance of *pricing* rather than by expressing the variation as
+free text.
 
 [cols="8",options="unnumbered"]
 |===
@@ -235,7 +365,7 @@ h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multip
 7: coast guard +
 8: agricultural +
 9: military +
-10: private company  +
+10: private company +
 11: maritime police +
 12: environmental +
 13: fishery +
@@ -282,7 +412,7 @@ h| S-128 Attribute h| S-57 Acronym h| Allowable Encoding Value h| Type h| Multip
 
 [underline]#Distinction:#
 
-8+h| Feature/Information associations
+8+h| [underline]#Feature/Information Associations#
 .2+h| Type .2+h| Association Name 6+h| Association Ends
 h| Class h| Role h| Mult h| Class h| Role h| Mult
 
@@ -291,7 +421,31 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 
 |===
 
+The two associations listed above correspond to the two levels at which a
+price may be attached, as described under *CatalogueSectionHeader*. Both
+have multiplicity 0,* at the *PriceInformation* end, so a single price
+instance may serve any number of elements or sections.
+
+Where a price is attached at both levels for the same item, the price
+attached to the element is the more specific and must be taken to
+prevail. Encoders should avoid creating such an overlap, and should
+attach a price at one level only for any given item.
+
 === Producer information
+
+*ProducerInformation* identifies the organisation responsible for
+producing a catalogued item. It is attached to a catalogue section by the
+Production Details association, and is linked to the means of contacting
+the organisation by the Production Contact association, which references
+an instance of *ContactDetails*.
+
+Both attributes are simple text attributes, and the distinction between
+them is set out in the remarks below the table. *agency responsible for
+production* has multiplicity 1,1 and must be populated on every instance;
+*agency name* is optional and is populated only where the organisation
+carrying out production differs from the organisation responsible for the
+content. Where the two are the same, *agency name* should be omitted
+rather than populated with a duplicate value.
 
 [cols="8",options="unnumbered"]
 |===
@@ -326,7 +480,7 @@ identified.
 
 [underline]#Distinction:#
 
-8+h| Feature/Information associations
+8+h| [underline]#Feature/Information Associations#
 .2+h| Type .2+h| Association Name 6+h| Association Ends
 h| Class h| Role h| Mult h| Class h| Role h| Mult
 
@@ -335,7 +489,32 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 
 |===
 
+The Production Contact association attaches the contact details of the
+producing organisation, and Production Details places the producer
+against the catalogue section whose content it produced. Both are
+optional at the *ProducerInformation* end, but an instance that
+participates in neither is unreachable within the dataset and serves no
+purpose.
+
+Where a catalogue contains products from several producing authorities,
+a separate instance of this type is encoded for each, and each is
+associated with the sections to which it applies.
+
 === Distributor information
+
+*DistributorInformation* identifies an organisation through which a
+catalogued item may be obtained. It is the counterpart of
+*ProducerInformation*, and the two are deliberately separate: the
+organisation that produces an item and the organisation that distributes
+it are frequently distinct, and a single item may be available from
+several distributors.
+
+*distributor name* has multiplicity 1,1 and must be populated; it is the
+only attribute the type declares. The means of contacting the
+distributor is not encoded here but on an associated instance of
+*ContactDetails*, reached by the Distributor Contact association, and an
+instance of *DistributorInformation* encoded without that association
+records a name that a user has no means of acting upon.
 
 [cols="8",options="unnumbered"]
 |===
@@ -358,7 +537,7 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 
 [underline]#Distinction:#
 
-8+h| Feature/Information associations
+8+h| [underline]#Feature/Information Associations#
 .2+h| Type .2+h| Association Name 6+h| Association Ends
 h| Class h| Role h| Mult h| Class h| Role h| Mult
 
@@ -366,3 +545,15 @@ h| Class h| Role h| Mult h| Class h| Role h| Mult
 | Association | Distributor Contact  | *ContactDetails*         | theContactDetails | 0,* | *DistributorInformation* | theDistributor | 0,1
 
 |===
+
+The Distribution Details association places the distributor against the
+catalogue sections it distributes, and Distributor Contact attaches the
+means of reaching it. A distributor handling several sections of a
+catalogue is encoded once and associated with each of them, rather than
+being repeated for each section.
+
+This completes the information types defined by S-128. The associations
+referred to throughout this clause and the preceding one are described in
+the two clauses that follow: "Association Names" defines each association
+and the ends it connects, and "Association Roles" defines the role names
+taken at those ends.

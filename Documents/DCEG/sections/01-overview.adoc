@@ -4,29 +4,58 @@
 
 === Preface
 
-The "Data Classification and Encoding Guide" has been developed to
-provide consistent, standardized instructions for encoding S-100 compliant
-Catalogue of Nautical Products (S-128) data.
+The Data Classification and Encoding Guide (DCEG) has been developed to
+provide consistent and standardised instructions for encoding S-100
+compliant Catalogue of Nautical Products (S-128) data. It forms Annex A
+to the S-128 Product Specification and is published as a separate
+document, so that encoding guidance can be maintained and reissued
+without amending the Product Specification itself.
 
-The purpose of the Data Classification and Encoding Guide is to facilitate
-S-128 encoding to meet IHO standards for the proper display of Catalogue
-of Nautical Products information in an ECDIS and other electronic
-charting displays. This document describes how to encode information
-that the modeller considers relevant to a Catalogue of Nautical data
-product. The content of a dataset is at the discretion of the producing
-authority provided that the conventions described within this document
-are followed. A "producing authority" is a Hydrographic Office (HO)
-or other organization authorized by a government, to produce definitive
+The purpose of the DCEG is to facilitate S-128 encoding to a standard
+that meets IHO requirements for the proper display of Catalogue of
+Nautical Products information in an ECDIS and in other electronic
+charting displays. Whereas the Product Specification defines what the
+S-128 data product is, and the Feature Catalogue defines the types from
+which it may be constructed, this document explains how those types are
+to be applied to real world circumstances. It describes how to encode
+information that the modeller considers relevant to a Catalogue of
+Nautical Products data product, and identifies the conventions that
+must be observed so that datasets produced by different authorities can
+be interpreted consistently.
+
+The content of a dataset is at the discretion of the producing
+authority, provided that the conventions described within this document
+are followed. That discretion is deliberate: the range of products
+catalogued, and the level of detail recorded for each of them, will
+differ between authorities according to national practice and the
+services offered. What must not differ is the manner in which a given
+item of information is expressed once an authority has decided to
+record it. A producing authority is a Hydrographic Office (HO), or
+another organisation authorised by a government to produce definitive
 nautical information.
 
-The entire S-100 Universal Hydrographic Data Model, including the
-S-128 Product Specification, is available at the following web site,
+This document must be read in conjunction with the S-128 Product
+Specification and the S-128 Feature Catalogue. Where this document and
+the Feature Catalogue appear to disagree on the permitted attributes,
+values or multiplicities of a type, the Feature Catalogue is
+authoritative, and the discrepancy must be reported to the IHO Nautical
+Information Provision Working Group (NIPWG) in accordance with the
+clause "Maintenance" below.
+
+The entire S-100 Universal Hydrographic Data Model, including the S-128
+Product Specification, is available at the following web site,
 http://www.iho.int/[http://www.iho.int].
 
 === S-128 Annex A - Data Classification and Encoding Guide - Metadata
 
 NOTE: This information uniquely identifies this Annex to the Product
 Specification and provides information about its creation and maintenance.
+
+The metadata recorded below identifies the edition of this Annex to
+which any statement of conformance refers. Encoders should confirm that
+the version and date given here correspond to the edition of the S-128
+Product Specification and Feature Catalogue in use before applying the
+guidance contained in this document.
 
 *Title:*:: The International Hydrographic Organization Catalogue of
 Nautical Products Specification, Annex A -- Data Classification and
@@ -65,6 +94,13 @@ Working Group (NIPWG) and must be made available via the IHO web site.
 [heading="terms and definitions"]
 ==== Terms and definitions
 
+For the purposes of this document, the terms and definitions given
+below apply. They are reproduced here because each of them bears
+directly on how features, attributes and geometry are to be encoded;
+the wider vocabulary of hydrography is defined in IHO S-32, and the
+terms particular to the data product itself are defined in the S-128
+Product Specification.
+
 ===== aggregation
 
 special form of {{association}} that specifies a whole-part relationship
@@ -88,7 +124,7 @@ of an entity
 
 ===== composition
 
-a strong {{aggregation}}; if a container object is deleted than all
+a strong {{aggregation}}; if a container object is deleted then all
 of its containee objects are deleted as well (that is, containee objects
 cannot exist without the container object)
 
@@ -171,9 +207,17 @@ that delineate the limits of the surface
 
 ==== Abbreviations
 
+The following abbreviations are used in this document.
+
+CNP:: Catalogue of Nautical Products
+
+DCEG:: Data Classification and Encoding Guide
+
 ECDIS:: Electronic Chart Display and Information System
 
 ENC:: Electronic Navigational Chart
+
+EPSG:: European Petroleum Survey Group
 
 GML:: Geography Markup Language
 
@@ -185,22 +229,54 @@ IMO:: International Maritime Organization
 
 ISO:: International Organization for Standardization
 
+NIPWG:: Nautical Information Provision Working Group
+
+RENC:: Regional Electronic Navigational Chart Coordinating Centre
+
 SENC:: System Electronic Navigational Chart
 
 SOLAS:: Safety of Life at Sea
 
+URL:: Uniform Resource Locator
+
+URN:: Uniform Resource Name
+
+UTF-8:: Unicode Transformation Format, 8-bit
+
+WGS 84:: World Geodetic System 1984
+
 === Use of language
 
-Within this document:
+The obligation attaching to every statement in this document is carried
+by a single verb, and that verb is used consistently throughout. Where a
+sentence contains none of the three verbs below, it is descriptive and
+places no obligation on the encoder. Within this document:
 
-"Must" indicates a mandatory requirement;
+"Must" indicates a mandatory requirement, which has to be satisfied for
+the encoding to conform to this document;
 
-"Should" indicates an optional requirement, that is the recommended
-process to be followed, but is not mandatory;
+"Should" indicates a recommendation, that is, the process that is
+recommended to be followed, but which is not mandatory;
 
 "May" means "allowed to" or "could possibly", and is not mandatory.
+
+The verb "shall" is not used in this document. Requirements expressed as
+mandatory in this document derive either from the S-128 Product
+Specification and Feature Catalogue, in which case the multiplicities
+recorded in the tables of this document are the authoritative statement
+of the obligation, or from the encoding conventions established here in
+the interests of consistency between producing authorities.
 
 === Maintenance
 
 Changes to the Data Classification and Encoding Guide must occur in
-accordance with the S-128 CNP Product Specification.
+accordance with the S-128 CNP Product Specification. Proposals for
+change are submitted to and coordinated by NIPWG, and new editions of
+this document must be made available via the IHO web site.
+
+Because this document is an Annex to the Product Specification rather
+than part of it, an edition of the DCEG may be reissued to correct or
+extend encoding guidance without a corresponding change to the Product
+Specification or the Feature Catalogue. Encoders should therefore verify
+that they hold the current edition of this document, and not rely on the
+edition of the Product Specification alone as an indication of currency.

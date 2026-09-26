@@ -3,7 +3,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" productId="S-128" version="1.1.0"
 xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100PC/20240415/S100PortrayalCatalog.xsd">
 
-  <pixmaps/>  
+  <pixmaps/>
   <colorProfiles>
     <colorProfile id="1">
       <description>
@@ -11,11 +11,11 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
         <description>Color Profile</description>
         <language>eng</language>
       </description>
-        <fileName>colorProfile.xml</fileName>
-        <fileType>ColorProfile</fileType>
-        <fileFormat>XML</fileFormat>
+      <fileName>colorProfile.xml</fileName>
+      <fileType>ColorProfile</fileType>
+      <fileFormat>XML</fileFormat>
     </colorProfile>
-  </colorProfiles>  
+  </colorProfiles>
   <symbols>
 	<symbol id="QUESMRK1">
       <description>
@@ -27,7 +27,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
       <fileType>Symbol</fileType>
       <fileFormat>SVG</fileFormat>
     </symbol>
-  </symbols> 
+  </symbols>
   <styleSheets>
     <styleSheet id="daySvgStyle">
       <description>
@@ -61,7 +61,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
     </styleSheet>
   </styleSheets>
   <lineStyles>
-	<lineStyle id="ElectronicProduct01">
+	<lineStyle id="ElePrd01">
       <description>
         <name>ElectronicProduct01</name>
         <description>ElectronicProduct01</description>
@@ -71,7 +71,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
       <fileType>LineStyle</fileType>
       <fileFormat>XML</fileFormat>
     </lineStyle>
-	<lineStyle id="S100Service01">
+	<lineStyle id="S100Sv01">
       <description>
         <name>S100Service01</name>
         <description>S100Service01</description>
@@ -81,7 +81,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
       <fileType>LineStyle</fileType>
       <fileFormat>XML</fileFormat>
     </lineStyle>
-	<lineStyle id="PhysicalProduct01">
+	<lineStyle id="PhyPrd01">
       <description>
         <name>PhysicalProduct01</name>
         <description>PhysicalProduct01</description>
@@ -93,7 +93,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
     </lineStyle>	
   </lineStyles>
   <areaFills/>
-  <fonts/>  
+  <fonts/>
   <viewingGroups>
     <viewingGroup id="31000">
 	 <description>
@@ -109,8 +109,8 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
 		<language>eng</language>
 	 </description>
 	</viewingGroup>
-  </viewingGroups>  
-  <foundationMode/>  
+  </viewingGroups>
+  <foundationMode/>
   <viewingGroupLayers>
    <viewingGroupLayer id="18">
 	 <description>
@@ -131,7 +131,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
 	 </description>
 	 <viewingGroupLayer>18</viewingGroupLayer>
 	</displayMode>
-  </displayModes>  
+  </displayModes>
   <displayPlanes>
     <displayPlane id="OVERRADAR" order="1">
       <description>
@@ -145,10 +145,10 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
           <name>Under radar</name>
           <description>Content displayed underneath Radar image</description>
           <language>eng</language>
-      </description> 
-    </displayPlane>   
+      </description>
+    </displayPlane>
   </displayPlanes>
-  <context/>  
+  <context/>
   <rules>
     <ruleFile id="main">
       <description>
@@ -156,53 +156,64 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
         <description>main rule file</description>
         <language>eng</language>
       </description>
-      <fileName>main.xsl</fileName>
+      <fileName>main.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
       <ruleType>TopLevelTemplate</ruleType>
     </ruleFile>
+    <ruleFile id="S100Scripting">
+      <description>
+         <name>S100Scripting</name>
+         <description>Scripting support</description>
+         <language>eng</language>
+      </description>
+      <fileName>S100Scripting.lua</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>LUA</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+   </ruleFile>
 	<ruleFile id="Default">
       <description>
         <name>Default</name>
         <description>Default</description>
         <language>eng</language>
       </description>
-      <fileName>Default.xsl</fileName>
+      <fileName>Default.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-	<ruleFile id="simpleLineStyle">
+    <ruleFile id="PortrayalAPI">
       <description>
-        <name>simpleLineStyle</name>
-        <description>simple Line Style rule file</description>
-        <language>eng</language>
+         <name>PortrayalAPI</name>
+         <description>Portrayal API</description>
+         <language>eng</language>
       </description>
-      <fileName>simpleLineStyle.xsl</fileName>
+      <fileName>PortrayalAPI.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
-    </ruleFile>
-	<ruleFile id="textStyle">
+   </ruleFile>
+   <ruleFile id="PortrayalModel">
       <description>
-        <name>textStyle</name>
-        <description>text Style rule file</description>
-        <language>eng</language>
+         <name>PortrayalModel</name>
+         <description>Portrayal Model</description>
+         <language>eng</language>
       </description>
-      <fileName>textStyle.xsl</fileName>
+      <fileName>PortrayalModel.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>LUA</fileFormat>
       <ruleType>SubTemplate</ruleType>
-    </ruleFile>
+   </ruleFile>
 	<ruleFile id="DistributorInformation">
       <description>
         <name>Distributor Information</name>
         <description>Distributor Information rule file</description>
         <language>eng</language>
       </description>
-      <fileName>DistributorInformation.xsl</fileName>
+      <fileName>DistributorInformation.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
 	<ruleFile id="S100Service">
@@ -211,7 +222,7 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
         <description>S100 Service rule file</description>
         <language>eng</language>
       </description>
-      <fileName>S100Service.xsl</fileName>
+      <fileName>S100Service.lua</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
@@ -222,9 +233,9 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
         <description>Electronic Product rule file</description>
         <language>eng</language>
       </description>
-      <fileName>ElectronicProduct.xsl</fileName>
+      <fileName>ElectronicProduct.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
 	<ruleFile id="PhysicalProduct">
@@ -233,10 +244,10 @@ xsi:schemaLocation="http://www.iho.int/S100PortrayalCatalog/5.2 https://schemas.
         <description>Physical Product rule file</description>
         <language>eng</language>
       </description>
-      <fileName>PhysicalProduct.xsl</fileName>
+      <fileName>PhysicalProduct.lua</fileName>
       <fileType>Rule</fileType>
-      <fileFormat>XSLT</fileFormat>
+      <fileFormat>lua</fileFormat>
       <ruleType>SubTemplate</ruleType>
-    </ruleFile>	
+    </ruleFile>
   </rules>
 </pc:portrayalCatalog>

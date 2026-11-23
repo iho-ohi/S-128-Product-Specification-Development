@@ -409,3 +409,4 @@ Gemfile.lock
 *.log.txt
 Documents/*/document.err.html
 Documents/*/document.xml.abort
+/.gitignore

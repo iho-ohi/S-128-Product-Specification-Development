@@ -2530,7 +2530,7 @@
 					<!--4-->
 					<xs:element name="typeOfProductFormat" type="typeOfProductFormatType" minOccurs="1" maxOccurs="1"/>
 					<!--5-->
-					<xs:element name="productSpecification" type="productSpecificationType" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="productSpecification" type="productSpecificationType" minOccurs="1" maxOccurs="1"/>
 					<xs:element name="geometry" minOccurs="0" maxOccurs="unbounded">
 						<xs:complexType>
 							<xs:choice>

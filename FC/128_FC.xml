@@ -2524,8 +2524,7 @@
 		</S100FC:S100_FC_FeatureAssociation>
 		<S100FC:S100_FC_FeatureAssociation isAbstract="false">
 			<S100FC:name>Correlated</S100FC:name>
-			<S100FC:definition>A supplementary or secondary part of the product, which may appear multiple times, offering control or display functionalities depending on its configuration.
-			</S100FC:definition>
+			<S100FC:definition>A supplementary or secondary part of the product, which may appear multiple times, offering control or display functionalities depending on its configuration.</S100FC:definition>
 			<S100FC:code>Correlated</S100FC:code>
 			<S100FC:role ref="theMain"/>
 			<S100FC:role ref="thePanel"/>

@@ -2035,6 +2035,7 @@
 			<xs:enumeration value="47"/>
 			<xs:enumeration value="48"/>
 			<xs:enumeration value="49"/>
+			<xs:enumeration value="50"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="contactAddressType">

@@ -799,7 +799,7 @@
 		<xs:annotation>
 			<xs:documentation>Location (address) for online access using a URL/URI address or similar addressing scheme.</xs:documentation>
 		</xs:annotation>
-		<xs:restriction base="xs:string"/>
+		<xs:restriction base="xs:anyURI"/>
 	</xs:simpleType>
 	<xs:complexType name="categoryOfProductMappingType">
 		<xs:annotation>

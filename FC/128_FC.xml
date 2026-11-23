@@ -1548,6 +1548,11 @@
 					<S100FC:definition>A vertical reference near the lowest astronomical tide (LAT), below which the sea level falls only very exceptionally.</S100FC:definition>
 					<S100FC:code>49</S100FC:code>
 				</S100FC:listedValue>
+				<S100FC:listedValue>
+					<S100FC:label>National Low Water Datum</S100FC:label>
+					<S100FC:definition>A low water datum defined by a National authority, from which levels, clearances and tidal heights are measured by this authority.</S100FC:definition>
+					<S100FC:code>50</S100FC:code>
+				</S100FC:listedValue>
 			</S100FC:listedValues>
 		</S100FC:S100_FC_SimpleAttribute>
 	</S100FC:S100_FC_SimpleAttributes>

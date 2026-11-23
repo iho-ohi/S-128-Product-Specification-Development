@@ -1557,7 +1557,7 @@
 			<S100FC:definition>Direction or superscription of a letter, package, etc., specifying the name of the place to which it is directed, and optionally a contact person or organisation who should receive it.</S100FC:definition>
 			<S100FC:code>contactAddress</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>2269</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>735</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1601,7 +1601,7 @@
 			<S100FC:definition>User specified paper size width x, height y</S100FC:definition>
 			<S100FC:code>customPaperSize</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9220</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1261</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1624,7 +1624,7 @@
 			<S100FC:definition>Locale of an option that is selected automatically unless an alternative is specified.</S100FC:definition>
 			<S100FC:code>defaultLocale</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9222</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1307</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1654,7 +1654,7 @@
 			<S100FC:definition>Provides the name of an entity, defines the national language of the name, and provides the option to display the name at various system display settings.</S100FC:definition>
 			<S100FC:code>featureName</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>140</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1253</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1684,7 +1684,7 @@
 			<S100FC:definition>Textual information about the feature. The information may be provided as a string of text or as a file name of a single external text file that contains the text.</S100FC:definition>
 			<S100FC:code>information</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>1420</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1130</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1728,7 +1728,7 @@
 			<S100FC:definition>The cycle of issuing a product or service.</S100FC:definition>
 			<S100FC:code>issuanceCycle</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9250</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1308</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1751,7 +1751,7 @@
 			<S100FC:definition>Information about online sources from which a resource or data can be obtained.</S100FC:definition>
 			<S100FC:code>onlineResource</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>1388</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1321</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1802,7 +1802,7 @@
 			<S100FC:definition>The active period of a recurring event or occurrence.</S100FC:definition>
 			<S100FC:code>periodicDateRange</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>276</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>794</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1825,7 +1825,7 @@
 			<S100FC:definition>A decision or establishment of a price.</S100FC:definition>
 			<S100FC:code>pricing</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9260</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1310</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1855,7 +1855,7 @@
 			<S100FC:definition>Information on the printing of nautical paper charts.</S100FC:definition>
 			<S100FC:code>printInformation</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9262</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1312</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1899,7 +1899,7 @@
 			<S100FC:definition>Size of nautical paper charts.</S100FC:definition>
 			<S100FC:code>printSize</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9264</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1311</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1932,7 +1932,7 @@
 			<S100FC:definition>The name of the product specification to which a nautical product adheres.</S100FC:definition>
 			<S100FC:code>productSpecification</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9267</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1313</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -1969,7 +1969,7 @@
 			<S100FC:definition>Information on additional files used in addition to nautical products.</S100FC:definition>
 			<S100FC:code>supportFile</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9286</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1317</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2086,7 +2086,7 @@
 			<S100FC:definition>The name of the product specification to which a support file adheres.</S100FC:definition>
 			<S100FC:code>supportFileSpecification</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9300</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1317</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2116,7 +2116,7 @@
 			<S100FC:definition>The name of the (product) specification to which a nautical service adheres.</S100FC:definition>
 			<S100FC:code>serviceSpecification</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9274</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1316</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2146,7 +2146,7 @@
 			<S100FC:definition>Information about the source document, publication, or reference from which object data or textual material included or referenced in a dataset are derived.</S100FC:definition>
 			<S100FC:code>sourceIndication</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>1736</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1320</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2230,7 +2230,7 @@
 			<S100FC:definition>A means or channel of communicating at a distance by electrical or electromagnetic means such as telegraphy, telephony, or broadcasting.</S100FC:definition>
 			<S100FC:code>telecommunications</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>1392</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>255</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2270,7 +2270,7 @@
 			<S100FC:definition>The temporal interval over which the product is updated or renewed.</S100FC:definition>
 			<S100FC:code>timeIntervalOfProduct</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9314</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1318</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2300,7 +2300,7 @@
 			<S100FC:definition>The temporal interval of the cycle over which data is produced.</S100FC:definition>
 			<S100FC:code>timeIntervalOfCycle</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9313</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1309</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2329,7 +2329,7 @@
 			<S100FC:definition>A reference to a of specific Notice to Mariners.</S100FC:definition>
 			<S100FC:code>referenceToNM</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9272</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1314</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2352,7 +2352,7 @@
 			<S100FC:definition>The indication of a specific week within a specific year.</S100FC:definition>
 			<S100FC:code>weekOfYear</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>9331</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>1315</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:subAttributeBinding sequential="false">
@@ -2593,7 +2593,7 @@
 			<S100FC:definition>Information on how to reach a person or organisation by postal, internet, telephone, telex and radio systems.</S100FC:definition>
 			<S100FC:code>ContactDetails</S100FC:code>
 			<S100FC:definitionReference>
-				<S100FC:sourceIdentifier>1386</S100FC:sourceIdentifier>
+				<S100FC:sourceIdentifier>27</S100FC:sourceIdentifier>
 				<S100FC:definitionSource ref="IHOREG"/>
 			</S100FC:definitionReference>
 			<S100FC:attributeBinding sequential="false">

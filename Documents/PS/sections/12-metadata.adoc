@@ -171,22 +171,13 @@ h| Name h| Description h| Mult h| Type h| Remarks
 | datasetID | Dataset ID expressed as a Maritime Resource Name | 0..1 | URN | The URN must be an MRN
 | compressionFlag | Indicates if the resource is compressed | 1 | Boolean | *_True_* indicates a compressed dataset resource *_False_* indicates an uncompressed dataset resource
 | dataProtection | Indicates if the data is encrypted | 1 | Boolean | *_True_* indicates an encrypted dataset resource *_False_* indicates an unencrypted dataset resource
-
 | protectionScheme | Specification or method used for data protection | 0..1 | S100_ProtectionScheme |
-
 | digitalSignatureReference | Specifies the algorithm used to compute digitalSignatureValue | 1 | S100_SE_DigitalSignatureReference (see <<S_100,part=15>>) |
-
-| digitalSignatureValue | Value derived from the digital signature | 1..*
-| S100_SE_DigitalSignature +
-(see <<S_100,part=15>>)
-| The value resulting from application of digitalSignatureReference Implemented as the digital signature format specified in <<S_100,part=15>>
-
-| copyright | Indicates if the dataset is copyrighted | 1 | Boolean
-| *_True_* indicates the resource is copyrighted *_False_* Indicates
+| digitalSignatureValue | Value derived from the digital signature | 1..* | S100_SE_DigitalSignature +
+(see <<S_100,part=15>>) | The value resulting from application of digitalSignatureReference Implemented as the digital signature format specified in <<S_100,part=15>>
+| copyright | Indicates if the dataset is copyrighted | 1 | Boolean | *_True_* indicates the resource is copyrighted *_False_* Indicates
 the resource is not copyrighted
-| classification | Indicates the security classification of the dataset
-| 0..1 | ClassMD_SecurityConstraints>MD_ClassificationCode (codelist)
-a|
+| classification | Indicates the security classification of the dataset | 0..1 | ClassMD_SecurityConstraints>MD_ClassificationCode (codelist) a|
 . unclassified
 . restricted
 . confidential
@@ -196,34 +187,20 @@ a|
 . for official use only
 . protected
 . limited distribution
-
 | purpose | The purpose for which the dataset has been issued | 0..1 | S100_Purpose |
-
 | notForNavigation | Indicates the dataset is not intended to be used for navigation | 1 | Boolean | *_True_* indicates the dataset is not intended to be used for navigation *_False_* indicates the dataset is intended to be used for navigation
-
 | specificUsage | The use for which the dataset is intended | 0..1 | MD_USAGE>specificUsage (character string) |
-
 | editionNumber | The edition number of the dataset | 0..1 | Integer | When a data set is initially created, the edition number 1 is assigned to it. The edition number is increased by 1 at each new edition. Edition number remains the same for a re-issue
 | updateNumber | Update number assigned to the dataset and increased by one for each subsequent update | 0..1 | Integer | Update number 0 is assigned to a new dataset
-
-| updateApplicationDate
-| This date is only used for the base cell files
+| updateApplicationDate | This date is only used for the base cell files
 (that is new data sets, re-issue and new edition), not update cell
 files. All updates dated on or before this date must have been applied
-by the producer
-| 0..1 | Date |
-
+by the producer | 0..1 | Date |
 | referenceID | Reference back to the datasetID | 0..1 | URN | Update metadata refers to the datasetID of the dataset metadata. This is used if and only if the dataset is an update The URN must be an MRN
-
 | issueDate | Date on which the data was made available by the data producer | 1 | Date |
-
 | issueTime | Time of day at which the data was made available by the data producer | 0..1 | Time | The S-100 datatype Time
-
 | boundingBox | The extent of the dataset limits | 0..1 | EX_GeographicBoundingBox |
-
-| temporalExtent | Specification of the temporal extent of the dataset
-| 0..1 | S100_TemporalExtent
-| The temporal extent is encoded as the date/time of the earliest
+| temporalExtent | Specification of the temporal extent of the dataset | 0..1 | S100_TemporalExtent | The temporal extent is encoded as the date/time of the earliest
 and latest data records (in coverage datasets) or date/time ranges
 (in vector datasets)If there is more than one feature in a dataset,
 the earliest and latest time values of records in all features are
@@ -234,42 +211,24 @@ indefinitely in the appropriate direction on the time axis, limited
 by the issue date/time or the cancellation or supersession of the
 datasetThis attribute is encoded if and only if at least one of the
 start and end of the temporal extent is known
-
 | productSpecification | The Product Specification used to create this dataset | 1 | S100_ProductSpecification |
-
 | producingAgency | Agency responsible for producing the data | 1 | CI_Responsibility>CI_Organisation | See <<S_100,part=17,table=17-3>>
-
 | producerCode | The official IHO Producer Code from the IHO GI Registry, Producer Code Register | 0..1 | CharacterString |
-
 | encodingFormat | The encoding format of the dataset | 1 | S100_EncodingFormat |
-
 | dataCoverage | Provides information about data coverages within the dataset | 0..* | S100_DataCoverage |
-
 | comment | Any additional information | 0..1 | CharacterString |
-
-| defaultLocale | Default language and character set used in the Exchange Catalogue | 0..* | PT_Locale | In absence of defaultLocale the language is English, UTF-8
-
+| defaultLocale | Default language and character set used in the Exchange Catalogue | 0..1 | PT_Locale | In absence of defaultLocale the language is English, UTF-8
 | otherLocale | Other languages and character sets used in the Exchange Catalogue | 0..* | PT_Locale |
-
 | metadataPointOfContact | Point of contact for metadata | 0..1 | CI_Responsibility>CI_Individual orCI_Responsibility>CI_Organisation | Only if metadataPointOfContact is different to producingAgency
 | metadataDateStamp | Date stamp for metadata | 0..1 | Date | May or may not be the issue date
-
 | replacedData | If a data file is cancelled is it replaced by another data file | 0..1 | Boolean |
-
 | dataReplacement | Cell name | 0..* | CharacterString | A dataset may be replaced by 1 or more datasets
-| navigationPurpose | Classification of intended navigation purpose (for Catalogue indexing purposes)
-| 0..3 | S100_NavigationPurpose
-| If Product Specification is intended for creation of navigational
+| navigationPurpose | Classification of intended navigation purpose (for Catalogue indexing purposes) | 0..3 | S100_NavigationPurpose | If Product Specification is intended for creation of navigational
 products this attribute should be mandatory
-
-| resourceMaintenance
-| Information about the frequency of resource updates, and the scope
-of those updates
-| 0..1 | MD_MaintenanceInformation
-| S-100 restricts the multiplicity to 0..1 and adds specific restrictions
+| resourceMaintenance | Information about the frequency of resource updates, and the scope
+of those updates | 0..1 | MD_MaintenanceInformation | S-100 restricts the multiplicity to 0..1 and adds specific restrictions
 on the ISO19115 structure and content. See clause MD_MaintenanceInformation
 later in this PartFormat: PnYnMnDTnHnMnS (XML built in type for <<ISO_8601>> duration). See <<S_100,clause=17-4.9>>
-
 |===
 
 [[sec_12.2.2.1]]
